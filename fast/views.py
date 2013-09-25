@@ -148,12 +148,12 @@ def doSkip(request, task):
 
 @login_required
 def doCaptcha(request):
-    user = request.user
+    user_profile = UserProfile.objects.get(user=request.user)
     if request.method == 'POST':
         form=FormWithCaptcha(request.POST)
         print "I received the form", form.is_valid()
         if form.is_valid():
-            user.credit = user.credit + 1
+            user_profile.credit = user_profile.credit + 1
     else:
         form = FormWithCaptcha()
     return HttpResponseRedirect(reverse('work'))

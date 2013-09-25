@@ -19,7 +19,7 @@
         {% csrf_token %}
         <div class="form-group">
           <p>{{ description }}</p>
-          <label for="exampleInputEmail1">{% if img %}<img src="{{ task.question }}" />{% else %}{{ task.question }}{% endif %}</label>
+          <label for="exampleInputEmail1">{% if img %}<img src="{{ STATIC_URL }}img/{{ task.question }}" />{% else %}{{ task.question }}{% endif %}</label>
           <textarea class="form-control" rows="3" placeholder="Input here..." ></textarea>
         </div>
         <button id="skip" type="submit" name="skip" class="btn btn-primary">Skip</button>
