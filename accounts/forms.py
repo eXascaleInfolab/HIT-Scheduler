@@ -21,7 +21,7 @@ class LoginForm(forms.Form):
                 'username'
             ),
             ButtonHolder(
-                Submit('submit', 'Log in', css_class='button')
+                Submit('submit', 'Start', css_class='button')
             )
         )
         super(LoginForm, self).__init__(*args, **kwargs)

@@ -6,7 +6,7 @@
       "finishtime": null,
       "name": "Company Customer Service Phone",
       "description": "Please find the customer service phone number of the following company :",
-      "value": 1,
+      "value": 0.01,
       "numtask": 200,
       "bclass": "data",
       "runtask": 0,

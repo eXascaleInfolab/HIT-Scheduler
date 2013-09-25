@@ -8,7 +8,7 @@ from captcha.fields import ReCaptchaField
 
 class UserProfile(models.Model):
 	user = models.ForeignKey(User, unique=True)
-	credit = models.IntegerField(default=0)
+	credit = models.FloatField(default=0.0)
 	score = models.IntegerField(default=0)
 
 class Batch(models.Model):

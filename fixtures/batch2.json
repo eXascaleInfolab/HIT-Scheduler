@@ -6,7 +6,7 @@
       "finishtime": null,
       "name": "Image Labeling",
       "description": "Enter a serie of keywords that describe the objects in the following image",
-      "value": 1,
+      "value": 0.01,
       "numtask": 106,
       "bclass": "extract",
       "runtask": 0,

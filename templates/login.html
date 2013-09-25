@@ -3,17 +3,17 @@
 {% load static %}
 
 {% block content %}
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <p>In order to pay you for your work, we need to know your Mturk Worker ID. Please navigate to <a href="https://www.mturk.com/mturk/dashboard">https://www.mturk.com/mturk/dashboard</a> where you will find your Worker ID in the top-right corner.<br />
-      <img src="{% static "img/dashboard.jpg" %}" style="border: 2px solid black;" /></p>
-    </div>
-  </div>
+<div class="container col-md-6 col-md-offset-3">
   <div class="jumbotron">
     <div class="container">
       {% crispy login_form %}
     </div>
+    <blockquote>
+      <p>* Your MTurk ID is needed for your payment, it could be obtained here: <a href="https://www.mturk.com/mturk/dashboard">https://www.mturk.com/mturk/dashboard</a> </p>
+      <small>The top-right corner</small>
+      <img src="{% static "img/dashboard.jpg" %}" style="border: 2px solid black;" /></p>
+    </blockquote>
+  </div>
   </div>
 </div>
 {% endblock content %}
