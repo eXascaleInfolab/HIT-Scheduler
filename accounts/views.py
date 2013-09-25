@@ -24,12 +24,18 @@ def login_view(request):
     #     return redirect('/')
     print request.user.username
 
+    if 'wid' in request.GET:
+        wid = request.GET.get('wid')
+    else:
+        wid = ''
+
     login_error = ''
     if request.method == 'POST':
-        login_form = LoginForm(request.POST)
+        login_form = LoginForm(request.POST, initial={
+            'username': wid
+        })
         if login_form.is_valid():
             username = request.POST['username']
-
             user = authenticate(username=username, password="cool")
             if user is not None:
                 print "user is back !"
@@ -40,6 +46,7 @@ def login_view(request):
                 user = authenticate(username=username, password="cool")
                 login(request, user)
                 user_profile = UserProfile.objects.create(user=request.user)
+                user_profile.save()
 
             if user is not None:
                 request.session['get_token'] = generate_token()
@@ -53,7 +60,9 @@ def login_view(request):
             login_error = 'Form invalid'
 
     if request.method != 'POST':
-        login_form = LoginForm()
+        login_form = LoginForm(initial={
+            'username': wid
+        })
 
     csrf_tk['login_error'] = login_error
     csrf_tk['login_form'] = login_form
