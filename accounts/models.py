@@ -8,7 +8,6 @@ from captcha.fields import ReCaptchaField
 
 class UserProfile(models.Model):
 	user = models.ForeignKey(User, unique=True)
-	mturkid = models.CharField(max_length=200)
 	credit = models.IntegerField(default=0)
 	score = models.IntegerField(default=0)
 
@@ -22,6 +21,7 @@ class Batch(models.Model):
 	deadline = models.DateTimeField(auto_now=True)
 	finishtime = models.DateTimeField(blank=True,null=True)
 	name = models.CharField(max_length=50)
+	description = models.CharField(max_length=255)
 	bclass = models.CharField(max_length=10, choices=(('classify','classify'),('extract','extract'),('curate','curate'),('data','data')))
 	def __unicode__(self):
 		return self.name

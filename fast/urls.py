@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     url(r'^batch/(?P<task_id>\d+)/$', 'fast.views.click', name='click'),
     (r'^tracking/', include('tracking.urls')),
     # url(r'^fast/', include('fast.foo.urls')),
+    url(r'^accounts/',  include('accounts.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

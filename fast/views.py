@@ -4,6 +4,7 @@ from django.template import RequestContext, loader
 from django.shortcuts import render_to_response, get_object_or_404, redirect, render
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 from accounts.models import UserProfile, Batch, Task, TaskLock, TaskAnswer, TaskSkip, FormWithCaptcha
 from django.contrib.sessions.models import Session
 from datetime import datetime
@@ -29,21 +30,21 @@ def BatchFilter(request):
 def getNextBatch_FIFO(request):
     SelectableBatchs = BatchFilter(request)
     if SelectableBatchs.count() == 0:
-        return 0 
+        return 0
     return SelectableBatchs.order_by('pulication')[0]
 
 # Earliest Deadline First
 def getNextBatch_EDF(request):
     SelectableBatchs = BatchFilter(request)
     if SelectableBatchs.count() == 0:
-        return 0 
+        return 0
     return SelectableBatchs.order_by('deadline')[0]
 
 # Round-Robin
 def getNextBatch_RR(request):
     SelectableBatchs = BatchFilter(request)
     if SelectableBatchs.count() == 0:
-        return 0 
+        return 0
     it = (getNextBatch_RR.item) % SelectableBatchs.count()
     getNextBatch_RR.item = getNextBatch_RR.item + 1
     return SelectableBatchs[it]
@@ -57,18 +58,19 @@ def getNextBatch_FAIR(request):
     return SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[0]
 
 # Core method
+@login_required
 def work(request):
-    print "going to check expiry"
+    print "work"
     release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
-    user_profile = user_login(request) # Victor?
-    print user_profile.credit, user_profile.mturkid
+    user_profile = UserProfile.objects.get(user=request.user)
+    print user_profile.credit, user_profile.user.username
     # TODO: move this after schedule the next betch
     count = num_visitors(request)
     print count, " NUMBER of visitors ...."
     if count < 3:
         form = FormWithCaptcha()
-        return render_to_response('captcha.html', 
-            {'user_profile':user_profile,'form': form}, 
+        return render_to_response('captcha.html',
+            {'user_profile':user_profile,'form': form},
             context_instance=RequestContext(request))
     # Check if the user isn't locking some task
     try:
@@ -96,7 +98,7 @@ def work(request):
     print "LOCK: ", request.user, task
     tlock, created = TaskLock.objects.get_or_create(user=request.user,task=task)
     tlock.save()
-    return render_to_response('task.html', {'user_profile':user_profile,'task':task}, 
+    return render_to_response('task.html', {'user_profile':user_profile,'task':task},
             context_instance=RequestContext(request))
 
 def click(request, task_id):
@@ -141,6 +143,7 @@ def doSkip(request, task):
     batch.save()
     return HttpResponseRedirect(reverse('work'))
 
+@login_required
 def doCaptcha(request):
     user = request.user
     if request.method == 'POST':
@@ -155,26 +158,6 @@ def doCaptcha(request):
 # Session management
 def num_visitors(request):
     return Visitor.objects.active().count()
-
-def user_login(request):
-    # username = request.POST['username']
-    # password = request.POST['password']
-    if request.user.is_authenticated():
-        user_profile = UserProfile.objects.get(user=request.user)
-    else:
-        username = id_generator()
-        user = authenticate(username=username, password="cool")
-        if user is not None:
-            print "user is back !"
-            login(request, user)
-            user_profile = UserProfile.objects.get(user=user)
-        else:
-            print "user is new: create him"
-            user = User.objects.create_user(username, 'username@hitbit.co', "cool")
-            user = authenticate(username=username, password="cool")
-            login(request, user)
-            user_profile = UserProfile.objects.create(user=request.user,mturkid=username)
-    return user_profile
 
 def release_expiredLocks():
     print "release expired locks"

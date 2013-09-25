@@ -1,10 +1,10 @@
-# Django settings for fast project.
+# -*- coding: utf-8 -*-:
 
 import os.path
 from os.path import abspath, dirname, basename, join
 import dj_database_url
 
-DEBUG = True 
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 PROJECT_DIR = os.path.dirname(__file__)
@@ -91,6 +91,7 @@ MIDDLEWARE_CLASSES = (
     'tracking.middleware.VisitorCleanUpMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'fast.utils.ThreadLocals',
 )
 
 ROOT_URLCONF = 'fast.urls'
@@ -121,6 +122,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'accounts',
     'tracking',
     'captcha',
@@ -182,3 +184,9 @@ CACHES = {
         'LOCATION': 'default-cache'
     }
 }
+
+AUTH_PROFILE_MODULE = 'accounts.UserProfile'
+LOGIN_URL = '/accounts/login'
+LOGIN_REDIRECT_URL='/'
+
+CRISPY_TEMPLATE_PACK='bootstrap3'
