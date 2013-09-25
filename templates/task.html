@@ -15,12 +15,12 @@
   </script>
   <div class="jumbotron">
     <div class="container">
+      <div class="alert alert-info"><strong>Instruction:</strong> {{ batch.description }} <span class="label label-danger"> Value = {{batch.value}}$</span> </div>
       <form role="form" action="{% url "click" task.id %}" method="post">
         {% csrf_token %}
         <div class="form-group">
-          <p>{{ description }}</p>
           <label for="exampleInputEmail1">{% if img %}<img src="{{ STATIC_URL }}img/{{ task.question }}" />{% else %}{{ task.question }}{% endif %}</label>
-          <textarea class="form-control" rows="3" placeholder="Input here..." ></textarea>
+          <textarea class="form-control" rows="3" placeholder="Type the result here." ></textarea>
         </div>
         <button id="skip" type="submit" name="skip" class="btn btn-primary">Skip</button>
         <button id="submit" type="submit" name="submit" class="btn btn-success">Submit</button>

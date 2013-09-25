@@ -88,20 +88,20 @@ def work(request):
         print taskExclude
         tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
         task = tasks[0]
+        task.lock = task.lock - 1
+        task.save()
+        batch.runtask = batch.runtask +1
+        batch.save()
     else:
         task = task_lock.task
         batch = task.batch
-    task.lock = task.lock - 1
-    task.save()
-    batch.runtask = batch.runtask +1
-    batch.save()
     print "LOCK: ", request.user, task
     tlock, created = TaskLock.objects.get_or_create(user=request.user,task=task)
     tlock.save()
     img = False
     if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
         img = True
-    return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'description': batch.description, 'img': img},
+    return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img},
             context_instance=RequestContext(request))
 
 @login_required
