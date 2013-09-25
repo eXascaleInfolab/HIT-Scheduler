@@ -1,0 +1,13 @@
+{% extends "navigation.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+  <div class="jumbotron">
+    <div class="container">
+      {{ login_error }}
+      {% crispy login_form %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

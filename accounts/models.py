@@ -8,7 +8,6 @@ from captcha.fields import ReCaptchaField
 
 class UserProfile(models.Model):
 	user = models.ForeignKey(User, unique=True)
-	mturkid = models.CharField(max_length=200)
 	credit = models.IntegerField(default=0)
 	score = models.IntegerField(default=0)
 
