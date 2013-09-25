@@ -155,7 +155,9 @@ def doCaptcha(request):
         form=FormWithCaptcha(request.POST)
         print "I received the form", form.is_valid()
         if form.is_valid():
-            user_profile.credit = user_profile.credit + 1
+            print "is VALID CAPTCHA"
+            user_profile.credit = user_profile.credit + 0.01
+            user_profile.save()
     else:
         form = FormWithCaptcha()
     return HttpResponseRedirect(reverse('work'))

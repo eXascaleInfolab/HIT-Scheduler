@@ -37,8 +37,9 @@
         <li><a href="#">Active User{{ visitors|pluralize }} <span class="badge">{{ visitors }}</span></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">{{ request.user }}</a></li>
-        <li><a href="#">{{ user_profile.credit }}$</a></li>
+        <li><a href="#">user : <span class="badge">{{ request.user }}</span></a></li>
+        <li><a href="#">credit : <span class="badge">{{ user_profile.credit }}$</span></a></li>
+        <li><a href="#">performance : <span class="badge">{{ user_profile.credit }}$/hr</span></a></li>
       </ul>
     </div>
     <!-- /.navbar-collapse -->
