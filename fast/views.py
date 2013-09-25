@@ -104,6 +104,7 @@ def work(request):
     return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'description': batch.description, 'img': img},
             context_instance=RequestContext(request))
 
+@login_required
 def click(request, task_id):
     task = get_object_or_404(Task, pk=task_id)
     if request.POST:
@@ -118,6 +119,7 @@ def doSubmit(request, task):
     task.done = task.done +1
     task.save()
     answer = TaskAnswer.objects.create(user=request.user,task=task)
+    print request.user
     tl = TaskLock.objects.filter(user=request.user,task=task)
     tl.delete()
     batch = task.batch
