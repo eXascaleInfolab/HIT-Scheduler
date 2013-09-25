@@ -1,0 +1,17 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="container">
+      <form method="POST" action="{% url 'doCaptcha' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+        <button type="submit" class="btn btn-primary btn-large">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

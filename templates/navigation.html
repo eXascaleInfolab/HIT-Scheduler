@@ -1,0 +1,48 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--     <meta property="og:image"  content="https://fbcdn-photos-a.akamaihd.net/photos-ak-snc7/v85005/64/107133976112752/app_115_107133976112752_662147280.png" />  -->
+    <title>{% block title %}{% endblock title %} Fast</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/font-awesome.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/docs.css">
+    <script type="text/javascript" src="https://use.typekit.net/gbh7uto.js"></script>
+    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.notify-better.js"></script>
+    {% block page-css %}{% endblock page-css %}
+  </head>
+  <body>
+
+  {% load tracking_tags %}
+  {% visitors_on_site as visitors %}
+
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Fast</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Active User{{ visitors|pluralize }} <span class="badge">{{ visitors }}</span></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">{{ user_profile.mturkid }}</a></li>
+        <li><a href="#">{{ user_profile.credit }}$</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+  {% block content_title %}{% endblock %}
+  {% block content %}{% endblock content %}
+</html>
