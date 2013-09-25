@@ -5,6 +5,7 @@
     "fields": {
       "finishtime": null,
       "name": "Image Labeling",
+      "description": "Enter a serie of keywords that describe the objects in the following image",
       "value": 1,
       "numtask": 106,
       "bclass": "extract",

@@ -79,7 +79,7 @@ def work(request):
         # Schedule the next batch
         batch = getNextBatch_FAIR(request)
         if batch == 0:
-            return render_to_response('done.html', 
+            return render_to_response('done.html',
                 {'user_profile':user_profile,},
                 context_instance=RequestContext(request))
         print "Batch Selected: ", batch
@@ -98,7 +98,10 @@ def work(request):
     print "LOCK: ", request.user, task
     tlock, created = TaskLock.objects.get_or_create(user=request.user,task=task)
     tlock.save()
-    return render_to_response('task.html', {'user_profile':user_profile,'task':task},
+    img = False
+    if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
+        img = True
+    return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'description': batch.description, 'img': img},
             context_instance=RequestContext(request))
 
 def click(request, task_id):

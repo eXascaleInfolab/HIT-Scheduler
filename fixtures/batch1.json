@@ -5,7 +5,7 @@
     "fields": {
       "finishtime": null,
       "name": "Company Customer Service Phone",
-      "description": "For this batch of tasks, you will have to find the customer service phone number of various companies.",
+      "description": "Please find the customer service phone number of the following company :",
       "value": 1,
       "numtask": 200,
       "bclass": "data",
@@ -21,7 +21,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Del Monte Foods Co\"",
+      "question": "\"Del Monte Foods Co\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -32,7 +32,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dell Computer Corporation\"",
+      "question": "\"Dell Computer Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -43,7 +43,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Delphi Corp.\"",
+      "question": "\"Delphi Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -54,7 +54,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Delta Air Lines Inc.\"",
+      "question": "\"Delta Air Lines Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -65,7 +65,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Deluxe Corporation\"",
+      "question": "\"Deluxe Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -76,7 +76,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Devon Energy Corporation\"",
+      "question": "\"Devon Energy Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -87,7 +87,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Di Giorgio Corporation\"",
+      "question": "\"Di Giorgio Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -98,7 +98,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dial Corporation\"",
+      "question": "\"Dial Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -109,7 +109,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Diebold Incorporated\"",
+      "question": "\"Diebold Incorporated\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -120,7 +120,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dillard's Inc.\"",
+      "question": "\"Dillard's Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -131,7 +131,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"DIMON Incorporated\"",
+      "question": "\"DIMON Incorporated\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -142,7 +142,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dole Food Company, Inc.\"",
+      "question": "\"Dole Food Company, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -153,7 +153,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dollar General Corporation\"",
+      "question": "\"Dollar General Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -164,7 +164,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dollar Tree Stores, Inc.\"",
+      "question": "\"Dollar Tree Stores, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -175,7 +175,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dominion Resources, Inc.\"",
+      "question": "\"Dominion Resources, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -186,7 +186,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Domino's Pizza LLC\"",
+      "question": "\"Domino's Pizza LLC\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -197,7 +197,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dover Corporation, Inc.\"",
+      "question": "\"Dover Corporation, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -208,7 +208,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dow Chemical Company\"",
+      "question": "\"Dow Chemical Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -219,7 +219,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dow Jones & Company, Inc.\"",
+      "question": "\"Dow Jones & Company, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -230,7 +230,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"DPL Inc.\"",
+      "question": "\"DPL Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -241,7 +241,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"DQE Inc.\"",
+      "question": "\"DQE Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -252,7 +252,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dreyer's Grand Ice Cream, Inc.\"",
+      "question": "\"Dreyer's Grand Ice Cream, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -263,7 +263,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"DST Systems, Inc.\"",
+      "question": "\"DST Systems, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -274,7 +274,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"DTE Energy Co.\"",
+      "question": "\"DTE Energy Co.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -285,7 +285,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"E.I. Du Pont de Nemours and Company\"",
+      "question": "\"E.I. Du Pont de Nemours and Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -296,7 +296,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Duke Energy Corp\"",
+      "question": "\"Duke Energy Corp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -307,7 +307,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dun & Bradstreet Inc.\"",
+      "question": "\"Dun & Bradstreet Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -318,7 +318,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"DURA Automotive Systems Inc.\"",
+      "question": "\"DURA Automotive Systems Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -329,7 +329,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"DynCorp\"",
+      "question": "\"DynCorp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -340,7 +340,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Dynegy Inc.\"",
+      "question": "\"Dynegy Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -351,7 +351,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"E.W. Scripps Company\"",
+      "question": "\"E.W. Scripps Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -362,7 +362,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Earthlink, Inc.\"",
+      "question": "\"Earthlink, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -373,7 +373,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Eastman Chemical Company\"",
+      "question": "\"Eastman Chemical Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -384,7 +384,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Eastman Kodak Company\"",
+      "question": "\"Eastman Kodak Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -395,7 +395,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Eaton Corporation\"",
+      "question": "\"Eaton Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -406,7 +406,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Echostar Communications Corporation\"",
+      "question": "\"Echostar Communications Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -417,7 +417,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Ecolab Inc.\"",
+      "question": "\"Ecolab Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -428,7 +428,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Edison International\"",
+      "question": "\"Edison International\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -439,7 +439,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"EGL Inc.\"",
+      "question": "\"EGL Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -450,7 +450,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"El Paso Corporation\"",
+      "question": "\"El Paso Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -461,7 +461,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Electronic Arts Inc.\"",
+      "question": "\"Electronic Arts Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -472,7 +472,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Electronic Data Systems Corp.\"",
+      "question": "\"Electronic Data Systems Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -483,7 +483,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"EMC Corporation\"",
+      "question": "\"EMC Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -494,7 +494,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Emcor Group Inc.\"",
+      "question": "\"Emcor Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -505,7 +505,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Emerson Electric Co.\"",
+      "question": "\"Emerson Electric Co.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -516,7 +516,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Encompass Services Corporation\"",
+      "question": "\"Encompass Services Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -527,7 +527,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Energizer Holdings Inc.\"",
+      "question": "\"Energizer Holdings Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -538,7 +538,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Energy East Corporation\"",
+      "question": "\"Energy East Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -549,7 +549,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Engelhard Corporation\"",
+      "question": "\"Engelhard Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -560,7 +560,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Enterprise Products Partners L.P.\"",
+      "question": "\"Enterprise Products Partners L.P.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -571,7 +571,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"EOG Resources, Inc.\"",
+      "question": "\"EOG Resources, Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -582,7 +582,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Equifax Inc.\"",
+      "question": "\"Equifax Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -593,7 +593,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Equitable Resources Inc.\"",
+      "question": "\"Equitable Resources Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -604,7 +604,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Equity Office Properties Trust\"",
+      "question": "\"Equity Office Properties Trust\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -615,7 +615,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Equity Residential Properties Trust\"",
+      "question": "\"Equity Residential Properties Trust\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -626,7 +626,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Estee Lauder Companies Inc.\"",
+      "question": "\"Estee Lauder Companies Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -637,7 +637,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Exelon Corporation\"",
+      "question": "\"Exelon Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -648,7 +648,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Exide Technologies\"",
+      "question": "\"Exide Technologies\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -659,7 +659,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Expeditors International of Washington Inc.\"",
+      "question": "\"Expeditors International of Washington Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -670,7 +670,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Express Scripts Inc.\"",
+      "question": "\"Express Scripts Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -681,7 +681,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"ExxonMobil Corporation\"",
+      "question": "\"ExxonMobil Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -692,7 +692,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fairchild Semiconductor International Inc.\"",
+      "question": "\"Fairchild Semiconductor International Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -703,7 +703,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Family Dollar Stores Inc.\"",
+      "question": "\"Family Dollar Stores Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -714,7 +714,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Farmland Industries Inc.\"",
+      "question": "\"Farmland Industries Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -725,7 +725,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Federal Mogul Corp.\"",
+      "question": "\"Federal Mogul Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -736,7 +736,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Federated Department Stores Inc.\"",
+      "question": "\"Federated Department Stores Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -747,7 +747,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Federal Express Corp.\"",
+      "question": "\"Federal Express Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -758,7 +758,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Felcor Lodging Trust Inc.\"",
+      "question": "\"Felcor Lodging Trust Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -769,7 +769,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Ferro Corp.\"",
+      "question": "\"Ferro Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -780,7 +780,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fidelity National Financial Inc.\"",
+      "question": "\"Fidelity National Financial Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -791,7 +791,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fifth Third Bancorp\"",
+      "question": "\"Fifth Third Bancorp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -802,7 +802,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"First American Financial Corp.\"",
+      "question": "\"First American Financial Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -813,7 +813,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"First Data Corp.\"",
+      "question": "\"First Data Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -824,7 +824,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"First National of Nebraska Inc.\"",
+      "question": "\"First National of Nebraska Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -835,7 +835,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"First Tennessee National Corp.\"",
+      "question": "\"First Tennessee National Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -846,7 +846,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"FirstEnergy Corp.\"",
+      "question": "\"FirstEnergy Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -857,7 +857,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fiserv Inc.\"",
+      "question": "\"Fiserv Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -868,7 +868,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fisher Scientific International Inc.\"",
+      "question": "\"Fisher Scientific International Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -879,7 +879,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"FleetBoston Financial Co.\"",
+      "question": "\"FleetBoston Financial Co.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -890,7 +890,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fleetwood Enterprises Inc.\"",
+      "question": "\"Fleetwood Enterprises Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -901,7 +901,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fleming Companies Inc.\"",
+      "question": "\"Fleming Companies Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -912,7 +912,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Flowers Foods Inc.\"",
+      "question": "\"Flowers Foods Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -923,7 +923,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Flowserv Corp\"",
+      "question": "\"Flowserv Corp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -934,7 +934,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fluor Corp\"",
+      "question": "\"Fluor Corp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -945,7 +945,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"FMC Corp\"",
+      "question": "\"FMC Corp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -956,7 +956,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Foamex International Inc\"",
+      "question": "\"Foamex International Inc\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -967,7 +967,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Foot Locker Inc\"",
+      "question": "\"Foot Locker Inc\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -978,7 +978,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Footstar Inc.\"",
+      "question": "\"Footstar Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -989,7 +989,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Ford Motor Co\"",
+      "question": "\"Ford Motor Co\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1000,7 +1000,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Forest Laboratories Inc.\"",
+      "question": "\"Forest Laboratories Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1011,7 +1011,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Fortune Brands Inc.\"",
+      "question": "\"Fortune Brands Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1022,7 +1022,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Foster Wheeler Ltd.\"",
+      "question": "\"Foster Wheeler Ltd.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1033,7 +1033,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"FPL Group Inc.\"",
+      "question": "\"FPL Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1044,7 +1044,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Franklin Resources Inc.\"",
+      "question": "\"Franklin Resources Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1055,7 +1055,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Freeport McMoran Copper & Gold Inc.\"",
+      "question": "\"Freeport McMoran Copper & Gold Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1066,7 +1066,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Frontier Oil Corp\"",
+      "question": "\"Frontier Oil Corp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1077,7 +1077,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Furniture Brands International Inc.\"",
+      "question": "\"Furniture Brands International Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1088,7 +1088,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gannett Co., Inc.\"",
+      "question": "\"Gannett Co., Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1099,7 +1099,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gap Inc.\"",
+      "question": "\"Gap Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1110,7 +1110,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gateway Inc.\"",
+      "question": "\"Gateway Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1121,7 +1121,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"GATX Corporation\"",
+      "question": "\"GATX Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1132,7 +1132,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gemstar-TV Guide International Inc.\"",
+      "question": "\"Gemstar-TV Guide International Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1143,7 +1143,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"General Cable Corporation\"",
+      "question": "\"General Cable Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1154,7 +1154,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"General Dynamics Corporation\"",
+      "question": "\"General Dynamics Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1165,7 +1165,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"General Electric Company\"",
+      "question": "\"General Electric Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1176,7 +1176,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"General Mills Inc\"",
+      "question": "\"General Mills Inc\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1187,7 +1187,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"General Motors Corporation\"",
+      "question": "\"General Motors Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1198,7 +1198,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gentek Inc.\"",
+      "question": "\"Gentek Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1209,7 +1209,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gentiva Health Services Inc.\"",
+      "question": "\"Gentiva Health Services Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1220,7 +1220,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Genuine Parts Company\"",
+      "question": "\"Genuine Parts Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1231,7 +1231,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Genuity Inc.\"",
+      "question": "\"Genuity Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1242,7 +1242,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Genzyme Corporation\"",
+      "question": "\"Genzyme Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1253,7 +1253,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Georgia Gulf Corporation\"",
+      "question": "\"Georgia Gulf Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1264,7 +1264,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Georgia-Pacific Corporation\"",
+      "question": "\"Georgia-Pacific Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1275,7 +1275,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gillette Company\"",
+      "question": "\"Gillette Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1286,7 +1286,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Gold Kist Inc.\"",
+      "question": "\"Gold Kist Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1297,7 +1297,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Golden State Bancorp Inc.\"",
+      "question": "\"Golden State Bancorp Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1308,7 +1308,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Golden West Financial Corporation\"",
+      "question": "\"Golden West Financial Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1319,7 +1319,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Goldman Sachs Group Inc.\"",
+      "question": "\"Goldman Sachs Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1330,7 +1330,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Goodrich Corporation\"",
+      "question": "\"Goodrich Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1341,7 +1341,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"The Goodyear Tire & Rubber Company\"",
+      "question": "\"The Goodyear Tire & Rubber Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1352,7 +1352,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Granite Construction Incorporated\"",
+      "question": "\"Granite Construction Incorporated\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1363,7 +1363,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Graybar Electric Company Inc.\"",
+      "question": "\"Graybar Electric Company Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1374,7 +1374,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Great Lakes Chemical Corporation\"",
+      "question": "\"Great Lakes Chemical Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1385,7 +1385,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Great Plains Energy Inc.\"",
+      "question": "\"Great Plains Energy Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1396,7 +1396,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"GreenPoint Financial Corp.\"",
+      "question": "\"GreenPoint Financial Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1407,7 +1407,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Greif Bros. Corporation\"",
+      "question": "\"Greif Bros. Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1418,7 +1418,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Grey Global Group Inc.\"",
+      "question": "\"Grey Global Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1429,7 +1429,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Group 1 Automotive Inc.\"",
+      "question": "\"Group 1 Automotive Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1440,7 +1440,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Guidant Corporation\"",
+      "question": "\"Guidant Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1451,7 +1451,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"H&R Block Inc.\"",
+      "question": "\"H&R Block Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1462,7 +1462,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"H.B. Fuller Company\"",
+      "question": "\"H.B. Fuller Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1473,7 +1473,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"H.J. Heinz Company\"",
+      "question": "\"H.J. Heinz Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1484,7 +1484,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Halliburton Co.\"",
+      "question": "\"Halliburton Co.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1495,7 +1495,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Harley-Davidson Inc.\"",
+      "question": "\"Harley-Davidson Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1506,7 +1506,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Harman International Industries Inc.\"",
+      "question": "\"Harman International Industries Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1517,7 +1517,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Harrah's Entertainment Inc.\"",
+      "question": "\"Harrah's Entertainment Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1528,7 +1528,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Harris Corp.\"",
+      "question": "\"Harris Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1539,7 +1539,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Harsco Corp.\"",
+      "question": "\"Harsco Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1550,7 +1550,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hartford Financial Services Group Inc.\"",
+      "question": "\"Hartford Financial Services Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1561,7 +1561,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hasbro Inc.\"",
+      "question": "\"Hasbro Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1572,7 +1572,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hawaiian Electric Industries Inc.\"",
+      "question": "\"Hawaiian Electric Industries Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1583,7 +1583,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"HCA Inc.\"",
+      "question": "\"HCA Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1594,7 +1594,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Health Management Associates Inc.\"",
+      "question": "\"Health Management Associates Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1605,7 +1605,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Health Net Inc.\"",
+      "question": "\"Health Net Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1616,7 +1616,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Healthsouth Corp\"",
+      "question": "\"Healthsouth Corp\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1627,7 +1627,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Henry Schein Inc.\"",
+      "question": "\"Henry Schein Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1638,7 +1638,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hercules Inc.\"",
+      "question": "\"Hercules Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1649,7 +1649,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Herman Miller Inc.\"",
+      "question": "\"Herman Miller Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1660,7 +1660,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hershey Foods Corp.\"",
+      "question": "\"Hershey Foods Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1671,7 +1671,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hewlett-Packard Company\"",
+      "question": "\"Hewlett-Packard Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1682,7 +1682,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hibernia Corp.\"",
+      "question": "\"Hibernia Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1693,7 +1693,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hillenbrand Industries Inc.\"",
+      "question": "\"Hillenbrand Industries Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1704,7 +1704,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hilton Hotels Corp.\"",
+      "question": "\"Hilton Hotels Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1715,7 +1715,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hollywood Entertainment Corp.\"",
+      "question": "\"Hollywood Entertainment Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1726,7 +1726,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Home Depot Inc.\"",
+      "question": "\"Home Depot Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1737,7 +1737,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hon Industries Inc.\"",
+      "question": "\"Hon Industries Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1748,7 +1748,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Honeywell International Inc.\"",
+      "question": "\"Honeywell International Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1759,7 +1759,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hormel Foods Corp.\"",
+      "question": "\"Hormel Foods Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1770,7 +1770,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Host Marriott Corp.\"",
+      "question": "\"Host Marriott Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1781,7 +1781,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Household International Corp.\"",
+      "question": "\"Household International Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1792,7 +1792,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hovnanian Enterprises Inc.\"",
+      "question": "\"Hovnanian Enterprises Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1803,7 +1803,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hub Group Inc.\"",
+      "question": "\"Hub Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1814,7 +1814,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hubbell Inc.\"",
+      "question": "\"Hubbell Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1825,7 +1825,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Hughes Supply Inc.\"",
+      "question": "\"Hughes Supply Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1836,7 +1836,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Humana Inc.\"",
+      "question": "\"Humana Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1847,7 +1847,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Huntington Bancshares Inc.\"",
+      "question": "\"Huntington Bancshares Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1858,7 +1858,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Idacorp Inc.\"",
+      "question": "\"Idacorp Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1869,7 +1869,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"IDT Corporation\"",
+      "question": "\"IDT Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1880,7 +1880,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"IKON Office Solutions Inc.\"",
+      "question": "\"IKON Office Solutions Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1891,7 +1891,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Illinois Tool Works Inc.\"",
+      "question": "\"Illinois Tool Works Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1902,7 +1902,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Imperial Sugar Company\"",
+      "question": "\"Imperial Sugar Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1913,7 +1913,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"IMS Health Inc.\"",
+      "question": "\"IMS Health Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1924,7 +1924,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Ingles Market Inc\"",
+      "question": "\"Ingles Market Inc\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1935,7 +1935,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Insight Enterprises Inc.\"",
+      "question": "\"Insight Enterprises Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1946,7 +1946,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Integrated Electrical Services Inc.\"",
+      "question": "\"Integrated Electrical Services Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1957,7 +1957,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Intel Corporation\"",
+      "question": "\"Intel Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1968,7 +1968,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Interpublic Group of Companies Inc.\"",
+      "question": "\"Interpublic Group of Companies Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1979,7 +1979,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Interstate Bakeries Corporation\"",
+      "question": "\"Interstate Bakeries Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -1990,7 +1990,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"International Business Machines Corp.\"",
+      "question": "\"International Business Machines Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2001,7 +2001,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"International Flavors & Fragrances Inc.\"",
+      "question": "\"International Flavors & Fragrances Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2012,7 +2012,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"International Multifoods Corporation\"",
+      "question": "\"International Multifoods Corporation\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2023,7 +2023,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Intuit Inc.\"",
+      "question": "\"Intuit Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2034,7 +2034,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"IT Group Inc.\"",
+      "question": "\"IT Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2045,7 +2045,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"ITT Industries Inc.\"",
+      "question": "\"ITT Industries Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2056,7 +2056,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Ivax Corp.\"",
+      "question": "\"Ivax Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2067,7 +2067,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"J.B. Hunt Transport Services Inc.\"",
+      "question": "\"J.B. Hunt Transport Services Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2078,7 +2078,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"J.C. Penny Co.\"",
+      "question": "\"J.C. Penny Co.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2089,7 +2089,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"J.P. Morgan Chase & Co.\"",
+      "question": "\"J.P. Morgan Chase & Co.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2100,7 +2100,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Jabil Circuit Inc.\"",
+      "question": "\"Jabil Circuit Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2111,7 +2111,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Jack In The Box Inc.\"",
+      "question": "\"Jack In The Box Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2122,7 +2122,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Jacobs Engineering Group Inc.\"",
+      "question": "\"Jacobs Engineering Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2133,7 +2133,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"JDS Uniphase Corp.\"",
+      "question": "\"JDS Uniphase Corp.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2144,7 +2144,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Jefferson-Pilot Co.\"",
+      "question": "\"Jefferson-Pilot Co.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2155,7 +2155,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"John Hancock Financial Services Inc.\"",
+      "question": "\"John Hancock Financial Services Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2166,7 +2166,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Johnson & Johnson\"",
+      "question": "\"Johnson & Johnson\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2177,7 +2177,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Johnson Controls Inc.\"",
+      "question": "\"Johnson Controls Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2188,7 +2188,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Jones Apparel Group Inc.\"",
+      "question": "\"Jones Apparel Group Inc.\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2199,7 +2199,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"KB Home\"",
+      "question": "\"KB Home\"",
       "batch": 1,
       "done": 0,
       "choice": ""
@@ -2210,7 +2210,7 @@
     "model": "accounts.task",
     "fields": {
       "lock": 3,
-      "question": "Please find the customer service phone number of the company \"Kellogg Company\"",
+      "question": "\"Kellogg Company\"",
       "batch": 1,
       "done": 0,
       "choice": ""

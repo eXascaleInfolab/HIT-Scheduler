@@ -18,7 +18,8 @@
       <form role="form" action="{% url "click" task.id %}" method="post">
         {% csrf_token %}
         <div class="form-group">
-          <label for="exampleInputEmail1">{{ task.question }}</label>
+          <p>{{ description }}</p>
+          <label for="exampleInputEmail1">{% if img %}<img src="{{ task.question }}" />{% else %}{{ task.question }}{% endif %}</label>
           <textarea class="form-control" rows="3" placeholder="Input here..." ></textarea>
         </div>
         <button id="skip" type="submit" name="skip" class="btn btn-primary">Skip</button>
