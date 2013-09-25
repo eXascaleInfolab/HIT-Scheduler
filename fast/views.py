@@ -58,27 +58,37 @@ def getNextBatch_FAIR(request):
 
 # Core method
 def work(request):
+    print "going to check expiry"
     release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
     user_profile = user_login(request) # Victor?
     print user_profile.credit, user_profile.mturkid
     # TODO: move this after schedule the next betch
     count = num_visitors(request)
+    print count, " NUMBER of visitors ...."
     if count < 3:
         form = FormWithCaptcha()
         return render_to_response('captcha.html', 
             {'user_profile':user_profile,'form': form}, 
             context_instance=RequestContext(request))
-    # Schedule the next batch
-    batch = getNextBatch_FAIR(request)
-    if batch == 0:
-        return render_to_response('done.html', 
-            {'user_profile':user_profile,},
-            context_instance=RequestContext(request))
-    print "Batch Selected: ", batch
-    # Take some care of real locks !
-    taskExclude = TaskFilter(request)
-    tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
-    task = tasks[0]
+    # Check if the user isn't locking some task
+    try:
+        task_lock = TaskLock.objects.get(user=request.user)
+    except TaskLock.DoesNotExist:
+        # Schedule the next batch
+        batch = getNextBatch_FAIR(request)
+        if batch == 0:
+            return render_to_response('done.html', 
+                {'user_profile':user_profile,},
+                context_instance=RequestContext(request))
+        print "Batch Selected: ", batch
+        # Take some care of real locks !
+        taskExclude = TaskFilter(request)
+        print taskExclude
+        tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
+        task = tasks[0]
+    else:
+        task = task_lock.task
+        batch = task.batch
     task.lock = task.lock - 1
     task.save()
     batch.runtask = batch.runtask +1
@@ -144,20 +154,20 @@ def doCaptcha(request):
 
 # Session management
 def num_visitors(request):
-    return Visitor.objects.active().filter(url=request.path).count()
+    return Visitor.objects.active().count()
 
 def user_login(request):
     # username = request.POST['username']
     # password = request.POST['password']
     if request.user.is_authenticated():
-        user_profile = UserProfile.objects.filter(user=request.user)[0]
+        user_profile = UserProfile.objects.get(user=request.user)
     else:
         username = id_generator()
         user = authenticate(username=username, password="cool")
         if user is not None:
             print "user is back !"
             login(request, user)
-            user_profile = UserProfile.objects.filter(user=request.user)[0]
+            user_profile = UserProfile.objects.get(user=user)
         else:
             print "user is new: create him"
             user = User.objects.create_user(username, 'username@hitbit.co', "cool")
@@ -167,9 +177,13 @@ def user_login(request):
     return user_profile
 
 def release_expiredLocks():
+    print "release expired locks"
     tlocks = TaskLock.objects.all()
     for tl in tlocks:
-        if tl.user.is_authenticated() == False:
+        try:
+            Visitor.objects.get(user=tl.user)
+        except Visitor.DoesNotExist:
+            print tl.user, "REMOVE LOCKS"
             task = tl.task
             batch = task.batch
             task.lock = task.lock + 1
