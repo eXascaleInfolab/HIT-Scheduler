@@ -106,8 +106,14 @@ TEMPLATE_DIRS = (
 
 # AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
-SESSION_COOKIE_AGE = 30
-TRACKING_TIMEOUT = 1
+SESSION_COOKIE_AGE = 300
+TRACKING_TIMEOUT = 5
+TRACKING_CLEANUP_TIMEOUT = 24
+# Number of seconds of inactivity before a user is marked offline
+USER_ONLINE_TIMEOUT = 300
+# Number of seconds that we will keep track of inactive users for before 
+# their last seen is removed from the cache
+USER_LASTSEEN_TIMEOUT = 60 * 60 * 24 * 7
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -178,13 +184,6 @@ CACHES = {
         'LOCATION': 'default-cache'
     }
 }
-
-# Number of seconds of inactivity before a user is marked offline
-USER_ONLINE_TIMEOUT = 30
-
-# Number of seconds that we will keep track of inactive users for before
-# their last seen is removed from the cache
-USER_LASTSEEN_TIMEOUT = 60 * 60 * 24 * 7
 
 AUTH_PROFILE_MODULE = 'accounts.UserProfile'
 LOGIN_URL = '/accounts/login'
