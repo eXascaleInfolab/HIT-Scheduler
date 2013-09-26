@@ -13,6 +13,8 @@ from django.db import transaction
 from django.db.models import Sum, F
 import random
 import string
+import os
+import fcntl
 from django.core.files import locks
 
 # Common utilities
