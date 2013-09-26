@@ -5,7 +5,7 @@
         "fields": {
             "finishtime": null,
             "name": "Mobile Phone Memorization",
-            "value": 1,
+            "value": 0.01,
             "numtask": 200,
             "bclass": "curate",
             "runtask": 0,
@@ -13,7 +13,7 @@
             "deadline": "2013-09-26T08:18:29Z",
             "repetition": 3,
             "pulication": "2013-09-26T08:18:29Z",
-            "description": ""
+            "description": "Read the following SMS, and rewrite it from memory after it disappears"
         }
     },
     {
