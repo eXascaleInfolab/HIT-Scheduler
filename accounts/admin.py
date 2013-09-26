@@ -23,4 +23,4 @@ class UserProfileAdmin(admin.ModelAdmin):
         (None,               {'fields': ['user','credit','score']}),
     ]
 
-admin.site.register(Batch, BatchAdmin)
+admin.site.register(Batch, BatchAdmin, UserProfile, UserProfileAdmin)
