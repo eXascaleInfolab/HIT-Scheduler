@@ -5,7 +5,6 @@
     "fields": {
       "finishtime": null,
       "name": "Company Customer Service Phone",
-      "description": "Please find the customer service phone number of the following company :",
       "value": 0.01,
       "numtask": 200,
       "bclass": "data",
@@ -13,7 +12,8 @@
       "done": false,
       "deadline": "2013-09-25T11:21:25Z",
       "repetition": 3,
-      "pulication": "2013-09-25T11:21:18Z"
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Find (e.g. on google) the <strong>Customer Service Phone Number</strong> of the following US based company",
     }
   },
   {

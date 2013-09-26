@@ -22,7 +22,7 @@ class Batch(models.Model):
 	finishtime = models.DateTimeField(blank=True,null=True)
 	name = models.CharField(max_length=50)
 	description = models.CharField(max_length=255)
-	bclass = models.CharField(max_length=10, choices=(('classify','classify'),('extract','extract'),('curate','curate'),('data','data')))
+	bclass = models.CharField(max_length=10, choices=(('classify','classify'),('extract','extract'),('curate','curate'),('data','data'),('study','study')))
 	def __unicode__(self):
 		return self.name
 

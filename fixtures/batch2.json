@@ -5,7 +5,6 @@
     "fields": {
       "finishtime": null,
       "name": "Image Labeling",
-      "description": "Enter a serie of keywords that describe the objects in the following image",
       "value": 0.01,
       "numtask": 106,
       "bclass": "extract",
@@ -14,7 +13,7 @@
       "deadline": "2013-09-25T11:47:49Z",
       "repetition": 3,
       "pulication": "2013-09-25T11:47:49Z",
-      "description": ""
+      "description": "Enter a list of keywords that describe the objects in the image bellow",
     }
   },
   {

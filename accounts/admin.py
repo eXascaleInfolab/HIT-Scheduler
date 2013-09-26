@@ -14,7 +14,7 @@ class BatchAdmin(admin.ModelAdmin):
     ]
     def formfield_for_choice_field(self, db_field, request, **kwargs):
         if db_field.name == "bclass":
-            kwargs['class'] = (('classify','classify'),('extract','extract'),('curate','curate'),('data','data'))
+            kwargs['class'] = (('classify','classify'),('extract','extract'),('curate','curate'),('data','data'),('study','study'))
         return super(BatchAdmin, self).formfield_for_choice_field(db_field, request, **kwargs)
     inlines = [TaskInline]
 
