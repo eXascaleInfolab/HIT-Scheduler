@@ -10,7 +10,7 @@ class TaskInline(admin.StackedInline):
     extra = 3
 class BatchAdmin(admin.ModelAdmin):
     fieldsets = [
-        (None,     {'fields': ['name','bclase','done','value','repetition','numtask']}),
+        (None,     {'fields': ['name','bclass','done','value','repetition','numtask']}),
     ]
     def formfield_for_choice_field(self, db_field, request, **kwargs):
         if db_field.name == "bclass":
