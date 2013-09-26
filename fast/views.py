@@ -62,7 +62,7 @@ def getNextBatch_FAIR(request):
 @login_required
 def work(request):
     lock = DjangoLock('/tmp/djangolock.tmp')
-    lock.aquire()
+    lock.acquire()
     try:
         print "work"
         release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
@@ -122,7 +122,7 @@ def click(request, task_id):
 @login_required
 def doSubmit(request, task):
     lock = DjangoLock('/tmp/djangolock.tmp')
-    lock.aquire()
+    lock.acquire()
     try:
         user_profile = UserProfile.objects.get(user=request.user)
         print 'submit ---------------------'
@@ -153,7 +153,7 @@ def doSubmit(request, task):
 @login_required
 def doSkip(request, task):
     lock = DjangoLock('/tmp/djangolock.tmp')
-    lock.aquire()
+    lock.acquire()
     try:
         print 'skip ---------------------'
         task.lock = task.lock + 1
