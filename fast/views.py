@@ -13,6 +13,7 @@ from django.db import transaction
 from django.db.models import Sum, F
 import random
 import string
+from django.core.files import locks
 
 # Common utilities
 def TaskFilter(request):
@@ -115,29 +116,34 @@ def click(request, task_id):
 
 @login_required
 def doSubmit(request, task):
-    user_profile = UserProfile.objects.get(user=request.user)
-    print 'submit ---------------------'
-    task.done = task.done +1
-    task.save()
-    answer = TaskAnswer.objects.create(user=request.user,task=task)
-    # Assuming he answered correctly .. give him money !
-    user_profile.credit = user_profile.credit + task.batch.value
-    user_profile.save()
-    tl = TaskLock.objects.filter(user=request.user,task=task)
-    tl.delete()
-    batch = task.batch
-    batch.runtask = batch.runtask -1
-    batch.save()
-    fct = batch.numtask * batch.repetition
-    d = Task.objects.filter(batch=batch).aggregate(Sum('done'))
-    d = d['done__sum']
-    print " #### fact: ", fct, d
-    if  d >= fct:
-        print "aww !",  d, fct
-        batch.done = True
-        batch.finishtime = datetime.now()
+    lock = DjangoLock('/tmp/djangolock.tmp')
+    lock.aquire()
+    try:
+        user_profile = UserProfile.objects.get(user=request.user)
+        print 'submit ---------------------'
+        task.done = task.done +1
+        task.save()
+        answer = TaskAnswer.objects.create(user=request.user,task=task)
+        # Assuming he answered correctly .. give him money !
+        user_profile.credit = user_profile.credit + task.batch.value
+        user_profile.save()
+        tl = TaskLock.objects.filter(user=request.user,task=task)
+        tl.delete()
+        batch = task.batch
+        batch.runtask = batch.runtask -1
         batch.save()
-    return HttpResponseRedirect(reverse('work'))
+        fct = batch.numtask * batch.repetition
+        d = Task.objects.filter(batch=batch).aggregate(Sum('done'))
+        d = d['done__sum']
+        print " #### fact: ", fct, d
+        if  d >= fct:
+            print "aww !",  d, fct
+            batch.done = True
+            batch.finishtime = datetime.now()
+            batch.save()
+        return HttpResponseRedirect(reverse('work'))
+    finally:
+        lock.release()
 
 @login_required
 def doSkip(request, task):
@@ -188,3 +194,23 @@ def release_expiredLocks():
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
+
+
+class DjangoLock:
+ 
+    def __init__(self, filename):
+        self.filename = filename
+        # This will create it if it does not exist already
+        self.handle = open(filename, 'w')
+ 
+    # flock() is a blocking call unless it is bitwise ORed with LOCK_NB to avoid blocking
+    # on lock acquisition.  This blocking is what I use to provide atomicity across forked
+    # Django processes since native python locks and semaphores only work at the thread level
+    def acquire(self):
+        fcntl.flock(self.handle, fcntl.LOCK_EX)
+ 
+    def release(self):
+        fcntl.flock(self.handle, fcntl.LOCK_UN)
+ 
+    def __del__(self):
+        self.handle.close()
