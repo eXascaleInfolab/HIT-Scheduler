@@ -61,49 +61,54 @@ def getNextBatch_FAIR(request):
 # Core method
 @login_required
 def work(request):
-    print "work"
-    release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
-    user_profile = UserProfile.objects.get(user=request.user)
-    print user_profile.credit, user_profile.user.username
-    # TODO: move this after schedule the next betch
-    count = num_visitors(request)
-    print count, " NUMBER of visitors ...."
-    if count < 3:
-        form = FormWithCaptcha()
-        return render_to_response('captcha.html',
-            {'user_profile':user_profile,'form': form},
-            context_instance=RequestContext(request))
-    # Check if the user isn't locking some task
+    lock = DjangoLock('/tmp/djangolock.tmp')
+    lock.aquire()
     try:
-        task_lock = TaskLock.objects.get(user=request.user)
-    except TaskLock.DoesNotExist:
-        # Schedule the next batch
-        batch = getNextBatch_FAIR(request)
-        if batch == 0:
-            return render_to_response('done.html',
-                {'user_profile':user_profile,},
+        print "work"
+        release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
+        user_profile = UserProfile.objects.get(user=request.user)
+        print user_profile.credit, user_profile.user.username
+        # TODO: move this after schedule the next betch
+        count = num_visitors(request)
+        print count, " NUMBER of visitors ...."
+        if count < 3:
+            form = FormWithCaptcha()
+            return render_to_response('captcha.html',
+                {'user_profile':user_profile,'form': form},
                 context_instance=RequestContext(request))
-        print "Batch Selected: ", batch
-        # Take some care of real locks !
-        taskExclude = TaskFilter(request)
-        print taskExclude
-        tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
-        task = tasks[0]
-        task.lock = task.lock - 1
-        task.save()
-        batch.runtask = batch.runtask +1
-        batch.save()
-    else:
-        task = task_lock.task
-        batch = task.batch
-    print "LOCK: ", request.user, task
-    tlock, created = TaskLock.objects.get_or_create(user=request.user,task=task)
-    tlock.save()
-    img = False
-    if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
-        img = True
-    return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img},
-            context_instance=RequestContext(request))
+        # Check if the user isn't locking some task
+        try:
+            task_lock = TaskLock.objects.get(user=request.user)
+        except TaskLock.DoesNotExist:
+            # Schedule the next batch
+            batch = getNextBatch_FAIR(request)
+            if batch == 0:
+                return render_to_response('done.html',
+                    {'user_profile':user_profile,},
+                    context_instance=RequestContext(request))
+            print "Batch Selected: ", batch
+            # Take some care of real locks !
+            taskExclude = TaskFilter(request)
+            print taskExclude
+            tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
+            task = tasks[0]
+            task.lock = task.lock - 1
+            task.save()
+            batch.runtask = batch.runtask +1
+            batch.save()
+        else:
+            task = task_lock.task
+            batch = task.batch
+        print "LOCK: ", request.user, task
+        tlock, created = TaskLock.objects.get_or_create(user=request.user,task=task)
+        tlock.save()
+        img = False
+        if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
+            img = True
+        return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img},
+                context_instance=RequestContext(request))
+    finally:
+        lock.release()
 
 @login_required
 def click(request, task_id):
@@ -147,16 +152,21 @@ def doSubmit(request, task):
 
 @login_required
 def doSkip(request, task):
-    print 'skip ---------------------'
-    task.lock = task.lock + 1
-    task.save()
-    skip = TaskSkip.objects.create(user=request.user,task=task)
-    tl = TaskLock.objects.filter(user=request.user,task=task)
-    tl.delete()
-    batch = task.batch
-    batch.runtask = batch.runtask - 1
-    batch.save()
-    return HttpResponseRedirect(reverse('work'))
+    lock = DjangoLock('/tmp/djangolock.tmp')
+    lock.aquire()
+    try:
+        print 'skip ---------------------'
+        task.lock = task.lock + 1
+        task.save()
+        skip = TaskSkip.objects.create(user=request.user,task=task)
+        tl = TaskLock.objects.filter(user=request.user,task=task)
+        tl.delete()
+        batch = task.batch
+        batch.runtask = batch.runtask - 1
+        batch.save()
+        return HttpResponseRedirect(reverse('work'))
+    finally:
+        lock.release()
 
 @login_required
 def doCaptcha(request):
