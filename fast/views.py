@@ -113,13 +113,16 @@ def click(request, task_id):
         elif 'skip' in request.POST:
             return doSkip(request, task)
 
+@login_required
 def doSubmit(request, task):
-    # do something about the response
+    user_profile = UserProfile.objects.get(user=request.user)
     print 'submit ---------------------'
     task.done = task.done +1
     task.save()
     answer = TaskAnswer.objects.create(user=request.user,task=task)
-    print request.user
+    # Assuming he answered correctly .. give him money !
+    user_profile.credit = user_profile.credit + task.batch.value
+    user_profile.save()
     tl = TaskLock.objects.filter(user=request.user,task=task)
     tl.delete()
     batch = task.batch
@@ -136,6 +139,7 @@ def doSubmit(request, task):
         batch.save()
     return HttpResponseRedirect(reverse('work'))
 
+@login_required
 def doSkip(request, task):
     print 'skip ---------------------'
     task.lock = task.lock + 1
