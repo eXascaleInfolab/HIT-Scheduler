@@ -12,7 +12,7 @@ class UserProfile(models.Model):
 	score = models.IntegerField(default=0)
 
 class Batch(models.Model):
-	value = models.IntegerField(default=1)
+	value = models.FloatField(default=0.01)
 	repetition = models.IntegerField(default=3)
 	numtask = models.IntegerField()
 	runtask = models.IntegerField(default=0)
