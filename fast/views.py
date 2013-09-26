@@ -186,7 +186,7 @@ def doCaptcha(request):
 
 # Session management
 def num_visitors(request):
-    return Visitor.objects.active().count()
+    return Visitor.objects.active().exclude(user=None).count()
 
 def release_expiredLocks():
     print "release expired locks"
