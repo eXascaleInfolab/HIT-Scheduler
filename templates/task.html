@@ -30,14 +30,14 @@
       <form role="form" action="{% url "click" task.id %}" method="post">
         {% csrf_token %}
         <div class="form-group">
-          <blockquote>
             {% if img %}
               <img src="{{ STATIC_URL }}img/{{ task.question }}" />
             {% else %}
-              {{ task.question }}
+            <blockquote>
+              <p>{{ task.question }}</p>
+            </blockquote>
             {% endif %}
-          </blockquote>
-          <textarea class="form-control" rows="3" placeholder="Type your answer here." ></textarea>
+          <input type="textarea" name="answer" class="form-control" rows="3" placeholder="Type your answer here.">
         </div>
         <button id="skip" type="submit" name="skip" class="btn btn-primary">Skip</button>
         <button id="submit" type="submit" name="submit" class="btn btn-success">Submit</button>

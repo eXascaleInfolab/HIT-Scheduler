@@ -139,7 +139,7 @@ def doSubmit(request, task):
         print 'submit ---------------------'
         task.done = task.done +1
         task.save()
-        answer = TaskAnswer.objects.create(user=request.user,task=task)
+        answer = TaskAnswer.objects.create(user=request.user,task=task, answer=request.POST['answer'])
         # Assuming he answered correctly .. give him money !
         user_profile.credit = user_profile.credit + task.batch.value
         user_profile.save()
