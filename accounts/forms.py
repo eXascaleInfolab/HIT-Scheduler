@@ -25,4 +25,4 @@ class LoginForm(forms.Form):
             )
         )
         super(LoginForm, self).__init__(*args, **kwargs)
-        self.fields['username'].label = "Mturk Worker ID"
+        self.fields['username'].label = "Enter your Amazon Mturk Worker ID"

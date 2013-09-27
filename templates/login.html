@@ -3,35 +3,34 @@
 {% load static %}
 
 {% block content %}
-<div class="row">
-    <div class="span4 offset4">
+<div class="container col-md-4 col-md-offset-4">
       <div class="well">
-        <legend>Sign in to WebApp</legend>
-        <form method="POST" action="" accept-charset="UTF-8">
-            <div class="alert alert-error">
-                <a class="close" data-dismiss="alert" href="#">x</a>Incorrect Username or Password!
-            </div>      
-            <input class="span3" placeholder="Username" type="text" name="username">
-            <input class="span3" placeholder="Password" type="password" name="password"> 
-            <label class="checkbox">
-                <input type="checkbox" name="remember" value="1"> Remember Me
-            </label>
-            <button class="btn-info btn" type="submit">Login</button>      
-        </form>    
+          <legend>Sign In</legend>
+          {% crispy login_form %}   
+          <h5><a data-toggle="modal" href="#myModal">*Click here if you need help getting your mturk id?</a></h5>
       </div>
-    </div>
 </div>
-<div class="container col-md-6 col-md-offset-3">
-  <div class="jumbotron">
-    <div class="container">
-      {% crispy login_form %}
-    </div>
-    <blockquote>
-      <p>* Your MTurk ID is needed for your payment, it could be obtained here: <a href="https://www.mturk.com/mturk/dashboard">https://www.mturk.com/mturk/dashboard</a> </p>
-      <small>The top-right corner</small>
-      <img src="{% static "img/dashboard.jpg" %}" style="border: 2px solid black;" /></p>
-    </blockquote>
-  </div>
-  </div>
-</div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Instructions to get your MTurk ID</h4>
+        </div>
+        <div class="modal-body">
+          Your MTurk ID is needed for your payment, it could be obtained from here: <br>
+          <a href="https://www.mturk.com/mturk/dashboard">https://www.mturk.com/mturk/dashboard</a>
+          <br>
+          <small>The top-right corner</small>
+          <br>
+          <a href="https://www.mturk.com/mturk/dashboard"><img src="{% static "img/dashboard.jpg" %}" style="border: 2px solid black;" /></a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 {% endblock content %}
