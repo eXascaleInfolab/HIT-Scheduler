@@ -3,4 +3,3 @@ venv
 staticfiles
 static/*
 fast/settings.py
-fast/static/*
