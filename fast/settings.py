@@ -16,7 +16,7 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES = {'default': dj_database_url.config(default='mysql://root:hello@localhost/fast')}
+DATABASES = {'default': dj_database_url.config(default='mysql://root:MarVicSQL1@localhost/fast')}
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
