@@ -28,8 +28,8 @@ class Batch(models.Model):
 
 class Task(models.Model):
 	batch = models.ForeignKey(Batch)
-	question = models.CharField(max_length=500,blank=False)
-	choice = models.CharField(max_length=500,blank=True)
+	question = models.TextField(max_length=500,blank=False)
+	choice = models.TextField(blank=True)
 	lock = models.IntegerField(default=3)
 	done = models.IntegerField(default=0)
 	def __unicode__(self):
@@ -44,7 +44,7 @@ class TaskLock(models.Model):
 class TaskAnswer(models.Model):
 	user = models.ForeignKey(User)
 	task = models.ForeignKey(Task)
-	answer = models.CharField(max_length=500)
+	answer = models.TextField(blank=True)
 	class Meta:
 		unique_together = ['user', 'task']
 
