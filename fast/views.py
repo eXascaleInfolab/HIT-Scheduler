@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response, get_object_or_404, redirect, re
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
-from accounts.models import UserProfile, Batch, Task, TaskLock, TaskAnswer, TaskSkip, FormWithCaptcha
+from accounts.models import UserProfile, Batch, Task, TaskLock, TaskAnswer, TaskSkip, FormWithCaptcha, BatchSkip
 from accounts.views import login_view
 from django.contrib.sessions.models import Session
 from datetime import datetime
@@ -22,7 +22,8 @@ from django.core.files import locks
 def TaskFilter(request):
     myDoneTasks = TaskAnswer.objects.filter(user=request.user).values_list('task', flat=True)
     mySkipTasks = TaskSkip.objects.filter(user=request.user).values_list('task', flat=True)
-    return set(myDoneTasks) | set(mySkipTasks)
+    mySkipBatchs = BatchSkip.objects.filter(user=request.user).values_list('batch__task', flat=True)
+    return set(myDoneTasks) | set(mySkipTasks) |  set(mySkipBatchs)
 
 def BatchFilter(request):
     taskExclude = TaskFilter(request)
@@ -122,10 +123,12 @@ def work(request):
 def click(request, task_id):
     task = get_object_or_404(Task, pk=task_id)
     if request.POST:
-        if 'submit' in request.POST:
-            return doSubmit(request, task)
-        elif 'skip' in request.POST:
+        if 'skip' in request.POST:
             return doSkip(request, task)
+        elif 'skipbatch' in request.POST:
+            return doSkipBatch(request, task)
+        elif 'submit' in request.POST:
+            return doSubmit(request, task)
 
 @login_required
 def doSubmit(request, task):
@@ -177,6 +180,24 @@ def doSkip(request, task):
         lock.release()
 
 @login_required
+def doSkipBatch(request, task):
+    lock = DjangoLock('/tmp/djangolock.tmp')
+    lock.acquire()
+    try:
+        print 'skip batch ---------------------'
+        task.lock = task.lock + 1
+        task.save()
+        skip = BatchSkip.objects.create(user=request.user,batch=task.batch)
+        tl = TaskLock.objects.filter(user=request.user,task=task)
+        tl.delete()
+        batch = task.batch
+        batch.runtask = batch.runtask - 1
+        batch.save()
+        return HttpResponseRedirect(reverse('work'))
+    finally:
+        lock.release()
+
+@login_required
 def doCaptcha(request):
     user_profile = UserProfile.objects.get(user=request.user)
     if request.method == 'POST':
@@ -213,20 +234,20 @@ def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
 
 class DjangoLock:
- 
+
     def __init__(self, filename):
         self.filename = filename
         # This will create it if it does not exist already
         self.handle = open(filename, 'w')
- 
+
     # flock() is a blocking call unless it is bitwise ORed with LOCK_NB to avoid blocking
     # on lock acquisition.  This blocking is what I use to provide atomicity across forked
     # Django processes since native python locks and semaphores only work at the thread level
     def acquire(self):
         fcntl.flock(self.handle, fcntl.LOCK_EX)
- 
+
     def release(self):
         fcntl.flock(self.handle, fcntl.LOCK_UN)
- 
+
     def __del__(self):
         self.handle.close()

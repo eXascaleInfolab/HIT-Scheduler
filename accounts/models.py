@@ -54,5 +54,11 @@ class TaskSkip(models.Model):
 	class Meta:
 		unique_together = ['user', 'task']
 
+class BatchSkip(models.Model):
+	user = models.ForeignKey(User)
+	batch = models.ForeignKey(Batch)
+	class Meta:
+		unique_together = ['user', 'batch']
+
 class FormWithCaptcha(forms.Form):
 	captcha = ReCaptchaField()
