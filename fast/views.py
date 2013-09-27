@@ -6,6 +6,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from accounts.models import UserProfile, Batch, Task, TaskLock, TaskAnswer, TaskSkip, FormWithCaptcha
+from accounts.views import login_view
 from django.contrib.sessions.models import Session
 from datetime import datetime
 from tracking.models import Visitor
@@ -70,6 +71,11 @@ def work(request):
         release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
         user_profile = UserProfile.objects.get(user=request.user)
         print user_profile.credit, user_profile.user.username
+        # try:
+        #     user_profile = UserProfile.objects.get(user=request.user)
+        #     print user_profile.credit, user_profile.user.username
+        # except UserProfile.DoesNotExist:
+        #     return HttpResponseRedirect(reverse('login_view'))
         # TODO: move this after schedule the next betch
         count = num_visitors(request)
         print count, " NUMBER of visitors ...."
