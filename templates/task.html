@@ -34,7 +34,11 @@ window.setTimeout(function () {
     <div class="container">
       <form role="form" action="{% url "click" task.id %}" method="post">
         {% csrf_token %} 
+        {% if batch.bclass == 'study' %}
         <div class="form-group fade" id="ephemera">
+        {% else %}
+        <div class="form-group">
+        {% endif %}
             {% if img %}
               <img src="{{ STATIC_URL }}img/{{ task.question }}" />
             {% else %}

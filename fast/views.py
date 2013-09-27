@@ -17,6 +17,7 @@ import string
 import os
 import fcntl
 from django.core.files import locks
+from django.utils.timezone import utc
 
 # Common utilities
 def TaskFilter(request):
@@ -146,12 +147,16 @@ def doSubmit(request, task):
         print 'submit ---------------------'
         task.done = task.done +1
         task.save()
-        answer = TaskAnswer.objects.create(user=request.user,task=task, answer=request.POST['answer'])
         # Assuming he answered correctly .. give him money !
         user_profile.credit = user_profile.credit + task.batch.value
         user_profile.save()
-        tl = TaskLock.objects.filter(user=request.user,task=task)
+        tl = TaskLock.objects.get(user=request.user,task=task)
+        # first measure elapsed time ..
+        start = tl.starttime
+        end = datetime.utcnow().replace(tzinfo=utc)
+        elapsed = (end - start).seconds
         tl.delete()
+        answer = TaskAnswer.objects.create(user=request.user,task=task, answer=request.POST['answer'],elapsed=elapsed)
         batch = task.batch
         batch.runtask = batch.runtask -1
         batch.save()
@@ -176,9 +181,13 @@ def doSkip(request, task):
         print 'skip ---------------------'
         task.lock = task.lock + 1
         task.save()
-        skip = TaskSkip.objects.create(user=request.user,task=task)
-        tl = TaskLock.objects.filter(user=request.user,task=task)
+        tl = TaskLock.objects.get(user=request.user,task=task)
+        # first measure elapsed time ..
+        start = tl.starttime
+        end = datetime.utcnow().replace(tzinfo=utc)
+        elapsed = (end - start).seconds
         tl.delete()
+        skip = TaskSkip.objects.create(user=request.user,task=task,elapsed=elapsed)
         batch = task.batch
         batch.runtask = batch.runtask - 1
         batch.save()
@@ -226,9 +235,9 @@ def release_expiredLocks():
     print "release expired locks"
     tlocks = TaskLock.objects.all()
     for tl in tlocks:
-        visits = Visitor.objects.filter(user=tl.user).count()
-        if visits > 0 :
-            print tl.user, "REMOVE LOCKS"
+        visits = Visitor.objects.active().filter(user=tl.user).count()
+        if visits == 0 :
+            print "CLEAN LOCKS FROM USER ::: " , tl.user
             task = tl.task
             batch = task.batch
             task.lock = task.lock + 1

@@ -38,6 +38,7 @@ class Task(models.Model):
 class TaskLock(models.Model):
 	user = models.ForeignKey(User)
 	task = models.ForeignKey(Task)
+	starttime = models.DateTimeField(auto_now=True)
 	class Meta:
 		unique_together = ['user', 'task']
 
@@ -45,12 +46,14 @@ class TaskAnswer(models.Model):
 	user = models.ForeignKey(User)
 	task = models.ForeignKey(Task)
 	answer = models.TextField(blank=True)
+	elapsed = models.IntegerField(default=0)
 	class Meta:
 		unique_together = ['user', 'task']
 
 class TaskSkip(models.Model):
 	user = models.ForeignKey(User)
 	task = models.ForeignKey(Task)
+	elapsed = models.IntegerField(default=0)
 	class Meta:
 		unique_together = ['user', 'task']
 
