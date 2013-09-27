@@ -10,8 +10,7 @@ urlpatterns = patterns('',
     url(r'^$', 'fast.views.work', name='work'),
     url(r'^wait/', 'fast.views.doCaptcha', name='doCaptcha'),
     url(r'^batch/(?P<task_id>\d+)/$', 'fast.views.click', name='click'),
-    (r'^tracking/', include('tracking.urls')),
-    # url(r'^fast/', include('fast.foo.urls')),
+    url(r'^tracking/', include('tracking.urls')),
     url(r'^accounts/',  include('accounts.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

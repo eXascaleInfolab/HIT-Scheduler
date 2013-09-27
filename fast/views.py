@@ -114,7 +114,12 @@ def work(request):
         img = False
         if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
             img = True
-        return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img},
+        choices = task.choice.split(',')
+        if len(choices) > 1:
+            return render_to_response('multichoice.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img, 'choices': choices},
+                context_instance=RequestContext(request))
+        else:
+            return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img},
                 context_instance=RequestContext(request))
     finally:
         lock.release()
@@ -132,6 +137,8 @@ def click(request, task_id):
 
 @login_required
 def doSubmit(request, task):
+    if not request.POST['answer'].strip():
+        return doSkip(request, task)
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
