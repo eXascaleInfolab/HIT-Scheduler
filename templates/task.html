@@ -25,18 +25,18 @@
          });
      });
   </script>
-  <div class="jumbotron">
+  <div>
     <div class="container">
       <form role="form" action="{% url "click" task.id %}" method="post">
         {% csrf_token %}
         <div class="form-group">
-          <label for="exampleInputEmail1">
+          <blockquote>
             {% if img %}
               <img src="{{ STATIC_URL }}img/{{ task.question }}" />
             {% else %}
-              <h5>{{ task.question }}</h5>
+              {{ task.question }}
             {% endif %}
-          </label>
+          </blockquote>
           <textarea class="form-control" rows="3" placeholder="Type your answer here." ></textarea>
         </div>
         <button id="skip" type="submit" name="skip" class="btn btn-primary">Skip</button>
