@@ -5,11 +5,11 @@
 <div class="container">
   <div class="alert alert-block alert-info fade in">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-        <h4>Work Instructions for the batch : {{ batch.name }} </h4>
+        <h4>{{ batch.name }}, Instructions: </h4>
         <p>{{ batch.description }}</p>
         <p>
-          <a class="btn btn-danger" href="#">I don't want to work on this.</a> 
-          <span class="label label-danger">Value = {{batch.value}}$</span>
+          <h3><span class="label label-success">Value = {{batch.value}}$</span></h3>
+          <a class="btn btn-danger" href="#">Skip</a> 
         </p>
   </div>
 </div>
