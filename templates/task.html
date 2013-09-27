@@ -3,14 +3,15 @@
 {% block content %}
 
 <div class="container">
-      <div class="alert alert-block alert-danger fade in">
+  <div class="alert alert-block alert-info fade in">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-        <h4>Oh snap! You got an error!</h4>
-        <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+        <h4>Work Instructions for the batch : {{ batch.name }} </h4>
+        <p>{{ batch.description }}</p>
         <p>
-          <a class="btn btn-danger" href="#">Take this action</a> <a class="btn btn-default" href="#">Or do this</a>
+          <a class="btn btn-danger" href="#">I don't want to work on this.</a> 
+          <span class="label label-danger">Value = {{batch.value}}$</span>
         </p>
-      </div>
+  </div>
 </div>
 <div class="container">
   <script type="application/javascript">
