@@ -2,3 +2,5 @@ venv
 *.pyc
 staticfiles
 static/*
+fast/settings.py
+fast/static/*
