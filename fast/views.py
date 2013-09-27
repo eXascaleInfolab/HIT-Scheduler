@@ -198,9 +198,8 @@ def release_expiredLocks():
     print "release expired locks"
     tlocks = TaskLock.objects.all()
     for tl in tlocks:
-        try:
-            Visitor.objects.get(user=tl.user)
-        except Visitor.DoesNotExist:
+        visits = Visitor.objects.filter(user=tl.user).count()
+        if visits > 0 :
             print tl.user, "REMOVE LOCKS"
             task = tl.task
             batch = task.batch
@@ -212,7 +211,6 @@ def release_expiredLocks():
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
-
 
 class DjangoLock:
  
