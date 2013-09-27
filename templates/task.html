@@ -1,28 +1,29 @@
 {% extends "navigation.html" %}
 
 {% block content %}
-
+<form role="form" action="{% url "click" task.id %}" method="post">
 <div class="container">
   <div class="alert alert-block alert-info fade in">
-    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-    <h4>{{ batch.name }}, Instructions: </h4>
-    <p>{{ batch.description }}</p>
-    <p>
-      <h3><span class="label label-success">Value = {{batch.value}}$</span></h3>
-      <a class="btn btn-danger" href="#">Skip</a>
-    </p>
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        <h4>{{ batch.name }}, Instructions: </h4>
+        <p>{{ batch.description }}</p>
+        <br>
+        <p>
+          <a class="btn btn-success disabled" href="#"><strong>Value =</strong>{{batch.value}}$</a> 
+          <button id="skipbatch" type="submit" name="skipbatch" class="btn btn-danger pull-right">Skip</button> 
+        </p>
   </div>
 </div>
 <div class="container">
   <script type="application/javascript">
   $(document).ready(function() {
-    $('#submit').click(function() {
-     $(this).button('loading');
-   });
-    $('#skip').click(function() {
-     $(this).button('loading');
-   });
-  });
+      $('#submit').click(function() {
+         $(this).button('loading');
+         });
+      $('#skip').click(function() {
+         $(this).button('loading');
+         });
+     });
   </script>
   <div class="jumbotron">
     <div class="container">
@@ -31,19 +32,18 @@
         <div class="form-group">
           <label for="exampleInputEmail1">
             {% if img %}
-            <img src="{{ STATIC_URL }}img/{{ task.question }}" />
+              <img src="{{ STATIC_URL }}img/{{ task.question }}" />
             {% else %}
-            <h5>{{ task.question }}</h5>
+              <h5>{{ task.question }}</h5>
             {% endif %}
           </label>
           <textarea class="form-control" rows="3" placeholder="Type your answer here." ></textarea>
         </div>
         <button id="skip" type="submit" name="skip" class="btn btn-primary">Skip</button>
-        <button id="submit" type="submit" name="submit" class="btn btn-success">Submit</button><br />
-        <button id="skipbatch" type="submit" name="skipbatch" class="btn btn-danger">Skip similar tasks</button>
-      </form>
+        <button id="submit" type="submit" name="submit" class="btn btn-success">Submit</button>
+      
     </div>
   </div>
 </div>
-
+</form>
 {% endblock content %}
