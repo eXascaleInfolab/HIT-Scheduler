@@ -70,8 +70,7 @@ def work(request):
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
-        count = Batch.objects.filter(done=False).count()
-        if count > 0:
+        if Batch.objects.filter(done=True).count() == Batch.objects.all().count():
             return render_to_response('done.html',
                 context_instance=RequestContext(request))
         print "work"
