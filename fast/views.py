@@ -150,6 +150,11 @@ def doSubmit(request, task):
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
+        try:
+            tl = TaskLock.objects.get(user=request.user,task=task)
+        except TaskLock.DoesNotExist:
+            # In case the person stayed too long and got dismissed
+            return HttpResponseRedirect(reverse('work'))
         user_profile = UserProfile.objects.get(user=request.user)
         print 'submit ---------------------'
         task.done = task.done +1
@@ -157,7 +162,6 @@ def doSubmit(request, task):
         # Assuming he answered correctly .. give him money !
         user_profile.credit = user_profile.credit + task.batch.value
         user_profile.save()
-        tl = TaskLock.objects.get(user=request.user,task=task)
         # first measure elapsed time ..
         start = tl.starttime
         end = datetime.utcnow().replace(tzinfo=utc)
@@ -186,9 +190,13 @@ def doSkip(request, task):
     lock.acquire()
     try:
         print 'skip ---------------------'
+        try:
+            tl = TaskLock.objects.get(user=request.user,task=task)
+        except TaskLock.DoesNotExist:
+            # In case the person stayed too long and got dismissed
+            return HttpResponseRedirect(reverse('work'))
         task.lock = task.lock + 1
         task.save()
-        tl = TaskLock.objects.get(user=request.user,task=task)
         # first measure elapsed time ..
         start = tl.starttime
         end = datetime.utcnow().replace(tzinfo=utc)
