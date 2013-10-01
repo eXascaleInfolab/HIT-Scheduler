@@ -20,8 +20,8 @@ def login_view(request):
     csrf_tk = {}
     csrf_tk.update(csrf(request))
 
-    # if request.user.is_authenticated:
-    #     return redirect('/')
+    if request.user.is_authenticated():
+        return redirect('/')
     print request.user.username
 
     if 'wid' in request.GET:
