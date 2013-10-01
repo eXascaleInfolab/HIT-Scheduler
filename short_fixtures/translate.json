@@ -1,0 +1,52 @@
+[
+  {
+    "pk": 5,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Collaborative Translation",
+      "value": 0.05,
+      "numtask": 3,
+      "bclass": "collab",
+      "runtask": 0,
+      "done": false,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "This a collaborative work where 3 persons help correct the gramatical mistakes present in this document."
+    }
+  },
+  {
+    "pk": 600,
+    "model": "accounts.task",
+    "fields": {
+      "lock": 3,
+      "question": "https://docs.google.com/document/d/1SKfuRrsReGww9QhJpPlj3Q7T6-kCGZ3v6vwXBY8u-Lc/",
+      "batch": 5,
+      "done": 0,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 601,
+    "model": "accounts.task",
+    "fields": {
+      "lock": 3,
+      "question": "https://docs.google.com/document/d/1jGmru03bv6-jaQ4M3ZRz4d87XuKqNXe3fYUnW1-FscA/",
+      "batch": 5,
+      "done": 0,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 602,
+    "model": "accounts.task",
+    "fields": {
+      "lock": 3,
+      "question": "https://docs.google.com/document/d/16iY2whaAls5sPR3DEJSYf1-cwL6evCQvTx4Iy5oiUAM/",
+      "batch": 5,
+      "done": 0,
+      "choice": ""
+    }
+  }
+]
