@@ -1,13 +1,26 @@
 {% extends "navigation.html" %}
 
 {% block content %}
-
-<div class="container  col-md-6 col-md-offset-3">
-	  <div class="alert alert-info"><strong>INFO:</strong> The real tasks will shortly be served... <br> To keep you motivated, please complete these Captchas, and, <strong>YES WE PAY</strong> <span class="label label-danger">0.01$</span>   (if it's correct! :) </div>
-      <form class="col-md-6 col-md-offset-3" method="POST" action="{% url 'doCaptcha' %}">
-          {% csrf_token %}
-          {{ form.as_p }}
-        <button type="submit" class="col-md-6 col-md-offset-3 btn btn-primary btn-large">Submit</button>
-      </form>
+<div  class="container">
+	<div class="row">
+	    <div class="alert alert-block alert-info fade in">
+	    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	    <span class="glyphicon glyphicon-info-sign"></span> 
+	    <strong>INFO:</strong> The real tasks will shortly be served... <br> To keep you motivated, please complete these Captchas, and, <strong>YES WE PAY</strong> <span class="label label-danger">0.01$</span>   (if it's correct! :) 
+	    </div>
+    </div>
+    <div class="row">
+		    <div class="panel panel-default ">
+		        <div class="panel-heading">Training HIT</div>
+		        <div class="panel-body">
+			        <form method="POST" action="{% url 'doCaptcha' %}">
+			          {% csrf_token %}
+			          {{ form.as_p }}
+			        <hr>
+			        <button type="submit" class="btn btn-primary btn-large">Submit</button>
+			        </form>
+		   	    </div>
+		    </div>
+	</div>
 </div>
 {% endblock content %}

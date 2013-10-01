@@ -18,6 +18,7 @@ import os
 import fcntl
 from django.core.files import locks
 from django.utils.timezone import utc
+from django.conf import settings
 
 # Common utilities
 def TaskFilter(request):
@@ -81,11 +82,19 @@ def work(request):
         # TODO: move this after schedule the next betch
         count = num_visitors(request)
         print count, " NUMBER of visitors ...."
-        if count < 3:
-            form = FormWithCaptcha()
-            return render_to_response('captcha.html',
-                {'user_profile':user_profile,'form': form},
-                context_instance=RequestContext(request))
+
+        # The work just started
+        if not work.start:
+            if count < settings.CONCURENT_WORKERS:
+                form = FormWithCaptcha()
+                return render_to_response('captcha.html',
+                    {'user_profile':user_profile,'form': form},
+                    context_instance=RequestContext(request))
+            else:
+                work.start=True
+                for batch in Batch.objects.all():
+                    batch.pulication = datetime.now() 
+
         # Check if the user isn't locking some task
         try:
             task_lock = TaskLock.objects.get(user=request.user)
@@ -116,14 +125,12 @@ def work(request):
         if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
             img = True
         choices = task.choice.split(',')
-        if len(choices) > 1:
-            return render_to_response('multichoice.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img, 'choices': choices},
-                context_instance=RequestContext(request))
-        else:
-            return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img},
+        return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img, 'choice': len(choices) > 1, 'choices': choices},
                 context_instance=RequestContext(request))
     finally:
         lock.release()
+work.start = False
+
 
 @login_required
 def click(request, task_id):
