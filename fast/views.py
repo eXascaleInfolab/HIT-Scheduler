@@ -70,6 +70,10 @@ def work(request):
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
+        count = Batch.objects.filter(done=False).count()
+        if count > 0:
+            return render_to_response('done.html',
+                context_instance=RequestContext(request))
         print "work"
         release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
         user_profile = UserProfile.objects.get(user=request.user)
