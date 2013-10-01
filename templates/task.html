@@ -40,30 +40,35 @@ window.setTimeout(function () {
               <form method="POST" action="{% url 'doCaptcha' %}">
               {% csrf_token %}
               {{ form.as_p }}
-              {% if img %}
-                <img src="{{ STATIC_URL }}img/{{ task.question }}" />
+              {% if batch.bclass == 'collab' %}
+              <iframe src="{{ doc }}" width="100%" height="600px"></iframe>
+              <textarea name="answer" name="answer" style="display:none;">collaborated.</textarea>
               {% else %}
-                  {% if batch.bclass == 'study' %}
-                  <blockquote id="ephemera" class="fade in">
-                  {% else %}
-                  <blockquote id="ephemera">
-                  {% endif %}
-                {{ task.question }}
-              </blockquote>
-              {% endif %}
-              <hr>
-              {% if choice %}
-                {% for choice in choices %}
-                <label class="radio" for="choice{{ forloop.counter }}">
-                  <input type="radio" name="answer" id="choice{{ forloop.counter }}" value="{{ choice }}" />
-                  {{ choice }}
-                </label>  
-                {% endfor %}
-                <label class="radio" for="choice100">
-                  <input type="radio" name="answer" id="choice100" value="" style="display:none;" checked>
-                </label>
-              {% else %}
-              <textarea name="answer" name="answer" class="form-control" rows="3" placeholder="Type your answer here"></textarea>
+                      {% if img %}
+                        <img src="{{ STATIC_URL }}img/{{ task.question }}" />
+                      {% else %}
+                          {% if batch.bclass == 'study' %}
+                          <blockquote id="ephemera" class="fade in">
+                          {% else %}
+                          <blockquote id="ephemera">
+                          {% endif %}
+                        {{ task.question }}
+                      </blockquote>
+                      {% endif %}
+                      <hr>
+                      {% if choice %}
+                        {% for choice in choices %}
+                        <label class="radio" for="choice{{ forloop.counter }}">
+                          <input type="radio" name="answer" id="choice{{ forloop.counter }}" value="{{ choice }}" />
+                          {{ choice }}
+                        </label>  
+                        {% endfor %}
+                        <label class="radio" for="choice100">
+                          <input type="radio" name="answer" id="choice100" value="" style="display:none;" checked>
+                        </label>
+                      {% else %}
+                      <textarea name="answer" name="answer" class="form-control" rows="3" placeholder="Type your answer here"></textarea>
+                      {% endif %}
               {% endif %}
               <hr>
           <button id="skipitou" type="submit" name="skip" class="btn btn-primary">Skip</button>

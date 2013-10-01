@@ -128,7 +128,10 @@ def work(request):
         if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
             img = True
         choices = task.choice.split(',')
-        return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img, 'choice': len(choices) > 1, 'choices': choices},
+        doc = False
+        if batch.bclass == "collab":
+            doc = task.question
+        return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img, 'choice': len(choices) > 1, 'choices': choices, 'doc':doc},
                 context_instance=RequestContext(request))
     finally:
         lock.release()
