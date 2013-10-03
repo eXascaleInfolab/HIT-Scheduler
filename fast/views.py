@@ -86,17 +86,20 @@ def work(request):
         count = num_visitors(request)
         print count, " NUMBER of visitors ...."
 
+        batches = Batch.objects.all()
+        work_start = batches[0].experiment_started
         # The work just started
-        if not work.start:
+        if not work_start:
             if count < settings.CONCURENT_WORKERS:
                 form = FormWithCaptcha()
                 return render_to_response('captcha.html',
                     {'user_profile':user_profile,'form': form},
                     context_instance=RequestContext(request))
             else:
-                work.start=True
                 for batch in Batch.objects.all():
-                    batch.pulication = datetime.now() 
+                    batch.pulication = datetime.now()
+                    batch.experiment_started = True
+                    batch.save()
 
         # Check if the user isn't locking some task
         try:
@@ -135,7 +138,6 @@ def work(request):
                 context_instance=RequestContext(request))
     finally:
         lock.release()
-work.start = False
 
 
 @login_required

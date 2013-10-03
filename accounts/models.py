@@ -1,8 +1,5 @@
-import datetime
 from django.db import models
 from django.contrib.auth.models import User
-from django.core.cache import cache
-from django.conf import settings
 from django import forms
 from captcha.fields import ReCaptchaField
 
@@ -12,6 +9,7 @@ class UserProfile(models.Model):
 	score = models.IntegerField(default=0)
 
 class Batch(models.Model):
+	experiment_started = models.BooleanField(default=False)
 	value = models.FloatField(default=0.01)
 	repetition = models.IntegerField(default=3)
 	numtask = models.IntegerField()
