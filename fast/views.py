@@ -116,7 +116,11 @@ def work(request):
             taskExclude = TaskFilter(request)
             print taskExclude
             tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
-            task = tasks[0]
+            try:
+                task = tasks[0]
+            except IndexError:
+                # if all tasks were filtered out, redirect to work
+                HttpResponseRedirect(reverse('work'))
             task.lock = task.lock - 1
             task.save()
             batch.runtask = batch.runtask +1
