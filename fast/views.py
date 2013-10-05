@@ -88,7 +88,8 @@ def work(request):
 
         batches = Batch.objects.all()
         work_start = batches[0].experiment_started
-        # The work just started
+        
+        # 1 Check if work started :)
         if not work_start:
             if count < settings.CONCURENT_WORKERS:
                 form = FormWithCaptcha()
@@ -102,10 +103,9 @@ def work(request):
                     batch.save()
 
         # Check if the user isn't locking some task
-        try:
-            task_lock = TaskLock.objects.get(user=request.user)
-        except TaskLock.DoesNotExist:
-            # Schedule the next batch
+        task_lock_count = TaskLock.objects.filter(user=request.user).count()
+        if task_lock_count == 0:
+            # No Lock ... Schedule the next batch
             batch = getNextBatch_FAIR(request)
             if batch == 0:
                 return render_to_response('done.html',
@@ -116,16 +116,16 @@ def work(request):
             taskExclude = TaskFilter(request)
             print taskExclude
             tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
-            try:
+            if tasks.count() == 0:
+                return HttpResponseRedirect(reverse('work'))
+            else:
                 task = tasks[0]
-            except IndexError:
-                # if all tasks were filtered out, redirect to work
-                HttpResponseRedirect(reverse('work'))
             task.lock = task.lock - 1
             task.save()
             batch.runtask = batch.runtask +1
             batch.save()
         else:
+            task_lock = TaskLock.objects.get(user=request.user)
             task = task_lock.task
             batch = task.batch
         print "LOCK: ", request.user, task
