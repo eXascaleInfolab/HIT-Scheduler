@@ -31,32 +31,31 @@ def TaskFilter(request):
     print "SKIPPING TASK:", set(myDoneTasks) | set(mySkipTasks) | set(doneOrLockedTasks)
     return set(myDoneTasks) | set(mySkipTasks) | set(doneOrLockedTasks)
 
-def BatchFilter(request):
-    taskExclude = TaskFilter(request)
+def BatchFilter(request, taskExclude):
     myRemainingBatchs = Task.objects.exclude(id__in=taskExclude).values_list('batch', flat=True)
     mySkipBatchs = BatchSkip.objects.filter(user=request.user).values_list('batch', flat=True)
     SelectableBatchs = Batch.objects.exclude(id__in=mySkipBatchs)
     SelectableBatchs = SelectableBatchs.filter(id__in=myRemainingBatchs, done=False)
-    print "SELECTING ONLY FROM BATCHS:", SelectableBatchs 
+    print "SELECTING ONLY FROM BATCHS:", SelectableBatchs
     return SelectableBatchs
 
 # FIFO
-def getNextBatch_FIFO(request):
-    SelectableBatchs = BatchFilter(request)
+def getNextBatch_FIFO(request, taskExclude):
+    SelectableBatchs = BatchFilter(request, taskExclude)
     if SelectableBatchs.count() == 0:
         return 0
     return SelectableBatchs.order_by('pulication')[0]
 
 # Earliest Deadline First
-def getNextBatch_EDF(request):
-    SelectableBatchs = BatchFilter(request)
+def getNextBatch_EDF(request, taskExclude):
+    SelectableBatchs = BatchFilter(request, taskExclude)
     if SelectableBatchs.count() == 0:
         return 0
     return SelectableBatchs.order_by('deadline')[0]
 
 # Round-Robin
-def getNextBatch_RR(request):
-    SelectableBatchs = BatchFilter(request)
+def getNextBatch_RR(request, taskExclude):
+    SelectableBatchs = BatchFilter(request, taskExclude)
     if SelectableBatchs.count() == 0:
         return 0
     it = (getNextBatch_RR.item) % SelectableBatchs.count()
@@ -65,8 +64,8 @@ def getNextBatch_RR(request):
 getNextBatch_RR.item = 0
 
 # Weighted Fair Scheduling
-def getNextBatch_FAIR(request):
-    SelectableBatchs = BatchFilter(request)
+def getNextBatch_FAIR(request, taskExclude):
+    SelectableBatchs = BatchFilter(request, taskExclude)
     if SelectableBatchs.count() == 0:
         return 0
     print "FAIR DECIDED ON THIS:", SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[0]
@@ -113,7 +112,8 @@ def work(request):
         print "NUM LOCKS:", task_lock_count
         if task_lock_count == 0:
             # No Lock ... Schedule the next batch
-            batch = getNextBatch_FAIR(request)
+            taskExclude = TaskFilter(request)
+            batch = getNextBatch_FAIR(request, taskExclude)
             if batch == 0:
                 print "Experiment Finished!"
                 return render_to_response('done.html',
@@ -121,8 +121,6 @@ def work(request):
                     context_instance=RequestContext(request))
             print "Batch Selected: ", batch
             # Take some care of real locks !
-            taskExclude = TaskFilter(request)
-            print taskExclude
             tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
             if tasks.count() == 0:
                 return HttpResponseRedirect(reverse('work'))
