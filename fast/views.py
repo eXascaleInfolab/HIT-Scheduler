@@ -122,9 +122,12 @@ def work(request):
                     context_instance=RequestContext(request))
             print "Batch Selected: ", batch
             # Take some care of real locks !
-            tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude)
+            tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude).order_by('?')
             if tasks.count() == 0:
-                return HttpResponseRedirect(reverse('work'))
+                # return HttpResponseRedirect(reverse('work'))
+                return render_to_response('captcha.html',
+                    {'user_profile':user_profile, 'count':count, 'form': form},
+                    context_instance=RequestContext(request))
             else:
                 task = tasks[0]
             task.lock = task.lock - 1
