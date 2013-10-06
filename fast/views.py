@@ -90,7 +90,7 @@ def work(request):
             return HttpResponseRedirect(reverse('login_view'))
         # TODO: move this after schedule the next betch
         count = num_visitors(request)
-        print "NUMBER of visitors:",count
+        print datetime.now(), "NUMBER of visitors:",count
 
         batches = Batch.objects.all()
         work_start = batches[0].experiment_started
@@ -103,6 +103,7 @@ def work(request):
                     {'user_profile':user_profile, 'count':count, 'form': form},
                     context_instance=RequestContext(request))
             else:
+                print datetime.now(), "SYSTEM START"
                 for batch in Batch.objects.all():
                     batch.pulication = datetime.utcnow().replace(tzinfo=utc)
                     batch.experiment_started = True
