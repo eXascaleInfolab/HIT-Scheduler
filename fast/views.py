@@ -104,7 +104,7 @@ def work(request):
                     context_instance=RequestContext(request))
             else:
                 for batch in Batch.objects.all():
-                    batch.pulication = utcnow().replace(tzinfo=utc)
+                    batch.pulication = datetime.utcnow().replace(tzinfo=utc)
                     batch.experiment_started = True
                     batch.save()
 
