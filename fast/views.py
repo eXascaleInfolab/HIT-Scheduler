@@ -73,6 +73,7 @@ def getNextBatch_FAIR(request, taskExclude):
 
 # Core method
 @login_required
+@transaction.commit_on_success
 def work(request):
     print 'work ------------------------------------------'
     lock = DjangoLock('/tmp/djangolock.tmp')
@@ -265,13 +266,14 @@ def doCaptcha(request):
 def num_visitors(request):
     return Visitor.objects.active().exclude(user=None).count()
 
+@transaction.commit_manually
 def release_expiredLocks():
     print "Release expired locks"
     tlocks = TaskLock.objects.all()
     for tl in tlocks:
         visits = Visitor.objects.active().filter(user=tl.user).count()
         if visits == 0 :
-            print "CLEAN LOCKS FROM USER ::: " , tl.user
+            sid = transaction.savepoint()
             task = tl.task
             batch = task.batch
             task.lock = task.lock + 1
@@ -279,6 +281,14 @@ def release_expiredLocks():
             batch.runtask = batch.runtask - 1
             batch.save()
             tl.delete()
+            visits = Visitor.objects.active().filter(user=tl.user).count()
+            if visits == 0 :
+                print "CLEAN LOCKS FROM USER ::: " , tl.user
+                transaction.savepoint_commit(sid)
+            else:
+                print "DON'T CLEAN LOCKS FROM USER ::: " , tl.user
+                transaction.savepoint_rollback(sid)
+    transaction.commit()
 
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
