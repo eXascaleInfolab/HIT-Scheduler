@@ -100,7 +100,7 @@ def work(request):
             if count < settings.CONCURENT_WORKERS:
                 form = FormWithCaptcha()
                 return render_to_response('captcha.html',
-                    {'user_profile':user_profile,'form': form},
+                    {'user_profile':user_profile, 'count':count, 'form': form},
                     context_instance=RequestContext(request))
             else:
                 for batch in Batch.objects.all():
