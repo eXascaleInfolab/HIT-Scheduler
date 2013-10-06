@@ -20,17 +20,24 @@ from django.core.files import locks
 from django.utils.timezone import utc
 from django.conf import settings
 
+import warnings
+warnings.showwarning = lambda *x: None
+
 # Common utilities
 def TaskFilter(request):
     myDoneTasks = TaskAnswer.objects.filter(user=request.user).values_list('task', flat=True)
     mySkipTasks = TaskSkip.objects.filter(user=request.user).values_list('task', flat=True)
-    mySkipBatchs = BatchSkip.objects.filter(user=request.user).values_list('batch__task', flat=True)
-    return set(myDoneTasks) | set(mySkipTasks) |  set(mySkipBatchs)
+    doneOrLockedTasks = Task.objects.filter(lock=0, done=3).values_list('id', flat=True)
+    print "SKIPPING TASK:", set(myDoneTasks) | set(mySkipTasks) | set(doneOrLockedTasks)
+    return set(myDoneTasks) | set(mySkipTasks) | set(doneOrLockedTasks)
 
 def BatchFilter(request):
     taskExclude = TaskFilter(request)
     myRemainingBatchs = Task.objects.exclude(id__in=taskExclude).values_list('batch', flat=True)
-    SelectableBatchs = Batch.objects.filter(id__in=myRemainingBatchs, done=False, runtask__lt=F('numtask'))
+    mySkipBatchs = BatchSkip.objects.filter(user=request.user).values_list('batch', flat=True)
+    SelectableBatchs = Batch.objects.exclude(id__in=mySkipBatchs)
+    SelectableBatchs = SelectableBatchs.filter(id__in=myRemainingBatchs, done=False)
+    print "SELECTING ONLY FROM BATCHS:", SelectableBatchs 
     return SelectableBatchs
 
 # FIFO
@@ -62,33 +69,32 @@ def getNextBatch_FAIR(request):
     SelectableBatchs = BatchFilter(request)
     if SelectableBatchs.count() == 0:
         return 0
+    print "FAIR DECIDED ON THIS:", SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[0]
     return SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[0]
 
 # Core method
 @login_required
 def work(request):
+    print 'work ------------------------------------------'
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
         if Batch.objects.filter(done=True).count() == Batch.objects.all().count():
             return render_to_response('done.html',
                 context_instance=RequestContext(request))
-        print "work"
         release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
-        user_profile = UserProfile.objects.get(user=request.user)
-        print user_profile.credit, user_profile.user.username
-        # try:
-        #     user_profile = UserProfile.objects.get(user=request.user)
-        #     print user_profile.credit, user_profile.user.username
-        # except UserProfile.DoesNotExist:
-        #     return HttpResponseRedirect(reverse('login_view'))
+        try:
+            user_profile = UserProfile.objects.get(user=request.user)
+            print user_profile.credit, user_profile.user.username
+        except UserProfile.DoesNotExist:
+            return HttpResponseRedirect(reverse('login_view'))
         # TODO: move this after schedule the next betch
         count = num_visitors(request)
-        print count, " NUMBER of visitors ...."
+        print "NUMBER of visitors:",count
 
         batches = Batch.objects.all()
         work_start = batches[0].experiment_started
-        
+        print "WORK STARTED?:", work_start
         # 1 Check if work started :)
         if not work_start:
             if count < settings.CONCURENT_WORKERS:
@@ -98,16 +104,18 @@ def work(request):
                     context_instance=RequestContext(request))
             else:
                 for batch in Batch.objects.all():
-                    batch.pulication = datetime.now()
+                    batch.pulication = utcnow().replace(tzinfo=utc)
                     batch.experiment_started = True
                     batch.save()
 
         # Check if the user isn't locking some task
         task_lock_count = TaskLock.objects.filter(user=request.user).count()
+        print "NUM LOCKS:", task_lock_count
         if task_lock_count == 0:
             # No Lock ... Schedule the next batch
             batch = getNextBatch_FAIR(request)
             if batch == 0:
+                print "Experiment Finished!"
                 return render_to_response('done.html',
                     {'user_profile':user_profile,},
                     context_instance=RequestContext(request))
@@ -122,7 +130,7 @@ def work(request):
                 task = tasks[0]
             task.lock = task.lock - 1
             task.save()
-            batch.runtask = batch.runtask +1
+            batch.runtask = batch.runtask + 1
             batch.save()
         else:
             task_lock = TaskLock.objects.get(user=request.user)
@@ -168,8 +176,8 @@ def doSubmit(request, task):
             # In case the person stayed too long and got dismissed
             return HttpResponseRedirect(reverse('work'))
         user_profile = UserProfile.objects.get(user=request.user)
-        print 'submit ---------------------'
-        task.done = task.done +1
+        print 'SUBMIT TASK ------------------------------------------'
+        task.done = task.done + 1
         task.save()
         # Assuming he answered correctly .. give him money !
         user_profile.credit = user_profile.credit + task.batch.value
@@ -181,18 +189,19 @@ def doSubmit(request, task):
         tl.delete()
         answer = TaskAnswer.objects.create(user=request.user,task=task, answer=request.POST['answer'],elapsed=elapsed)
         batch = task.batch
-        batch.runtask = batch.runtask -1
+        batch.runtask = batch.runtask - 1
         batch.save()
         fct = batch.numtask * batch.repetition
         d = Task.objects.filter(batch=batch).aggregate(Sum('done'))
         d = d['done__sum']
-        print " #### fact: ", fct, d
+        print "#### fact: ", fct, d
         if  d >= fct:
             print "aww !",  d, fct
             batch.done = True
-            batch.finishtime = datetime.now()
+            batch.finishtime = datetime.utcnow().replace(tzinfo=utc)
             batch.save()
         return HttpResponseRedirect(reverse('work'))
+        # return work(request)
     finally:
         lock.release()
 
@@ -201,7 +210,7 @@ def doSkip(request, task):
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
-        print 'skip ---------------------'
+        print 'SKIP TASK ------------------------------------------'
         try:
             tl = TaskLock.objects.get(user=request.user,task=task)
         except TaskLock.DoesNotExist:
@@ -227,7 +236,7 @@ def doSkipBatch(request, task):
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
-        print 'skip batch ---------------------'
+        print 'SKIP BATCH ------------------------------------------'
         task.lock = task.lock + 1
         task.save()
         skip = BatchSkip.objects.create(user=request.user,batch=task.batch)
@@ -259,7 +268,7 @@ def num_visitors(request):
     return Visitor.objects.active().exclude(user=None).count()
 
 def release_expiredLocks():
-    print "release expired locks"
+    print "Release expired locks"
     tlocks = TaskLock.objects.all()
     for tl in tlocks:
         visits = Visitor.objects.active().filter(user=tl.user).count()
