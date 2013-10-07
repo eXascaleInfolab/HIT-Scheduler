@@ -48,7 +48,7 @@ def getNextBatch_FIFO(request, taskExclude):
     SelectableBatchs = BatchFilter(request, taskExclude)
     if SelectableBatchs.count() == 0:
         return 0
-    return SelectableBatchs.order_by('pulication')[0]
+    return SelectableBatchs.order_by('batch_id')[0]
 
 # Earliest Deadline First
 def getNextBatch_EDF(request, taskExclude):
