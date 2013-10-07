@@ -19,11 +19,15 @@ import fcntl
 from django.core.files import locks
 from django.utils.timezone import utc
 from django.conf import settings
+from decimal import *
 
 import warnings
 warnings.showwarning = lambda *x: None
 
 # Common utilities
+def TaskCount():
+    return Task.objects.all().count()
+
 def TaskFilter(request):
     myDoneTasks = TaskAnswer.objects.filter(user=request.user).values_list('task', flat=True)
     mySkipTasks = TaskSkip.objects.filter(user=request.user).values_list('task', flat=True)
@@ -150,7 +154,8 @@ def work(request):
         doc = False
         if batch.bclass == "collab":
             doc = task.question
-        return render_to_response('task.html', {'user_profile':user_profile,'task':task, 'batch': batch, 'img': img, 'choice': len(choices) > 1, 'choices': choices, 'doc':doc},
+        completed = (len(TaskFilter(request)))/Decimal(TaskCount()) * 100;
+        return render_to_response('task.html', {'user_profile':user_profile, 'completed': completed ,'task':task, 'batch': batch, 'img': img, 'choice': len(choices) > 1, 'choices': choices, 'doc':doc},
                 context_instance=RequestContext(request))
     finally:
         lock.release()
