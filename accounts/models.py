@@ -8,10 +8,6 @@ class UserProfile(models.Model):
 	credit = models.FloatField(default=0.0)
 	score = models.IntegerField(default=0)
 
-class UserCode(models.Model):
-	user = models.ForeignKey(User)
-	code = model.CharField(max_length=6)
-
 class Batch(models.Model):
 	experiment_started = models.BooleanField(default=False)
 	value = models.FloatField(default=0.01)
