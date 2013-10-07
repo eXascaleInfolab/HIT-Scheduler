@@ -84,7 +84,9 @@ def work(request):
     lock.acquire()
     try:
         if Batch.objects.filter(done=True).count() == Batch.objects.all().count():
-            return render_to_response('done.html',
+            code = id_generator()
+            print "CODE !", code
+            return render_to_response('done.html', {'code': code},
                 context_instance=RequestContext(request))
         release_expiredLocks() # Too heavy, but that's ok for now (run using celery ?)
         try:
@@ -122,8 +124,10 @@ def work(request):
             batch = getNextBatch_FAIR(request, taskExclude)
             if batch == 0:
                 print "Experiment Finished!"
+                code = id_generator()
+                print "CODE !", code
                 return render_to_response('done.html',
-                    {'user_profile':user_profile,},
+                    {'user_profile':user_profile, 'code':code},
                     context_instance=RequestContext(request))
             print "Batch Selected: ", batch
             # Take some care of real locks !

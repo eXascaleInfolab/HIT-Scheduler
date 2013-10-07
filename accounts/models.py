@@ -8,6 +8,10 @@ class UserProfile(models.Model):
 	credit = models.FloatField(default=0.0)
 	score = models.IntegerField(default=0)
 
+class UserCode(models.Model):
+	user = models.ForeignKey(User)
+	code = model.CharField(max_length=6)
+
 class Batch(models.Model):
 	experiment_started = models.BooleanField(default=False)
 	value = models.FloatField(default=0.01)
@@ -45,6 +49,7 @@ class TaskAnswer(models.Model):
 	task = models.ForeignKey(Task)
 	answer = models.TextField(blank=True)
 	elapsed = models.IntegerField(default=0)
+	submit = models.DateTimeField(auto_now=True)
 	class Meta:
 		unique_together = ['user', 'task']
 
@@ -52,12 +57,14 @@ class TaskSkip(models.Model):
 	user = models.ForeignKey(User)
 	task = models.ForeignKey(Task)
 	elapsed = models.IntegerField(default=0)
+	submit = models.DateTimeField(auto_now=True)
 	class Meta:
 		unique_together = ['user', 'task']
 
 class BatchSkip(models.Model):
 	user = models.ForeignKey(User)
 	batch = models.ForeignKey(Batch)
+	submit = models.DateTimeField(auto_now=True)
 	class Meta:
 		unique_together = ['user', 'batch']
 
