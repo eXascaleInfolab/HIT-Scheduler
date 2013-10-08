@@ -8,10 +8,10 @@ from django.contrib.auth.decorators import login_required
 from accounts.models import UserProfile, Batch, Task, TaskLock, TaskAnswer, TaskSkip, FormWithCaptcha, BatchSkip
 from accounts.views import login_view
 from django.contrib.sessions.models import Session
-from datetime import datetime
+from datetime import datetime, timedelta
 from tracking.models import Visitor
 from django.db import transaction
-from django.db.models import Sum, F
+from django.db.models import Sum, Avg, F
 import random
 import string
 import os
@@ -72,8 +72,42 @@ def getNextBatch_FAIR(request, taskExclude):
     SelectableBatchs = BatchFilter(request, taskExclude)
     if SelectableBatchs.count() == 0:
         return 0
-    print "FAIR DECIDED ON THIS:", SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[0]
-    return SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[0]
+    batch = SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[0]
+    if batch.bclass == "collab":
+        print "##################"
+        print "THE TIME HAS COME"
+        work.todo = Task.objects.get(batch=batch)
+        print work.todo
+        print "##################"
+    else:
+        return batch
+    if SelectableBatchs.count() == 1:
+        return 0
+    return SelectableBatchs.extra(select={'score': "runtask/value"}).order_by('score')[1]
+
+# Gang
+def gang():
+    est = {}
+    locks = TaskLock.objects.all()
+    for lock in locks:
+        task = Task.objects.get(id=lock.task_id)
+        tb= Task.objects.filter(batch_id=task.batch_id)
+        avg = TaskAnswer.objects.filter(user_id=lock.user_id,task__in=tb).aggregate(Avg('elapsed'))['elapsed__avg']
+        if avg:
+            estimate = lock.starttime + timedelta(seconds=avg)
+            est[lock.user_id] =  estimate
+    tup = sorted(est.items(), key=lambda x:x[1])
+    print tup
+    workers=[]
+    if len(tup) >= 3:
+        for x in range(0,len(tup)-2):
+            print "###### TIME INTERVAL:  ", tup[x+2][1] - tup[x][1]
+            if tup[x+2][1] - tup[x][1] < timedelta(seconds=100):
+                for i in range(x,x+3):
+                    workers.append(tup[i][0])
+                break
+    return workers
+
 
 # Core method
 @login_required
@@ -118,28 +152,36 @@ def work(request):
         # Check if the user isn't locking some task
         task_lock_count = TaskLock.objects.filter(user=request.user).count()
         print "NUM LOCKS:", task_lock_count
+        user_id = request.user.id
         if task_lock_count == 0:
             # No Lock ... Schedule the next batch
             taskExclude = TaskFilter(request)
-            batch = getNextBatch_FAIR(request, taskExclude)
-            if batch == 0:
-                print "Experiment Finished!"
-                code = id_generator()
-                print "CODE !", code
-                return render_to_response('done.html',
-                    {'user_profile':user_profile, 'code':code},
-                    context_instance=RequestContext(request))
-            print "Batch Selected: ", batch
-            # Take some care of real locks !
-            tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude).order_by('?')
-            if tasks.count() == 0:
-                # return HttpResponseRedirect(reverse('work'))
-                form = FormWithCaptcha()
-                return render_to_response('captcha.html',
-                    {'user_profile':user_profile, 'count':count, 'form': form},
-                    context_instance=RequestContext(request))
+            ganged = Batch.objects.get(id=10).done
+            if user_id in work.workers and not ganged:
+                print "workers !" , work.todo
+                work.workers.remove(user_id)
+                batch=Batch.objects.get(id=10)
+                task = Task.objects.get(id=1000)
             else:
-                task = tasks[0]
+                batch = getNextBatch_FAIR(request, taskExclude)
+                if batch == 0:
+                    print "Experiment Finished!"
+                    code = id_generator()
+                    print "CODE !", code
+                    return render_to_response('done.html',
+                        {'user_profile':user_profile, 'code':code},
+                        context_instance=RequestContext(request))
+                print "Batch Selected: ", batch
+                # Take some care of real locks !
+                tasks = Task.objects.filter(batch=batch, lock__gt=0, done__lt=batch.repetition).exclude(id__in=taskExclude).order_by('?')
+                if tasks.count() == 0:
+                    # return HttpResponseRedirect(reverse('work'))
+                    form = FormWithCaptcha()
+                    return render_to_response('captcha.html',
+                        {'user_profile':user_profile, 'count':count, 'form': form},
+                        context_instance=RequestContext(request))
+                else:
+                    task = tasks[0]
             task.lock = task.lock - 1
             task.save()
             batch.runtask = batch.runtask + 1
@@ -151,6 +193,9 @@ def work(request):
         print "LOCK: ", request.user, task
         tlock, created = TaskLock.objects.get_or_create(user=request.user,task=task)
         tlock.save()
+        if len(work.workers) == 0:
+            work.workers = gang()
+        print work.workers
         img = False
         if task.question[-4:].lower() in ['.jpg', '.png', '.gif', '.jpeg']:
             img = True
@@ -163,7 +208,8 @@ def work(request):
                 context_instance=RequestContext(request))
     finally:
         lock.release()
-
+work.workers = []
+work.todo = None
 
 @login_required
 def click(request, task_id):
@@ -199,8 +245,8 @@ def doSubmit(request, task):
         start = tl.starttime
         end = datetime.utcnow().replace(tzinfo=utc)
         elapsed = (end - start).seconds
+        answer = TaskAnswer.objects.create(user=request.user,task=task, answer=request.POST['answer'],assign=tl.starttime,elapsed=elapsed)
         tl.delete()
-        answer = TaskAnswer.objects.create(user=request.user,task=task, answer=request.POST['answer'],elapsed=elapsed)
         batch = task.batch
         batch.runtask = batch.runtask - 1
         batch.save()
@@ -235,8 +281,8 @@ def doSkip(request, task):
         start = tl.starttime
         end = datetime.utcnow().replace(tzinfo=utc)
         elapsed = (end - start).seconds
+        skip = TaskSkip.objects.create(user=request.user,task=task,assign=tl.starttime,elapsed=elapsed)
         tl.delete()
-        skip = TaskSkip.objects.create(user=request.user,task=task,elapsed=elapsed)
         batch = task.batch
         batch.runtask = batch.runtask - 1
         batch.save()

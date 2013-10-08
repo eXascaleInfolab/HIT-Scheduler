@@ -1,12 +1,12 @@
 [
   {
-    "pk": 5,
+    "pk": 10,
     "model": "accounts.batch",
     "fields": {
       "finishtime": null,
       "name": "Collaborative Translation",
       "value": 0.05,
-      "numtask": 3,
+      "numtask": 1,
       "bclass": "collab",
       "runtask": 0,
       "done": false,
@@ -17,34 +17,12 @@
     }
   },
   {
-    "pk": 600,
+    "pk": 1000,
     "model": "accounts.task",
     "fields": {
       "lock": 3,
       "question": "https://docs.google.com/document/d/1SKfuRrsReGww9QhJpPlj3Q7T6-kCGZ3v6vwXBY8u-Lc/",
-      "batch": 5,
-      "done": 0,
-      "choice": ""
-    }
-  },
-  {
-    "pk": 601,
-    "model": "accounts.task",
-    "fields": {
-      "lock": 3,
-      "question": "https://docs.google.com/document/d/1jGmru03bv6-jaQ4M3ZRz4d87XuKqNXe3fYUnW1-FscA/",
-      "batch": 5,
-      "done": 0,
-      "choice": ""
-    }
-  },
-  {
-    "pk": 602,
-    "model": "accounts.task",
-    "fields": {
-      "lock": 3,
-      "question": "https://docs.google.com/document/d/16iY2whaAls5sPR3DEJSYf1-cwL6evCQvTx4Iy5oiUAM/",
-      "batch": 5,
+      "batch": 10,
       "done": 0,
       "choice": ""
     }
