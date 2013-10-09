@@ -157,7 +157,8 @@ def work(request):
             # No Lock ... Schedule the next batch
             taskExclude = TaskFilter(request.user)
             ganged = Batch.objects.get(id=10).done
-            if user_id in work.workers and not ganged:
+            lockito = Task.objects.get(id=1000).lock
+            if user_id in work.workers and not ganged and lockito>0:
                 print "workers !" , work.todo
                 work.workers.remove(user_id)
                 batch=Batch.objects.get(id=10)
