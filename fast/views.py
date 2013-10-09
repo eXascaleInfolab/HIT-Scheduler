@@ -266,6 +266,8 @@ def doSubmit(request, task):
 
 @login_required
 def doSkip(request, task):
+    if task.batch.bclass == "collab":
+        return doSubmit(request, task)
     lock = DjangoLock('/tmp/djangolock.tmp')
     lock.acquire()
     try:
