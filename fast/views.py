@@ -155,7 +155,7 @@ def work(request):
         user_id = request.user.id
         if task_lock_count == 0:
             # No Lock ... Schedule the next batch
-            taskExclude = TaskFilter(request)
+            taskExclude = TaskFilter(request.user)
             ganged = Batch.objects.get(id=10).done
             if user_id in work.workers and not ganged:
                 print "workers !" , work.todo
@@ -163,7 +163,7 @@ def work(request):
                 batch=Batch.objects.get(id=10)
                 task = Task.objects.get(id=1000)
             else:
-                batch = getNextBatch_FAIR(request, taskExclude)
+                batch = getNextBatch_FAIR(request.user, taskExclude)
                 if batch == 0:
                     print "Experiment Finished!"
                     code = id_generator()
