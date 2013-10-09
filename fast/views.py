@@ -102,7 +102,7 @@ def gang():
     if len(tup) >= 3:
         for x in range(0,len(tup)-2):
             print "###### TIME INTERVAL:  ", tup[x+2][1] - tup[x][1]
-            if tup[x+2][1] - tup[x][1] < timedelta(seconds=100):
+            if tup[x+2][1] - tup[x][1] < timedelta(seconds=10):
                 for i in range(x,x+3):
                     workers.append(tup[i][0])
                 break
