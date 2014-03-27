@@ -2,90 +2,48 @@
 
 {% block content %}
 <script type="application/javascript">
-$(document).ready(function() {
-    $('#submitou').click(function() {
-       $(this).button('loading');
-       //$(this).attr('disabled', 'disabled');
-       });
-    $('#skipitou').click(function() {
-       $(this).button('loading');
-       //$(this).attr('disabled', 'disabled');
-       });
-   });
-function showAlert() {
-  $("#ephemera").addClass("out");
-}
-window.setTimeout(function () {
-    showAlert();
-}, 3000);
+  $(document).ready(function() {
+      $("#submitButton").click(function( event ) {
+        event.preventDefault();
+        $.post($("#openturk").attr("action"),
+          function() {
+            $("#mturk_form").submit();
+          });
+      });
+  });
 </script>
-<form id="workform" role="form" action="{% url "click" task.id %}" method="post">
-<div class="container">
+<input type="hidden" name="assignmentId" id="myAssignmentId" value="<?php echo($assignmentId); ?>" />
+<section class="scrollable wrapper">
   <div class="row">
-    <div class="progress progress-striped active">
-      <div class="progress-bar"  role="progressbar" aria-valuenow="{{ completed }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ completed }}%">
-        <span class="sr-only">{{ completed }}% Complete</span>
+      <div class="col-sm-6 col-sm-offset-3">
+        <form id="openturk" role="form" action="{% url "submit" task.id %}" method="post">
+        </form>
+        <form id="mturk_form" action="http://www.mturk.com/mturk/externalSubmit" method="post">
+          <input type="hidden" id="assignmentId" name="assignmentId" value="">
+          <input type="hidden" id="hitId" name="hitId" value="">
+          <input type="hidden" id="workerId" name="workerId" value="">
+            <section class="panel">
+              <header class="panel-heading bg-primary">
+                <span class="h4">{{batch.description}}</span>
+              </header>
+              <div class="panel-body">
+                <span class="h4">{{task.question}}</span>
+                <hr>                        
+                  <div class="form-group">
+                  <div class="input-group m-b"> 
+                    <span class="input-group-addon"><i class="icon-phone"></i></span> 
+                    <input type="text" name="phone" class="form-control" placeholder="(---) --- ----"> 
+                  </div>
+                  </div>
+              </div>
+              <footer class="panel-footer text-right bg-light lter">
+                <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
+              </footer>
+            </section>
+            <input type="hidden" name="bonus" value="{{bonus}}"> 
+            {% csrf_token %}
+        </form>
       </div>
-    </div>
   </div>
-  <div class="row">
-      <div class="alert alert-block alert-info fade in">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-      <h4>
-        <span class="glyphicon glyphicon-info-sign"></span>
-        {{ batch.description }}
-      </h4>
-      </br>
-        <p>
-          <a href="#" class="btn btn-success btn-sm"><strong>Value = </strong>{{batch.value}}$</a>
-          <button id="skipbatch" type="submit" name="skipbatch" class="btn btn-danger btn-sm">Skip this type of work</button>
-        </p>
-      </div>
-  </div>
-  <div class="row">
-    <div class="panel panel-default ">
-          <div class="panel-heading">HIT {{task.id}}</div>
-          <div class="panel-body">
-              <form method="POST" action="{% url 'doCaptcha' %}">
-              {% csrf_token %}
-              {{ form.as_p }}
-              {% if batch.bclass == 'collab' %}
-              <iframe src="{{ doc }}" width="100%" height="600px"></iframe>
-              <textarea name="answer" name="answer" style="display:none;">collaborated.</textarea>
-              {% else %}
-                      {% if img %}
-                        <img src="{{ STATIC_URL }}img/{{ task.question }}" />
-                      {% else %}
-                          {% if batch.bclass == 'study' %}
-                          <blockquote id="ephemera" class="fade in">
-                          {% else %}
-                          <blockquote id="ephemera">
-                          {% endif %}
-                        {{ task.question }}
-                      </blockquote>
-                      {% endif %}
-                      <hr>
-                      {% if choice %}
-                        {% for choice in choices %}
-                        <label class="radio" for="choice{{ forloop.counter }}">
-                          <input type="radio" name="answer" id="choice{{ forloop.counter }}" value="{{ choice }}" />
-                          {{ choice }}
-                        </label>
-                        {% endfor %}
-                        <label class="radio" for="choice100">
-                          <input type="radio" name="answer" id="choice100" value="" style="display:none;" checked>
-                        </label>
-                      {% else %}
-                      <textarea name="answer" name="answer" class="form-control" rows="3" placeholder="Type your answer here"></textarea>
-                      {% endif %}
-              {% endif %}
-              <hr>
-          <button id="skipitou" type="submit" name="skip" class="btn btn-primary">Skip</button>
-          <button id="submitou" type="submit" name="submit" class="btn btn-success">Submit</button>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
-</form>
+</section>
 {% endblock content %}

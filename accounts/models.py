@@ -20,7 +20,7 @@ class Batch(models.Model):
 	finishtime = models.DateTimeField(blank=True,null=True)
 	name = models.CharField(max_length=50)
 	description = models.CharField(max_length=255)
-	bclass = models.CharField(max_length=10, choices=(('classify','classify'),('extract','extract'),('curate','curate'),('data','data'),('study','study'),('collab','collab')))
+	bclass = models.CharField(max_length=20, choices=(('classify','classify'),('extract','extract'),('curate','curate'),('data','data'),('study','study'),('collab','collab'), ('imgcompare','imgcompare'), ('imgcompare_multi','imgcompare_multi'),('er_multi','er_multi')))
 	def __unicode__(self):
 		return self.name
 
@@ -28,43 +28,15 @@ class Task(models.Model):
 	batch = models.ForeignKey(Batch)
 	question = models.TextField(max_length=500,blank=False)
 	choice = models.TextField(blank=True)
-	lock = models.IntegerField(default=3)
-	done = models.IntegerField(default=0)
 	def __unicode__(self):
 		return self.question
 
-class TaskLock(models.Model):
+class TaskSubmit(models.Model):
 	user = models.ForeignKey(User)
 	task = models.ForeignKey(Task)
-	starttime = models.DateTimeField(auto_now=True)
+	starttime = models.DateTimeField(auto_now_add=True)
+	submittime = models.DateTimeField(blank=True,null=True)
+	elapsed = models.FloatField(blank=True,null=True)
+	bonus = models.FloatField(default=0.01)
 	class Meta:
 		unique_together = ['user', 'task']
-
-class TaskAnswer(models.Model):
-	user = models.ForeignKey(User)
-	task = models.ForeignKey(Task)
-	answer = models.TextField(blank=True)
-	elapsed = models.IntegerField(default=0)
-	assign = models.DateTimeField()
-	submit = models.DateTimeField(auto_now=True)
-	class Meta:
-		unique_together = ['user', 'task']
-
-class TaskSkip(models.Model):
-	user = models.ForeignKey(User)
-	task = models.ForeignKey(Task)
-	elapsed = models.IntegerField(default=0)
-	assign = models.DateTimeField()
-	submit = models.DateTimeField(auto_now=True)
-	class Meta:
-		unique_together = ['user', 'task']
-
-class BatchSkip(models.Model):
-	user = models.ForeignKey(User)
-	batch = models.ForeignKey(Batch)
-	submit = models.DateTimeField(auto_now=True)
-	class Meta:
-		unique_together = ['user', 'batch']
-
-class FormWithCaptcha(forms.Form):
-	captcha = ReCaptchaField()

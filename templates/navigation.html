@@ -1,57 +1,134 @@
 {% load i18n static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>{% block title %}{% endblock title %} Fast</title>
-    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/font-awesome.css">
-    <script type="text/javascript" src="https://use.typekit.net/gbh7uto.js"></script>
-    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-2.0.3.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+  <head>
+    <title>{% block title %}{% endblock title %} trained</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/font.css" type="text/css" cache="false" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/plugin.css" type="text/css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/app.css" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="{{ STATIC_URL }}js/ie/respond.min.js" cache="false"></script>
+      <script src="{{ STATIC_URL }}js/ie/html5.js" cache="false"></script>
+      <script src="{{ STATIC_URL }}js/ie/fix.js" cache="false"></script>
+    <![endif]-->
     {% block page-css %}{% endblock page-css %}
-    <style media="screen" type="text/css">
-      .fade {
-      opacity: 1;
-      -webkit-transition: opacity 0.15s linear;
-      -moz-transition: opacity 0.15s linear;
-      -o-transition: opacity 0.15s linear;
-      transition: opacity 0.15s linear;
+    <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    <!-- Sparkline Chart -->
+    <script src="{{ STATIC_URL }}js/charts/sparkline/jquery.sparkline.min.js"></script>
+    <!-- App -->
+    <script src="{{ STATIC_URL }}js/app.js"></script>
+    <script src="{{ STATIC_URL }}js/app.plugin.js"></script>
+    <script src="{{ STATIC_URL }}js/app.data.js"></script>
+    <script src="{{ STATIC_URL }}js/libs/jquery.pjax.js" cache="false"></script>
+    <!-- Sparkline Chart -->
+    <script src="{{ STATIC_URL }}js/charts/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Easy Pie Chart -->
+    <script src="{{ STATIC_URL }}js/charts/easypiechart/jquery.easy-pie-chart.js"></script>
+    <!-- Morris -->
+    <script src="{{ STATIC_URL }}js/charts/morris/raphael-min.js" cache="false"></script>
+    <script src="{{ STATIC_URL }}js/charts/morris/morris.min.js" cache="false"></script>
+    <script language="Javascript">
+      //
+      // This method Gets URL Parameters (GUP)
+      //
+      function gup( name )
+      {
+        var regexS = "[\\?&]"+name+"=([^&#]*)";
+        var regex = new RegExp( regexS );
+        var tmpURL = window.location.href;
+        var results = regex.exec( tmpURL );
+        if( results == null )
+          return "";
+        else
+          return results[1];
       }
-      .fade.out {
-          opacity: 0;
+
+      //
+      // This method decodes the query parameters that were URL-encoded
+      //
+      function decode(strToDecode)
+      {
+        var encoded = strToDecode;
+        return unescape(encoded.replace(/\+/g,  " "));
       }
-    </style>
+
+      </script>
   </head>
   <body>
-
-  {% load tracking_tags %}
-  {% visitors_on_site as visitors %}
-
-  <nav class="navbar navbar-default" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Fast</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Active User{{ visitors|pluralize }} <span class="badge">{{ visitors }}</span></a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">User : <span class="label label-info">{{ request.user }}</span></a></li>
-        <li><a href="#">Credit : <span class="label label-success">{{ user_profile.credit }}</span></a></li>
-      </ul>
-    </div>
-    <!-- /.navbar-collapse -->
-  </nav>
+  <section>
+    <header class="header bg-black navbar navbar-inverse">
+      <div class="collapse navbar-collapse pull-in">
+        <ul class="nav navbar-nav m-l-n">
+          <li class="active">
+            <a href="#" class="nav-brand" data-toggle="fullscreen"><img src="{{ STATIC_URL }}images/logo.png.1" style="max-height: 30px;"></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <span class="thumb-sm avatar pull-left m-t-n-xs m-r-xs">
+                <img src="http://identicon.org?t={{ request.user }}&s=256" class="img-thumbnail">
+              </span>
+              {{ request.user }}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    {% if user.is_authenticated %}
+    <header>
+      <div class="row b-b m-l-none m-r-none">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="clearfix m-t-lg m-b-sm pull-none-xs">
+            <div class="pull-left">
+              <div class="pull-left m-r-xs">
+                <div id="superchart" class="sparkline inline" data-type="line" data-height="35" data-bar-width="4" data-bar-spacing="2" data-bar-color="#afcf6f">{% for d in data %} {{d}},{% endfor %}</div>
+              </div>
+            </div>
+            <div class="pull-left">
+              <div class="clear">
+                <span class="block">Current Hourly Rate:</span>                    
+                <span class="h4">${{last}}/Hr</span>
+                {% if upside%}
+                <i class="icon-level-up text-success"></i>
+                {%else%}
+                <i class="icon-level-down text-danger"></i>
+                {%endif%}
+              </div>
+            </div>
+            <div class="pull-right  m-l-lg">                  
+              <div class="pull-right m-r-xs">
+                <button class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Bonus you will get from this batch upon approval."><i class="icon-shopping-cart"></i>Total Bonus: ${{user_profile.credit}}</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    {% endif %}
+  </section>
   {% block content_title %}{% endblock %}
   {% block content %}{% endblock content %}
+  <script language="Javascript">
+    document.getElementById('assignmentId').value = gup('assignmentId');
+    if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE" || gup('assignmentId')=="")
+    {
+      // If we're previewing, disable the button and give it a helpful message
+      document.getElementById('submit').disabled = true;
+      document.getElementById('submit').innerHTML = "You must ACCEPT the HIT before you can submit the results.";
+    } else {
+        var form = document.getElementById('mturk_form');
+        if (document.referrer && ( document.referrer.indexOf('workersandbox') != -1) ) {
+            form.action = "http://www.mturk.com/mturk/externalSubmit";
+        }
+    }
+
+</script>
+</body>
 </html>

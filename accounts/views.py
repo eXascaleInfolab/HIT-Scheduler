@@ -8,7 +8,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.core.context_processors import csrf
 
 from accounts.tokens import generate_token
-from fast.utils import render_template
+from train.utils import render_template
 
 from .models import UserProfile
 
@@ -53,7 +53,7 @@ def login_view(request):
                 if 'next' in request.POST:
                     return redirect(request.POST['next'] or '/')
                 else:
-                    return redirect('/')
+                    return redirect('/batch/1/')
             else:
                 login_error = 'Sorry, something bad happened.'
         else:
