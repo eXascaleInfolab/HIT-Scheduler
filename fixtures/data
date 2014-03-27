@@ -1,0 +1,1249 @@
+      {
+        "pk": 626,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/1.jpg,data/celebrities/1_1.jpg,data/celebrities/24_1.jpg,data/celebrities/8_1.jpg,data/celebrities/15_1.jpg,data/celebrities/9_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 627,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/1.jpg,data/celebrities/19_1.jpg,data/celebrities/17_1.jpg,data/celebrities/25_1.jpg,data/celebrities/21_1.jpg,data/celebrities/2_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 628,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/1.jpg,data/celebrities/13_1.jpg,data/celebrities/18_1.jpg,data/celebrities/11_1.jpg,data/celebrities/6_1.jpg,data/celebrities/10_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 629,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/1.jpg,data/celebrities/20_1.jpg,data/celebrities/16_1.jpg,data/celebrities/22_1.jpg,data/celebrities/7_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 630,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/1.jpg,data/celebrities/4_1.jpg,data/celebrities/5_1.jpg,data/celebrities/3_1.jpg,data/celebrities/12_1.jpg,data/celebrities/23_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 631,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/2.jpg,data/celebrities/2_1.jpg,data/celebrities/10_1.jpg,data/celebrities/11_1.jpg,data/celebrities/3_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 632,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/2.jpg,data/celebrities/13_1.jpg,data/celebrities/8_1.jpg,data/celebrities/23_1.jpg,data/celebrities/24_1.jpg,data/celebrities/20_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 633,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/2.jpg,data/celebrities/14_1.jpg,data/celebrities/7_1.jpg,data/celebrities/18_1.jpg,data/celebrities/1_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 634,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/2.jpg,data/celebrities/21_1.jpg,data/celebrities/4_1.jpg,data/celebrities/9_1.jpg,data/celebrities/12_1.jpg,data/celebrities/15_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 635,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/2.jpg,data/celebrities/17_1.jpg,data/celebrities/5_1.jpg,data/celebrities/22_1.jpg,data/celebrities/16_1.jpg,data/celebrities/25_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 636,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/3.jpg,data/celebrities/22_1.jpg,data/celebrities/10_1.jpg,data/celebrities/15_1.jpg,data/celebrities/21_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 637,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/3.jpg,data/celebrities/9_1.jpg,data/celebrities/25_1.jpg,data/celebrities/2_1.jpg,data/celebrities/13_1.jpg,data/celebrities/1_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 638,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/3.jpg,data/celebrities/4_1.jpg,data/celebrities/6_1.jpg,data/celebrities/5_1.jpg,data/celebrities/11_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 639,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/3.jpg,data/celebrities/8_1.jpg,data/celebrities/17_1.jpg,data/celebrities/16_1.jpg,data/celebrities/24_1.jpg,data/celebrities/12_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 640,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/3.jpg,data/celebrities/3_1.jpg,data/celebrities/7_1.jpg,data/celebrities/20_1.jpg,data/celebrities/23_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 641,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/4.jpg,data/celebrities/16_1.jpg,data/celebrities/8_1.jpg,data/celebrities/21_1.jpg,data/celebrities/4_1.jpg,data/celebrities/25_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 642,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/4.jpg,data/celebrities/13_1.jpg,data/celebrities/1_1.jpg,data/celebrities/2_1.jpg,data/celebrities/24_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 643,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/4.jpg,data/celebrities/5_1.jpg,data/celebrities/18_1.jpg,data/celebrities/22_1.jpg,data/celebrities/3_1.jpg,data/celebrities/15_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 644,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/4.jpg,data/celebrities/11_1.jpg,data/celebrities/19_1.jpg,data/celebrities/14_1.jpg,data/celebrities/9_1.jpg,data/celebrities/12_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 645,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/4.jpg,data/celebrities/7_1.jpg,data/celebrities/17_1.jpg,data/celebrities/23_1.jpg,data/celebrities/20_1.jpg,data/celebrities/10_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 646,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/5.jpg,data/celebrities/18_1.jpg,data/celebrities/15_1.jpg,data/celebrities/1_1.jpg,data/celebrities/23_1.jpg,data/celebrities/24_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 647,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/5.jpg,data/celebrities/6_1.jpg,data/celebrities/13_1.jpg,data/celebrities/7_1.jpg,data/celebrities/17_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 648,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/5.jpg,data/celebrities/2_1.jpg,data/celebrities/16_1.jpg,data/celebrities/14_1.jpg,data/celebrities/8_1.jpg,data/celebrities/9_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 649,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/5.jpg,data/celebrities/11_1.jpg,data/celebrities/10_1.jpg,data/celebrities/21_1.jpg,data/celebrities/25_1.jpg,data/celebrities/20_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 650,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/5.jpg,data/celebrities/5_1.jpg,data/celebrities/12_1.jpg,data/celebrities/4_1.jpg,data/celebrities/22_1.jpg,data/celebrities/3_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 651,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/6.jpg,data/celebrities/11_1.jpg,data/celebrities/9_1.jpg,data/celebrities/21_1.jpg,data/celebrities/17_1.jpg,data/celebrities/2_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 652,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/6.jpg,data/celebrities/12_1.jpg,data/celebrities/25_1.jpg,data/celebrities/3_1.jpg,data/celebrities/16_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 653,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/6.jpg,data/celebrities/23_1.jpg,data/celebrities/15_1.jpg,data/celebrities/1_1.jpg,data/celebrities/8_1.jpg,data/celebrities/7_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 654,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/6.jpg,data/celebrities/19_1.jpg,data/celebrities/22_1.jpg,data/celebrities/5_1.jpg,data/celebrities/13_1.jpg,data/celebrities/10_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 655,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/6.jpg,data/celebrities/24_1.jpg,data/celebrities/20_1.jpg,data/celebrities/18_1.jpg,data/celebrities/4_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 656,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/7.jpg,data/celebrities/19_1.jpg,data/celebrities/13_1.jpg,data/celebrities/1_1.jpg,data/celebrities/25_1.jpg,data/celebrities/15_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 657,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/7.jpg,data/celebrities/24_1.jpg,data/celebrities/2_1.jpg,data/celebrities/4_1.jpg,data/celebrities/16_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 658,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/7.jpg,data/celebrities/20_1.jpg,data/celebrities/17_1.jpg,data/celebrities/23_1.jpg,data/celebrities/5_1.jpg,data/celebrities/3_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 659,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/7.jpg,data/celebrities/12_1.jpg,data/celebrities/8_1.jpg,data/celebrities/11_1.jpg,data/celebrities/7_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 660,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/7.jpg,data/celebrities/14_1.jpg,data/celebrities/9_1.jpg,data/celebrities/21_1.jpg,data/celebrities/10_1.jpg,data/celebrities/22_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 661,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/8.jpg,data/celebrities/18_1.jpg,data/celebrities/9_1.jpg,data/celebrities/22_1.jpg,data/celebrities/16_1.jpg,data/celebrities/12_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 662,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/8.jpg,data/celebrities/1_1.jpg,data/celebrities/2_1.jpg,data/celebrities/3_1.jpg,data/celebrities/17_1.jpg,data/celebrities/13_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 663,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/8.jpg,data/celebrities/19_1.jpg,data/celebrities/15_1.jpg,data/celebrities/21_1.jpg,data/celebrities/23_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 664,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/8.jpg,data/celebrities/10_1.jpg,data/celebrities/8_1.jpg,data/celebrities/5_1.jpg,data/celebrities/14_1.jpg,data/celebrities/11_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 665,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/8.jpg,data/celebrities/24_1.jpg,data/celebrities/7_1.jpg,data/celebrities/25_1.jpg,data/celebrities/20_1.jpg,data/celebrities/4_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 666,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/9.jpg,data/celebrities/24_1.jpg,data/celebrities/13_1.jpg,data/celebrities/23_1.jpg,data/celebrities/19_1.jpg,data/celebrities/9_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 667,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/9.jpg,data/celebrities/15_1.jpg,data/celebrities/7_1.jpg,data/celebrities/4_1.jpg,data/celebrities/14_1.jpg,data/celebrities/16_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 668,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/9.jpg,data/celebrities/8_1.jpg,data/celebrities/17_1.jpg,data/celebrities/11_1.jpg,data/celebrities/22_1.jpg,data/celebrities/3_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 669,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/9.jpg,data/celebrities/12_1.jpg,data/celebrities/21_1.jpg,data/celebrities/1_1.jpg,data/celebrities/2_1.jpg,data/celebrities/20_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 670,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/9.jpg,data/celebrities/5_1.jpg,data/celebrities/6_1.jpg,data/celebrities/25_1.jpg,data/celebrities/10_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 671,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/10.jpg,data/celebrities/2_1.jpg,data/celebrities/20_1.jpg,data/celebrities/15_1.jpg,data/celebrities/1_1.jpg,data/celebrities/5_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 672,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/10.jpg,data/celebrities/4_1.jpg,data/celebrities/11_1.jpg,data/celebrities/10_1.jpg,data/celebrities/25_1.jpg,data/celebrities/8_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 673,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/10.jpg,data/celebrities/7_1.jpg,data/celebrities/3_1.jpg,data/celebrities/21_1.jpg,data/celebrities/19_1.jpg,data/celebrities/17_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 674,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/10.jpg,data/celebrities/18_1.jpg,data/celebrities/24_1.jpg,data/celebrities/16_1.jpg,data/celebrities/22_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 675,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/10.jpg,data/celebrities/9_1.jpg,data/celebrities/14_1.jpg,data/celebrities/23_1.jpg,data/celebrities/13_1.jpg,data/celebrities/12_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 676,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/11.jpg,data/celebrities/10_1.jpg,data/celebrities/9_1.jpg,data/celebrities/4_1.jpg,data/celebrities/24_1.jpg,data/celebrities/21_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 677,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/11.jpg,data/celebrities/18_1.jpg,data/celebrities/15_1.jpg,data/celebrities/2_1.jpg,data/celebrities/20_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 678,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/11.jpg,data/celebrities/8_1.jpg,data/celebrities/5_1.jpg,data/celebrities/7_1.jpg,data/celebrities/19_1.jpg,data/celebrities/3_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 679,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/11.jpg,data/celebrities/22_1.jpg,data/celebrities/13_1.jpg,data/celebrities/17_1.jpg,data/celebrities/11_1.jpg,data/celebrities/12_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 680,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/11.jpg,data/celebrities/25_1.jpg,data/celebrities/1_1.jpg,data/celebrities/23_1.jpg,data/celebrities/16_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 681,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/12.jpg,data/celebrities/10_1.jpg,data/celebrities/8_1.jpg,data/celebrities/15_1.jpg,data/celebrities/3_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 682,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/12.jpg,data/celebrities/14_1.jpg,data/celebrities/2_1.jpg,data/celebrities/20_1.jpg,data/celebrities/12_1.jpg,data/celebrities/25_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 683,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/12.jpg,data/celebrities/4_1.jpg,data/celebrities/7_1.jpg,data/celebrities/18_1.jpg,data/celebrities/19_1.jpg,data/celebrities/16_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 684,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/12.jpg,data/celebrities/1_1.jpg,data/celebrities/23_1.jpg,data/celebrities/13_1.jpg,data/celebrities/17_1.jpg,data/celebrities/24_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 685,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/12.jpg,data/celebrities/22_1.jpg,data/celebrities/11_1.jpg,data/celebrities/9_1.jpg,data/celebrities/21_1.jpg,data/celebrities/5_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 686,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/13.jpg,data/celebrities/8_1.jpg,data/celebrities/24_1.jpg,data/celebrities/19_1.jpg,data/celebrities/16_1.jpg,data/celebrities/9_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 687,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/13.jpg,data/celebrities/4_1.jpg,data/celebrities/5_1.jpg,data/celebrities/7_1.jpg,data/celebrities/18_1.jpg,data/celebrities/22_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 688,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/13.jpg,data/celebrities/14_1.jpg,data/celebrities/15_1.jpg,data/celebrities/10_1.jpg,data/celebrities/12_1.jpg,data/celebrities/21_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 689,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/13.jpg,data/celebrities/3_1.jpg,data/celebrities/1_1.jpg,data/celebrities/11_1.jpg,data/celebrities/13_1.jpg,data/celebrities/20_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 690,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/13.jpg,data/celebrities/17_1.jpg,data/celebrities/23_1.jpg,data/celebrities/6_1.jpg,data/celebrities/25_1.jpg,data/celebrities/2_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 691,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/14.jpg,data/celebrities/16_1.jpg,data/celebrities/24_1.jpg,data/celebrities/1_1.jpg,data/celebrities/10_1.jpg,data/celebrities/7_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 692,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/14.jpg,data/celebrities/25_1.jpg,data/celebrities/22_1.jpg,data/celebrities/8_1.jpg,data/celebrities/15_1.jpg,data/celebrities/4_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 693,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/14.jpg,data/celebrities/9_1.jpg,data/celebrities/21_1.jpg,data/celebrities/5_1.jpg,data/celebrities/11_1.jpg,data/celebrities/2_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 694,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/14.jpg,data/celebrities/17_1.jpg,data/celebrities/12_1.jpg,data/celebrities/13_1.jpg,data/celebrities/19_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 695,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/14.jpg,data/celebrities/14_1.jpg,data/celebrities/3_1.jpg,data/celebrities/23_1.jpg,data/celebrities/20_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 696,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/15.jpg,data/celebrities/10_1.jpg,data/celebrities/25_1.jpg,data/celebrities/16_1.jpg,data/celebrities/23_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 697,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/15.jpg,data/celebrities/13_1.jpg,data/celebrities/4_1.jpg,data/celebrities/12_1.jpg,data/celebrities/17_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 698,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/15.jpg,data/celebrities/9_1.jpg,data/celebrities/22_1.jpg,data/celebrities/20_1.jpg,data/celebrities/7_1.jpg,data/celebrities/2_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 699,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/15.jpg,data/celebrities/6_1.jpg,data/celebrities/19_1.jpg,data/celebrities/3_1.jpg,data/celebrities/8_1.jpg,data/celebrities/11_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 700,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/15.jpg,data/celebrities/21_1.jpg,data/celebrities/1_1.jpg,data/celebrities/15_1.jpg,data/celebrities/5_1.jpg,data/celebrities/24_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 701,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/16.jpg,data/celebrities/19_1.jpg,data/celebrities/1_1.jpg,data/celebrities/24_1.jpg,data/celebrities/12_1.jpg,data/celebrities/4_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 702,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/16.jpg,data/celebrities/11_1.jpg,data/celebrities/17_1.jpg,data/celebrities/8_1.jpg,data/celebrities/13_1.jpg,data/celebrities/6_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 703,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/16.jpg,data/celebrities/21_1.jpg,data/celebrities/5_1.jpg,data/celebrities/22_1.jpg,data/celebrities/9_1.jpg,data/celebrities/7_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 704,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/16.jpg,data/celebrities/25_1.jpg,data/celebrities/18_1.jpg,data/celebrities/20_1.jpg,data/celebrities/15_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 705,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/16.jpg,data/celebrities/3_1.jpg,data/celebrities/16_1.jpg,data/celebrities/2_1.jpg,data/celebrities/10_1.jpg,data/celebrities/23_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 706,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/17.jpg,data/celebrities/2_1.jpg,data/celebrities/21_1.jpg,data/celebrities/19_1.jpg,data/celebrities/20_1.jpg,data/celebrities/10_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 707,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/17.jpg,data/celebrities/22_1.jpg,data/celebrities/25_1.jpg,data/celebrities/9_1.jpg,data/celebrities/24_1.jpg,data/celebrities/15_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 708,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/17.jpg,data/celebrities/12_1.jpg,data/celebrities/6_1.jpg,data/celebrities/11_1.jpg,data/celebrities/13_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 709,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/17.jpg,data/celebrities/8_1.jpg,data/celebrities/1_1.jpg,data/celebrities/17_1.jpg,data/celebrities/14_1.jpg,data/celebrities/16_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 710,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/17.jpg,data/celebrities/5_1.jpg,data/celebrities/4_1.jpg,data/celebrities/23_1.jpg,data/celebrities/7_1.jpg,data/celebrities/3_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 711,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/18.jpg,data/celebrities/10_1.jpg,data/celebrities/15_1.jpg,data/celebrities/9_1.jpg,data/celebrities/25_1.jpg,data/celebrities/13_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 712,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/18.jpg,data/celebrities/14_1.jpg,data/celebrities/5_1.jpg,data/celebrities/18_1.jpg,data/celebrities/11_1.jpg,data/celebrities/17_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 713,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/18.jpg,data/celebrities/7_1.jpg,data/celebrities/20_1.jpg,data/celebrities/2_1.jpg,data/celebrities/23_1.jpg,data/celebrities/1_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 714,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/18.jpg,data/celebrities/12_1.jpg,data/celebrities/8_1.jpg,data/celebrities/16_1.jpg,data/celebrities/6_1.jpg,data/celebrities/21_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 715,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/18.jpg,data/celebrities/4_1.jpg,data/celebrities/3_1.jpg,data/celebrities/19_1.jpg,data/celebrities/24_1.jpg,data/celebrities/22_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 716,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/19.jpg,data/celebrities/25_1.jpg,data/celebrities/1_1.jpg,data/celebrities/2_1.jpg,data/celebrities/12_1.jpg,data/celebrities/3_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 717,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/19.jpg,data/celebrities/22_1.jpg,data/celebrities/7_1.jpg,data/celebrities/10_1.jpg,data/celebrities/15_1.jpg,data/celebrities/16_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 718,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/19.jpg,data/celebrities/23_1.jpg,data/celebrities/6_1.jpg,data/celebrities/8_1.jpg,data/celebrities/4_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 719,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/19.jpg,data/celebrities/20_1.jpg,data/celebrities/24_1.jpg,data/celebrities/17_1.jpg,data/celebrities/21_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 720,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/19.jpg,data/celebrities/13_1.jpg,data/celebrities/11_1.jpg,data/celebrities/5_1.jpg,data/celebrities/18_1.jpg,data/celebrities/9_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 721,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/20.jpg,data/celebrities/16_1.jpg,data/celebrities/2_1.jpg,data/celebrities/8_1.jpg,data/celebrities/15_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 722,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/20.jpg,data/celebrities/7_1.jpg,data/celebrities/20_1.jpg,data/celebrities/12_1.jpg,data/celebrities/19_1.jpg,data/celebrities/11_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 723,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/20.jpg,data/celebrities/5_1.jpg,data/celebrities/14_1.jpg,data/celebrities/13_1.jpg,data/celebrities/3_1.jpg,data/celebrities/25_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 724,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/20.jpg,data/celebrities/17_1.jpg,data/celebrities/24_1.jpg,data/celebrities/6_1.jpg,data/celebrities/21_1.jpg,data/celebrities/1_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 725,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/20.jpg,data/celebrities/22_1.jpg,data/celebrities/23_1.jpg,data/celebrities/10_1.jpg,data/celebrities/4_1.jpg,data/celebrities/9_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 726,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/21.jpg,data/celebrities/8_1.jpg,data/celebrities/6_1.jpg,data/celebrities/25_1.jpg,data/celebrities/14_1.jpg,data/celebrities/2_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 727,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/21.jpg,data/celebrities/7_1.jpg,data/celebrities/3_1.jpg,data/celebrities/20_1.jpg,data/celebrities/21_1.jpg,data/celebrities/22_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 728,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/21.jpg,data/celebrities/24_1.jpg,data/celebrities/4_1.jpg,data/celebrities/5_1.jpg,data/celebrities/15_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 729,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/21.jpg,data/celebrities/16_1.jpg,data/celebrities/23_1.jpg,data/celebrities/12_1.jpg,data/celebrities/11_1.jpg,data/celebrities/13_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 730,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/21.jpg,data/celebrities/18_1.jpg,data/celebrities/10_1.jpg,data/celebrities/17_1.jpg,data/celebrities/9_1.jpg,data/celebrities/1_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 731,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/22.jpg,data/celebrities/3_1.jpg,data/celebrities/22_1.jpg,data/celebrities/21_1.jpg,data/celebrities/7_1.jpg,data/celebrities/24_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 732,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/22.jpg,data/celebrities/13_1.jpg,data/celebrities/15_1.jpg,data/celebrities/2_1.jpg,data/celebrities/14_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 733,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/22.jpg,data/celebrities/25_1.jpg,data/celebrities/4_1.jpg,data/celebrities/20_1.jpg,data/celebrities/8_1.jpg,data/celebrities/17_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 734,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/22.jpg,data/celebrities/11_1.jpg,data/celebrities/5_1.jpg,data/celebrities/6_1.jpg,data/celebrities/9_1.jpg,data/celebrities/1_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 735,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/22.jpg,data/celebrities/23_1.jpg,data/celebrities/16_1.jpg,data/celebrities/18_1.jpg,data/celebrities/10_1.jpg,data/celebrities/12_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 736,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/23.jpg,data/celebrities/17_1.jpg,data/celebrities/10_1.jpg,data/celebrities/20_1.jpg,data/celebrities/22_1.jpg,data/celebrities/9_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 737,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/23.jpg,data/celebrities/2_1.jpg,data/celebrities/21_1.jpg,data/celebrities/1_1.jpg,data/celebrities/25_1.jpg,data/celebrities/4_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 738,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/23.jpg,data/celebrities/14_1.jpg,data/celebrities/8_1.jpg,data/celebrities/15_1.jpg,data/celebrities/7_1.jpg,data/celebrities/13_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 739,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/23.jpg,data/celebrities/12_1.jpg,data/celebrities/6_1.jpg,data/celebrities/24_1.jpg,data/celebrities/11_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 740,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/23.jpg,data/celebrities/23_1.jpg,data/celebrities/3_1.jpg,data/celebrities/18_1.jpg,data/celebrities/16_1.jpg,data/celebrities/5_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 741,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/24.jpg,data/celebrities/11_1.jpg,data/celebrities/3_1.jpg,data/celebrities/22_1.jpg,data/celebrities/24_1.jpg,data/celebrities/17_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 742,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/24.jpg,data/celebrities/4_1.jpg,data/celebrities/9_1.jpg,data/celebrities/25_1.jpg,data/celebrities/1_1.jpg,data/celebrities/19_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 743,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/24.jpg,data/celebrities/6_1.jpg,data/celebrities/10_1.jpg,data/celebrities/23_1.jpg,data/celebrities/7_1.jpg,data/celebrities/18_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 744,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/24.jpg,data/celebrities/15_1.jpg,data/celebrities/12_1.jpg,data/celebrities/20_1.jpg,data/celebrities/16_1.jpg,data/celebrities/8_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 745,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/24.jpg,data/celebrities/21_1.jpg,data/celebrities/5_1.jpg,data/celebrities/13_1.jpg,data/celebrities/2_1.jpg,data/celebrities/14_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 746,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/25.jpg,data/celebrities/23_1.jpg,data/celebrities/4_1.jpg,data/celebrities/15_1.jpg,data/celebrities/17_1.jpg,data/celebrities/3_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 747,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/25.jpg,data/celebrities/6_1.jpg,data/celebrities/14_1.jpg,data/celebrities/8_1.jpg,data/celebrities/5_1.jpg,data/celebrities/2_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 748,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/25.jpg,data/celebrities/11_1.jpg,data/celebrities/13_1.jpg,data/celebrities/19_1.jpg,data/celebrities/10_1.jpg,data/celebrities/12_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 749,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/25.jpg,data/celebrities/18_1.jpg,data/celebrities/20_1.jpg,data/celebrities/16_1.jpg,data/celebrities/24_1.jpg,data/celebrities/25_1.jpg",
+          "choice": "yes, no"
+        }
+      },
+
+      {
+        "pk": 750,
+        "model": "accounts.task",
+        "fields": {
+          "batch": 2,
+          "question": "data/celebrities/25.jpg,data/celebrities/1_1.jpg,data/celebrities/9_1.jpg,data/celebrities/7_1.jpg,data/celebrities/22_1.jpg,data/celebrities/21_1.jpg",
+          "choice": "yes, no"
+        }
+      },

@@ -1,0 +1,1818 @@
+[
+  {
+    "pk": 1,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Company Customer Service Phone",
+      "value": 0.01,
+      "numtask": 200,
+      "bclass": "data",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Find the Customer Service Phone Number of the following US based company."
+    }
+  },
+  {
+    "pk": 1,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Del Monte Foods Co\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 2,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dell Computer Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Delphi Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 4,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Delta Air Lines Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 5,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Deluxe Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 6,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Devon Energy Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 7,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Di Giorgio Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 8,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dial Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 9,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Diebold Incorporated\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 10,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dillard's Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 11,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"DIMON Incorporated\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 12,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dole Food Company, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 13,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dollar General Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 14,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dollar Tree Stores, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 15,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dominion Resources, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 16,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Domino's Pizza LLC\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 17,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dover Corporation, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 18,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dow Chemical Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 19,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dow Jones & Company, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 20,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"DPL Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 21,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"DQE Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 22,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dreyer's Grand Ice Cream, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 23,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"DST Systems, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 24,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"DTE Energy Co.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 25,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"E.I. Du Pont de Nemours and Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 26,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Duke Energy Corp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 27,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dun & Bradstreet Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 28,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"DURA Automotive Systems Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 29,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"DynCorp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 30,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Dynegy Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 31,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"E.W. Scripps Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 32,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Earthlink, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 33,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Eastman Chemical Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 34,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Eastman Kodak Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 35,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Eaton Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 36,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Echostar Communications Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 37,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Ecolab Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 38,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Edison International\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 39,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"EGL Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 40,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"El Paso Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 41,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Electronic Arts Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 42,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Electronic Data Systems Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 43,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"EMC Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 44,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Emcor Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 45,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Emerson Electric Co.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 46,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Encompass Services Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 47,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Energizer Holdings Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 48,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Energy East Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 49,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Engelhard Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 50,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Enterprise Products Partners L.P.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 51,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"EOG Resources, Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 52,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Equifax Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 53,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Equitable Resources Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 54,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Equity Office Properties Trust\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 55,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Equity Residential Properties Trust\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 56,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Estee Lauder Companies Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 57,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Exelon Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 58,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Exide Technologies\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 59,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Expeditors International of Washington Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 60,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Express Scripts Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 61,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"ExxonMobil Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 62,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fairchild Semiconductor International Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 63,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Family Dollar Stores Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 64,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Farmland Industries Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 65,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Federal Mogul Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 66,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Federated Department Stores Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 67,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Federal Express Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 68,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Felcor Lodging Trust Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 69,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Ferro Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 70,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fidelity National Financial Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 71,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fifth Third Bancorp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 72,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"First American Financial Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 73,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"First Data Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 74,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"First National of Nebraska Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 75,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"First Tennessee National Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 76,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"FirstEnergy Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 77,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fiserv Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 78,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fisher Scientific International Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 79,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"FleetBoston Financial Co.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 80,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fleetwood Enterprises Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 81,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fleming Companies Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 82,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Flowers Foods Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 83,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Flowserv Corp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 84,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fluor Corp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 85,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"FMC Corp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 86,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Foamex International Inc\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 87,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Foot Locker Inc\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 88,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Footstar Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 89,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Ford Motor Co\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 90,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Forest Laboratories Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 91,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Fortune Brands Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 92,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Foster Wheeler Ltd.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 93,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"FPL Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 94,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Franklin Resources Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 95,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Freeport McMoran Copper & Gold Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 96,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Frontier Oil Corp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 97,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Furniture Brands International Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 98,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gannett Co., Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 99,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gap Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 100,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gateway Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 101,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"GATX Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 102,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gemstar-TV Guide International Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 103,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"General Cable Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 104,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"General Dynamics Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 105,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"General Electric Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 106,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"General Mills Inc\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 107,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"General Motors Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 108,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gentek Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 109,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gentiva Health Services Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 110,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Genuine Parts Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 111,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Genuity Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 112,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Genzyme Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 113,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Georgia Gulf Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 114,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Georgia-Pacific Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 115,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gillette Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 116,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Gold Kist Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 117,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Golden State Bancorp Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 118,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Golden West Financial Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 119,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Goldman Sachs Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 120,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Goodrich Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 121,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"The Goodyear Tire & Rubber Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 122,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Granite Construction Incorporated\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 123,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Graybar Electric Company Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 124,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Great Lakes Chemical Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 125,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Great Plains Energy Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 126,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"GreenPoint Financial Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 127,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Greif Bros. Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 128,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Grey Global Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 129,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Group 1 Automotive Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 130,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Guidant Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 131,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"H&R Block Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 132,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"H.B. Fuller Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 133,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"H.J. Heinz Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 134,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Halliburton Co.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 135,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Harley-Davidson Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 136,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Harman International Industries Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 137,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Harrah's Entertainment Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 138,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Harris Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 139,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Harsco Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 140,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hartford Financial Services Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 141,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hasbro Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 142,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hawaiian Electric Industries Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 143,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"HCA Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 144,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Health Management Associates Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 145,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Health Net Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 146,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Healthsouth Corp\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 147,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Henry Schein Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 148,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hercules Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 149,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Herman Miller Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 150,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hershey Foods Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 151,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hewlett-Packard Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 152,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hibernia Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 153,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hillenbrand Industries Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 154,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hilton Hotels Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 155,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hollywood Entertainment Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 156,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Home Depot Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 157,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hon Industries Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 158,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Honeywell International Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 159,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hormel Foods Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 160,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Host Marriott Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 161,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Household International Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 162,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hovnanian Enterprises Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 163,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hub Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 164,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hubbell Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 165,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Hughes Supply Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 166,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Humana Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 167,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Huntington Bancshares Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 168,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Idacorp Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 169,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"IDT Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 170,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"IKON Office Solutions Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 171,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Illinois Tool Works Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 172,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Imperial Sugar Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 173,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"IMS Health Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 174,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Ingles Market Inc\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 175,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Insight Enterprises Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 176,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Integrated Electrical Services Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 177,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Intel Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 178,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Interpublic Group of Companies Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 179,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Interstate Bakeries Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 180,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"International Business Machines Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 181,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"International Flavors & Fragrances Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 182,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"International Multifoods Corporation\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 183,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Intuit Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 184,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"IT Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 185,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"ITT Industries Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 186,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Ivax Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 187,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"J.B. Hunt Transport Services Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 188,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"J.C. Penny Co.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 189,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"J.P. Morgan Chase & Co.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 190,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Jabil Circuit Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 191,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Jack In The Box Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 192,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Jacobs Engineering Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 193,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"JDS Uniphase Corp.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 194,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Jefferson-Pilot Co.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 195,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"John Hancock Financial Services Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 196,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Johnson & Johnson\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 197,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Johnson Controls Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 198,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Jones Apparel Group Inc.\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 199,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"KB Home\"",
+      "batch": 1,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 200,
+    "model": "accounts.task",
+    "fields": {
+      "question": "\"Kellogg Company\"",
+      "batch": 1,
+      "choice": ""
+    }
+  }
+]
