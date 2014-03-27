@@ -1,0 +1,89 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+<script type="application/javascript">
+$(document).ready(function() {
+    $('#yes').click(function() {
+       $(this).button('loading');
+       //$(this).attr('disabled', 'disabled');
+       });
+    $('#no').click(function() {
+       $(this).button('loading');
+       //$(this).attr('disabled', 'disabled');
+       });
+   });
+function showAlert() {
+  $("#ephemera").addClass("out");
+}
+window.setTimeout(function () {
+    showAlert();
+}, 3000);
+</script>
+<section class="scrollable wrapper">
+  <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+        <form data-validate="parsley" role="form" action="{% url "click" task.id %}" method="post">
+          {% csrf_token %}
+          <section class="panel">
+            <header class="panel-heading">
+              <span class="h4">{{batch.description}}</span>
+            </header>
+            <section class="panel no-borders hbox">
+              <aside class="r-l text-center v-middle">
+                <div class="wrapper">
+                  <img src="{{ STATIC_URL }}{{img1}}"   height="350" width="250">                    
+                </div>
+              </aside>
+              <aside>
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-sm btn-white">
+                    <input type="radio" name="options" id="option1"> 
+                    <label>
+                      <img src="{{ STATIC_URL }}data/none.jpg" height="180" width="180"/>
+                    </label>
+                  </label>
+                  <label class="btn btn-sm btn-white">
+                    <input type="radio" name="options" id="option2"> 
+                    <label>
+                      <img src="{{ STATIC_URL }}{{img2}}" height="180" width="180"/>
+                    </label>
+                  </label>
+                  <label class="btn btn-sm btn-white">
+                    <input type="radio" name="options" id="option3"> 
+                    <label>
+                      <img src="{{ STATIC_URL }}{{img3}}" height="180" width="180"/>
+                    </label>
+                  </label>
+                  <label class="btn btn-sm btn-white">
+                    <input type="radio" name="options" id="option4"> 
+                    <label>
+                      <img src="{{ STATIC_URL }}{{img4}}" height="180" width="180"/>
+                    </label>
+                  </label>
+                  <label class="btn btn-sm btn-white">
+                    <input type="radio" name="options" id="option3"> 
+                    <label>
+                      <img src="{{ STATIC_URL }}{{img5}}" height="180" width="180"/>
+                    </label>
+                  </label>
+                  <label class="btn btn-sm btn-white">
+                    <input type="radio" name="options" id="option4"> 
+                    <label>
+                      <img src="{{ STATIC_URL }}{{img6}}" height="180" width="180"/>
+                    </label>
+                  </label>
+                </div>
+              </aside>
+            </section>
+            <footer class="panel-footer text-right bg-light lter">
+              <div class="wrapper text-center bg-white font-bold">
+                <button id="no" type="submit" name="submit" class="btn btn-danger btn-lg"><i class="icon-remove icon-2x icon-mutted v-middle"></i> No</button>
+                <button id="yes" type="submit" name="submit" class="btn btn-success btn-lg"><i class="icon-ok icon-2x icon-mutted v-middle"></i> Yes</button>
+              </div>
+            </footer>
+          </section>
+        </form>
+      </div>
+  </div>
+</section>
+{% endblock content %}

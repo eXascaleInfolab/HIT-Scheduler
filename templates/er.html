@@ -1,0 +1,87 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+<script type="application/javascript">
+$(document).ready(function() {
+    $('#yes').click(function() {
+       $(this).button('loading');
+       //$(this).attr('disabled', 'disabled');
+       });
+    $('#no').click(function() {
+       $(this).button('loading');
+       //$(this).attr('disabled', 'disabled');
+       });
+   });
+function showAlert() {
+  $("#ephemera").addClass("out");
+}
+window.setTimeout(function () {
+    showAlert();
+}, 3000);
+</script>
+
+<section class="scrollable wrapper">
+  <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <div class="panel"> 
+          <div class="panel-heading bg-primary"> Item to be matched 
+          </div> 
+          <div class="panel-body text-sm"> 
+                      <small class="text-uc text-xs text-muted">Product's Name</small>
+                      <p>{{item.0}}</p>
+                      <small class="text-uc text-xs text-muted">Product's Price</small>
+                      {% if item.1 %}
+                        <p>{{item.1}}</p>
+                      {% else %}
+                        <p>N/A</p>
+                      {% endif %}   
+           </div> 
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <form data-validate="parsley" role="form" action="{% url "click" task.id %}" method="post">
+          {% csrf_token %}
+          <section class="panel">
+            <header class="panel-heading bg-primary">{{batch.description}}</header>
+              <table class="table-responsive">
+              <table class="table table-striped m-b-none text-sm">
+                <thead>
+                  <tr>
+                    <th width="20"></th>
+                    <th>Item</th>
+                    <th width="20">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for it in items%}
+                  <tr>
+                    <td><input type="radio" name="post[]" value="2"></td>
+                    <td>{{it.0}}</td>
+                    {% if it.1 %}
+                      <td>{{it.1}}</td>
+                    {% else %}
+                      <td>N/A</td>
+                    {% endif %}                  
+                  </tr>
+                  {% endfor %}
+                  <tr>
+                    <td><input type="radio" name="post[]" value="5"></td>
+                    <td>None of the above</td>
+                    <td>N/A</td>
+                  </tr>
+                </tbody>
+              </table>
+            </table>
+              <footer class="panel-footer text-right bg-light lter">
+                <div class="row"> 
+                  <div class="col-sm-12 hidden-xs"> 
+                    <button id="no" type="submit" name="submit" class="btn btn-primary">Submit</button> 
+                  </div>  
+                </div>
+              </footer>
+          </section>
+        </form>
+      </div>
+  </div>
+</section>
+{% endblock content %}
