@@ -7,7 +7,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'train.views.work', name='work'),
+    url(r'^$', 'train.views.welcome', name='welcome'),
     url(r'^batch/(?P<task_id>\d+)/$', 'train.views.work', name='work'),
     url(r'^submit/(?P<task_id>\d+)/$', 'train.views.submit', name='submit'),
     url(r'^accounts/',  include('accounts.urls')),

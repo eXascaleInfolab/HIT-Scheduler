@@ -167,4 +167,5 @@ def submit(request, task_id):
     return HttpResponse('', mimetype="application/javascript")
 
 def welcome(request):
+    print "welome ! "
     return render_to_response('welcome.html', context_instance=RequestContext(request))
