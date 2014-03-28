@@ -40,6 +40,15 @@
       }
 
       </script>
+      <script>
+          // Wait for window load
+          $(window).load(function() {
+              // Animate loader off screen
+              $("#loader").animate({
+                  top: -200
+              }, 1500);
+          });
+      </script>
     <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
