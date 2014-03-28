@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ STATIC_URL }}css/animate.css" type="text/css" />
     <link rel="stylesheet" href="{{ STATIC_URL }}css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="{{ STATIC_URL }}css/font.css" type="text/css" cache="false" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/select2/select2.css" type="text/css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/fuelux/fuelux.css" type="text/css">
     <link rel="stylesheet" href="{{ STATIC_URL }}css/plugin.css" type="text/css" />
     <link rel="stylesheet" href="{{ STATIC_URL }}css/app.css" type="text/css" />
     <!--[if lt IE 9]>
@@ -33,6 +35,8 @@
     <!-- Morris -->
     <script src="{{ STATIC_URL }}js/charts/morris/raphael-min.js" cache="false"></script>
     <script src="{{ STATIC_URL }}js/charts/morris/morris.min.js" cache="false"></script>
+    <script src="{{ STATIC_URL }}js/parsley/parsley.min.js" cache="false"></script>
+    <script src="{{ STATIC_URL }}js/parsley/parsley.extend.js" cache="false"></script>
     <script language="Javascript">
       //
       // This method Gets URL Parameters (GUP)
@@ -62,7 +66,7 @@
   </head>
   <body>
   <section>
-    <header class="header bg-black navbar navbar-inverse">
+<!--     <header class="header bg-black navbar navbar-inverse">
       <div class="collapse navbar-collapse pull-in">
         <ul class="nav navbar-nav m-l-n">
           <li class="active">
@@ -80,21 +84,24 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     {% if user.is_authenticated %}
-    <header>
-      <div class="row b-b m-l-none m-r-none">
+    <div class="header bg-dark">
+      <div class="row m-l-none m-r-none">
         <div class="col-sm-6 col-sm-offset-3">
           <div class="clearfix m-t-lg m-b-sm pull-none-xs">
-            <div class="pull-left">
-              <div class="pull-left m-r-xs">
-                <div id="superchart" class="sparkline inline" data-type="line" data-height="35" data-bar-width="4" data-bar-spacing="2" data-bar-color="#afcf6f">{% for d in data %} {{d}},{% endfor %}</div>
+            <div class="pull-right  m-l-lg">                  
+              <div class="pull-right m-r-xs">
+                <div data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Bonus you will get from this batch upon approval">
+                    <span class="text-muted">Total Bonus:</span>
+                    <span class="h4 text-info block">${{user_profile.credit}}</span>
+                  </div>
               </div>
             </div>
-            <div class="pull-left">
-              <div class="clear">
-                <span class="block">Current Hourly Rate:</span>                    
-                <span class="h4">${{last}}/Hr</span>
+            <div class="pull-right  m-l-lg">
+              <div class="clear" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Speed of the previous HIT you submitted">
+                <span class="text-muted block">Your Last Hourly Rate:</span>                    
+                <span class="h4 text-info">${{last}}/Hour</span>
                 {% if upside%}
                 <i class="icon-level-up text-success"></i>
                 {%else%}
@@ -102,9 +109,9 @@
                 {%endif%}
               </div>
             </div>
-            <div class="pull-right  m-l-lg">                  
-              <div class="pull-right m-r-xs">
-                <button class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Bonus you will get from this batch upon approval."><i class="icon-shopping-cart"></i>Total Bonus: ${{user_profile.credit}}</button>
+            <div class="pull-right  m-l-lg">
+              <div class="pull-left m-r-xs" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Speed of all the HITs you submitted">
+                <div id="superchart" class="sparkline inline" data-type="bar" data-height="35" data-bar-width="4" data-bar-spacing="2" data-bar-color="#fb6b5b">{{data}}</div>
               </div>
             </div>
           </div>
@@ -120,8 +127,8 @@
     if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE" || gup('assignmentId')=="")
     {
       // If we're previewing, disable the button and give it a helpful message
-      document.getElementById('submit').disabled = true;
-      document.getElementById('submit').innerHTML = "You must ACCEPT the HIT before you can submit the results.";
+      document.getElementById('submitButton').disabled = true;
+      document.getElementById('submitButton').innerHTML = "You must ACCEPT the HIT before you can submit the results.";
     } else {
         var form = document.getElementById('mturk_form');
         if (document.referrer && ( document.referrer.indexOf('workersandbox') != -1) ) {

@@ -12,31 +12,30 @@
       });
   });
 </script>
-<input type="hidden" name="assignmentId" id="myAssignmentId" value="<?php echo($assignmentId); ?>" />
-<section class="scrollable wrapper">
+<section class="scrollable wrapper ">
   <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
         <form id="openturk" role="form" action="{% url "submit" task.id %}" method="post">
         </form>
-        <form id="mturk_form" action="http://www.mturk.com/mturk/externalSubmit" method="post">
+        <form data-validate="parsley" id="mturk_form" action="http://www.mturk.com/mturk/externalSubmit" method="post">
           <input type="hidden" id="assignmentId" name="assignmentId" value="">
           <input type="hidden" id="hitId" name="hitId" value="">
             <section class="panel">
-              <header class="panel-heading bg-primary">
+              <header class="panel-heading bg-info">
                 <span class="h4">{{batch.description}}</span>
               </header>
               <div class="panel-body">
-                <span class="h4">{{task.question}}</span>
+                <span class="h3 block">{{task.question}}</span>
                 <hr>                        
                   <div class="form-group">
                   <div class="input-group m-b"> 
-                    <span class="input-group-addon"><i class="icon-phone"></i></span> 
-                    <input type="text" name="phone" class="form-control" placeholder="(---) --- ----"> 
+                    <label>Phone</label> 
+                    <input type="text" class="form-control parsley-validated" data-type="phone" name="phone" placeholder="(XXX) XXXX XXX" data-required="true">
                   </div>
                   </div>
               </div>
               <footer class="panel-footer text-right bg-light lter">
-                <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
+                <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-info">Submit</button>
               </footer>
             </section>
             <input type="hidden" name="bonus" value="{{bonus}}"> 
