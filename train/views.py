@@ -9,7 +9,6 @@ from accounts.models import UserProfile, Batch, Task, TaskSubmit
 from accounts.views import login_view
 from django.contrib.sessions.models import Session
 from datetime import datetime, timedelta
-from tracking.models import Visitor
 from django.db import transaction
 from django.db.models import Sum, Avg, F
 import random

@@ -4,9 +4,11 @@
 <script type="application/javascript">
   $(document).ready(function() {
       $("#submitButton").click(function( event ) {
+        alert('submit 1');
         event.preventDefault();
         $.post($("#openturk").attr("action"),
           function() {
+            alert('try 1');
             $("#mturk_form").submit();
           });
       });
@@ -15,8 +17,7 @@
 <section class="scrollable wrapper ">
   <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
-        <form id="openturk" role="form" action="{% url "submit" task.id %}" method="post">
-        </form>
+        <form id="openturk" role="form" action="{% url "submit" task.id %}" method="post"></form>
         <form data-validate="parsley" id="mturk_form" action="http://www.mturk.com/mturk/externalSubmit" method="post">
           <input type="hidden" id="assignmentId" name="assignmentId" value="">
           <input type="hidden" id="hitId" name="hitId" value="">
