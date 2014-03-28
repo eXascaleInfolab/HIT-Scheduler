@@ -4,12 +4,10 @@
 <script type="application/javascript">
   $(document).ready(function() {
       $("#submitButton").click(function( event ) {
-        alert('submit 1');
         event.preventDefault();
         if ( $("#mturk_form").parsley('validate') ) {
           $.post("{% url "submit" task.id %}",
             function() {
-              alert('try 1');
               $("#mturk_form").submit();
             });
         }
