@@ -1,0 +1,84 @@
+<html><head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/annyang/0.2.0/annyang.min.js"></script>
+    <script>
+  "use strict";
+  $(document).ready(function() {
+    if (annyang) {
+
+      var select = function(number) {
+        switch(number) {
+          case 'one':
+          case 'on':
+          case 1:
+            number = 1;
+            break;
+
+          case 'two':
+          case 'to':
+          case 2:
+            number = 2;
+            break;
+
+          case 'three':
+          case 'tree':
+          case 3:
+            number = 3;
+            break;
+        }
+
+        $('input:radio[name=myRadioButton]:nth('+(number-1)+')').attr('checked', true);
+        console.log(number);
+      }
+
+      var submit = function() {
+        console.log('submit');
+        $('#hit').submit();
+      };
+
+      var selectandsubmit = function(number) {
+        console.log('select and submit');
+        select(number);
+        submit();
+      };
+
+      var reset = function() {
+        console.log('reset');
+        $('input:radio[name=myRadioButton]').attr('checked',false);
+      };
+
+      var commands = {
+        'select :number': select,
+        'go': submit,
+        'go :number': selectandsubmit,
+        'reset': reset
+      };
+
+      annyang.debug();
+      annyang.init(commands);
+      annyang.setLanguage('en');
+
+      annyang.start();
+    } else {
+      console.log('failed to load annyang');
+    }
+  });
+    </script>
+  </head>
+  <body style="">
+    <form id="hit">
+      <input type="radio" name="myRadioButton" value="one">One
+      <input type="radio" name="myRadioButton" value="two">Two
+      <input type="radio" name="myRadioButton" value="three">Three
+    </form>
+    <p>Available vocal commands :</p>
+    <ul>
+      <li>to select a number, say "select *number*"</li>
+      <li>to submit the form, say "go"</li>
+      <li>to reset your choice, say "reset"</li>
+      <li>to select and submit, say "go *number*"</li>
+    </ul>
+    <p>Don't forget to watch the developer console</p>
+  
+
+</body></html>
