@@ -1,7 +1,7 @@
-Django==1.5.4
+Django==1.6.2
 distribute==0.6.27
 dj-static==0.0.5
+django-crispy-forms==1.4.0
 pytz==2013d
 static==0.4
 wsgiref==0.1.2
-django-crispy-forms>=1.4.0
