@@ -1,1 +1,1 @@
-web: gunicorn fast.wsgi
+web: gunicorn train.wsgi
