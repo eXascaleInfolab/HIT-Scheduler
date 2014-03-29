@@ -1,7 +1,8 @@
 import os.path
 from os.path import abspath, dirname, basename, join
 
-DEBUG = True
+#DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 PROJECT_DIR = os.path.dirname(__file__)

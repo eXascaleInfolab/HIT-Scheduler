@@ -30,6 +30,7 @@ def work(request,task_id):
     print workerId
     if request.user.is_authenticated() == False:
         if workerId != None:
+            print "new with id ", workerId
             user = authenticate(username=workerId, password="cool")
             if user is not None:
                 print "user is back !"
@@ -42,10 +43,13 @@ def work(request,task_id):
                 user_profile = UserProfile.objects.create(user=request.user)
                 user_profile.save()
         else:
+            print "new without id"
             return render_to_response('welcome.html', context_instance=RequestContext(request))
-
+    else: 
+        print "super, user is back: ", request.user
+    print "super, user is here: ", request.user
     if task_id == None:
-        return render_to_response('error.html', {'user_profile':user_profile}, context_instance=RequestContext(request))
+        return render_to_response('error.html', context_instance=RequestContext(request))
 
     # this is by default ..
     batch = Batch.objects.get(id=1)

@@ -1,4 +1,3 @@
-{% load i18n static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,15 +38,6 @@
         return unescape(encoded.replace(/\+/g,  " "));
       }
 
-      </script>
-      <script>
-          // Wait for window load
-          $(window).load(function() {
-              // Animate loader off screen
-              $("#loader").animate({
-                  top: -200
-              }, 1500);
-          });
       </script>
     <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -116,6 +106,11 @@
         }
     }
 
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#welcomebody').show();
+});
 </script>
 </body>
 </html>
