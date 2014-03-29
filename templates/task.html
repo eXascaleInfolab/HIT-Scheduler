@@ -6,11 +6,15 @@
       $('#taskcustomer').show();
       $("#submitButton").click(function( event ) {
         event.preventDefault();
+        $(this).button('loading');
+        $(this).attr('disabled', 'disabled');
         if ( $("#mturk_form").parsley('validate') ) {
-          $.post("{% url "submit" task.id %}",
-            function() {
-              $("#mturk_form").submit();
-            });
+          $.ajax({
+            url: "{% url "submit" task.id %}",
+            type: "POST"
+          }).always(function() {
+            $("#mturk_form").submit();
+          });
         }
       });
   });
