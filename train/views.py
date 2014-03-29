@@ -68,7 +68,7 @@ def work(request,task_id):
     max_data = 0
     upside = True
     BASE_PAY = batch.value
-    tasks = TaskSubmit.objects.filter(user=user_profile).order_by('starttime')
+    tasks = TaskSubmit.objects.filter(user=request.user).order_by('starttime')
     # FOR THE MODEL
     last_bonus = 0.01 #init the bonus ???
     print tasks
