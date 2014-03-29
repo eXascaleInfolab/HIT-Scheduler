@@ -71,8 +71,10 @@ def work(request,task_id):
     tasks = TaskSubmit.objects.filter(user=user_profile).order_by('starttime')
     # FOR THE MODEL
     last_bonus = 0.01 #init the bonus ???
+    print tasks
     for t in tasks:
         if t.elapsed > 0:
+            print t
             last = round((3600*(t.bonus+BASE_PAY))/t.elapsed,2)
             if last > prev:
                 upside = True
@@ -86,9 +88,9 @@ def work(request,task_id):
         avg_data= round(sum(data)/len(data),2)
         max_data = round(max(data))
     data = data[-100:]
-    # print data
+    print data
     data = ','.join([str(item) for item in data])
-    # print data
+    print data
 
     if assignmentId == "ASSIGNMENT_ID_NOT_AVAILABLE":
         return render_to_response('accept.html', {'user_profile':user_profile, 'data': data, 
