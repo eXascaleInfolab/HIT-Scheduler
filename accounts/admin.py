@@ -25,7 +25,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 class TaskSubmitAdmin(admin.ModelAdmin):
     list_display = ('user', 'task', 'elapsed', 'bonus')
 
-admin.site.register(Job)
+admin.site.register(TaskSubmit)
 admin.site.register(TaskSubmit, TaskSubmitAdmin)
 
 admin.site.register(Batch, BatchAdmin)
