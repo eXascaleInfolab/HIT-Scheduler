@@ -6,8 +6,6 @@
       $('#taskcustomer').show();
       $("#submitButton").click(function( event ) {
         event.preventDefault();
-        $(this).button('loading');
-        $(this).attr('disabled', 'disabled');
         if ( $("#mturk_form").parsley('validate') ) {
           $.post("{% url "submit" task.id %}",
             function() {
