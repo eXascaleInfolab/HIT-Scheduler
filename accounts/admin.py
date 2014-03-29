@@ -1,5 +1,5 @@
 from django.contrib import admin
-from accounts.models import Batch,Task, UserProfile
+from accounts.models import Batch,Task, UserProfile, TaskSubmit
 
 class TaskAdmin(admin.ModelAdmin):
     fieldsets = [
@@ -19,9 +19,14 @@ class BatchAdmin(admin.ModelAdmin):
     inlines = [TaskInline]
 
 class UserProfileAdmin(admin.ModelAdmin):
-    fieldsets = [
-        (None,               {'fields': ['user','credit','score']}),
-    ]
+    list_display=('user','credit','score')
+
+
+class TaskSubmitAdmin(admin.ModelAdmin):
+    list_display = ('user', 'task', 'elapsed', 'bonus')
+
+admin.site.register(Job)
+admin.site.register(TaskSubmit, TaskSubmitAdmin)
 
 admin.site.register(Batch, BatchAdmin)
 admin.site.register(UserProfile, UserProfileAdmin)
