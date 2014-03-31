@@ -5,7 +5,7 @@
     "fields": {
       "finishtime": null,
       "name": "Company Customer Service Phone",
-      "value": 0.01,
+      "value": 0.02,
       "numtask": 200,
       "bclass": "data",
       "runtask": 0,
