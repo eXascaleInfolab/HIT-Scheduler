@@ -70,7 +70,7 @@ def work(request,task_id):
     BASE_PAY = batch.value
     tasks = TaskSubmit.objects.filter(user=request.user).order_by('starttime')
     # FOR THE MODEL
-    last_bonus = 0.0712 #init the bonus ???
+    # last_bonus = 0.0712 #init the bonus ???
     print tasks
     for t in tasks:
         if t.elapsed > 0:
@@ -83,7 +83,7 @@ def work(request,task_id):
             prev = last
             data.append(last)
             #FOR THE MODEL
-            last_bonus = t.bonus 
+            # last_bonus = t.bonus 
     if len(data) >0 :
         avg_data= round(sum(data)/len(data),2)
         max_data = round(max(data))
@@ -109,8 +109,8 @@ def work(request,task_id):
     # 1) do it constant :
     print assigned, assigned.id
     # FOR THE MODEL
-    bonus = last_bonus - 0.0012
-    # UNIFORM: bonus = 0.01
+    # bonus = last_bonus - 0.0012
+    bonus = 0.04
     
     assigned.bonus = bonus
     assigned.save()
