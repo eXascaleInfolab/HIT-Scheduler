@@ -93,7 +93,7 @@ def work(request,task_id):
     print data
 
     if assignmentId == "ASSIGNMENT_ID_NOT_AVAILABLE":
-        return render_to_response('accept.html', {'user_profile':user_profile, 'data': data, 
+        return render_to_response('accept.html', {'user_profile':user_profile, 'data': data, 'batch': batch,
             'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside}, context_instance=RequestContext(request))
 
     # get the task
@@ -102,7 +102,7 @@ def work(request,task_id):
     try: 
         assigned, created= TaskSubmit.objects.get_or_create(user=request.user,task=task, elapsed=0)
     except IntegrityError as e:
-        return render_to_response('done.html', {'user_profile':user_profile, 'data': data, 
+        return render_to_response('done.html', {'user_profile':user_profile, 'data': data, 'batch': batch,
             'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside}, context_instance=RequestContext(request))
 
     ## Run some model and assign the bonus !!
@@ -113,7 +113,7 @@ def work(request,task_id):
     bonus = last_bonus + 0.0012
     # Desc: bonus = last_bonus + 0.0012
     # Uniform: bonus = 0.04
-        
+
     assigned.bonus = bonus
     assigned.save()
     print "assigned price:", assigned.bonus
