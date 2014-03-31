@@ -184,5 +184,6 @@ def submit(request, task_id):
     return HttpResponse('', mimetype="application/javascript")
 
 def welcome(request):
-    print "welome ! "
-    return render_to_response('welcome.html', context_instance=RequestContext(request))
+    print "welcome ! "
+    batch = Batch.objects.get(id=1)
+    return render_to_response('welcome.html', {'bonus': bonus}, context_instance=RequestContext(request))
