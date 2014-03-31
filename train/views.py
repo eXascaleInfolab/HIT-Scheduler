@@ -115,7 +115,7 @@ def work(request,task_id):
     # bonus = last_bonus + 0.001
     # Desc: bonus = last_bonus + 0.0012
     # Uniform: 
-    bonus = 0.01
+    bonus = 0.03
 
     assigned.bonus = bonus
     assigned.save()
