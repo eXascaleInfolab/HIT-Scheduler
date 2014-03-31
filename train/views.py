@@ -112,10 +112,10 @@ def work(request,task_id):
     print assigned, assigned.id
     # FOR THE MODEL
     # Asc:
-    bonus = last_bonus + 0.001
+    # bonus = last_bonus + 0.001
     # Desc: bonus = last_bonus + 0.0012
     # Uniform: 
-    # bonus = 0.04
+    bonus = 0.01
 
     assigned.bonus = bonus
     assigned.save()
