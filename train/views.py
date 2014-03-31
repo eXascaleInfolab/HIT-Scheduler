@@ -70,7 +70,7 @@ def work(request,task_id):
     BASE_PAY = batch.value
     tasks = TaskSubmit.objects.filter(user=request.user).order_by('starttime')
     # FOR THE MODEL
-    last_bonus = 0.01 #init the bonus ???
+    last_bonus = 0.01 #init the bonus ???  0.0712
     print tasks
     for t in tasks:
         if t.elapsed > 0:
@@ -109,9 +109,11 @@ def work(request,task_id):
     # 1) do it constant :
     print assigned, assigned.id
     # FOR THE MODEL
+    # Asc:
     bonus = last_bonus + 0.0012
-    bonus = 0.04
-    
+    # Desc: bonus = last_bonus + 0.0012
+    # Uniform: bonus = 0.04
+        
     assigned.bonus = bonus
     assigned.save()
     print "assigned price:", assigned.bonus
