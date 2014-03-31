@@ -71,7 +71,7 @@
               <div class="pull-right m-r-xs">
                 <div data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Total extra bonus you will get from this batch upon approval">
                     <span class="text-muted">Total Bonus:</span>
-                    <span class="h4 text-danger block">${{user_profile.credit}}</span>
+                    <span class="h4 text-success block">${{user_profile.credit}}</span>
                   </div>
               </div>
             </div>
@@ -79,14 +79,14 @@
               <div class="pull-right m-r-xs">
                 <div data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Extra bonus you will get for this single HIT upon approval">
                     <span class="text-muted">Bonus:</span>
-                    <span class="h4 text-danger block">${% if bonus%}{{bonus}}{%else%}-.--{%endif%}</span>
+                    <span class="h4 text-success block">${% if bonus%}{{bonus}}{%else%}-.--{%endif%}</span>
                   </div>
               </div>
             </div>
             <div class="pull-right  m-l-lg">
               <div class="clear" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Speed of the previous HIT you submitted">
                 <span class="text-muted block">Last Hourly Rate:</span>                    
-                <span class="h4 text-danger">${{last}}/Hour</span>
+                <span class="h4 text-success">${{last}}/Hour</span>
                 {% if upside%}
                 <i class="icon-level-up text-success"></i>
                 {%else%}
