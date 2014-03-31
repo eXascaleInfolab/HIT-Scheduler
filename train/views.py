@@ -186,4 +186,4 @@ def submit(request, task_id):
 def welcome(request):
     print "welcome ! "
     batch = Batch.objects.get(id=1)
-    return render_to_response('welcome.html', {'bonus': bonus}, context_instance=RequestContext(request))
+    return render_to_response('welcome.html', {'batch': batch}, context_instance=RequestContext(request))
