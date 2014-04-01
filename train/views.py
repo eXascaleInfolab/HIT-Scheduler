@@ -23,6 +23,9 @@ import ast
 
 # Core method
 def work(request,task_id):
+    num_users = UserProfile.count();
+    if num_users >= 5:
+        return render_to_response('error.html', context_instance=RequestContext(request))
     print "giving !!!!!!"
     # Some user management with mturk
     workerId = request.GET.get('workerId')
@@ -112,7 +115,7 @@ def work(request,task_id):
     print assigned, assigned.id
     # FOR THE MODEL
     # Asc:
-    bonus = last_bonus + 0.0012
+    bonus = last_bonus + 0.001
     # Desc: bonus = last_bonus + 0.0012
     # Uniform: 
     # bonus = 0.03
