@@ -187,6 +187,9 @@ def submit(request, task_id):
     return HttpResponse('', mimetype="application/javascript")
 
 def welcome(request):
+    num_users = UserProfile.objects.count();
+    if num_users >= 5:
+        return render_to_response('error.html', context_instance=RequestContext(request))
     print "welcome ! "
     batch = Batch.objects.get(id=1)
     return render_to_response('welcome.html', {'batch': batch}, context_instance=RequestContext(request))
