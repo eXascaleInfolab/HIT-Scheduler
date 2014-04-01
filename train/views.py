@@ -23,7 +23,7 @@ import ast
 
 # Core method
 def work(request,task_id):
-    num_users = UserProfile.count();
+    num_users = UserProfile.objects.count();
     if num_users >= 5:
         return render_to_response('error.html', context_instance=RequestContext(request))
     print "giving !!!!!!"
