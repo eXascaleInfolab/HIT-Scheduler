@@ -1,2 +1,3 @@
-rm customer.db
-./manage.py syncdb --noinput
+dropdb train
+createdb train
+./manage.py syncdb

@@ -153,6 +153,10 @@ def work(request,task_id):
         return render_to_response('task.html', {'user_profile':user_profile, 'task':task, 'bonus': bonus,  
             'data': data, 'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside, 'batch':batch}, 
             context_instance=RequestContext(request))
+    elif batch.bclass == "classify":
+        return render_to_response('flies.html', {'user_profile':user_profile, 'task':task, 'bonus': bonus,  
+            'data': data, 'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside, 'batch':batch}, 
+            context_instance=RequestContext(request))
     else:
         return render_to_response('error.html', {'user_profile':user_profile}, context_instance=RequestContext(request))
 
