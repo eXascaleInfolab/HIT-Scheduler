@@ -24,7 +24,7 @@ import ast
 # Core method
 def work(request,task_id):
     num_users = UserProfile.objects.count();
-    if num_users >= 5:
+    if num_users >= 50:
         return render_to_response('error.html', context_instance=RequestContext(request))
     print "giving !!!!!!"
     # Some user management with mturk
@@ -73,7 +73,7 @@ def work(request,task_id):
     BASE_PAY = batch.value
     tasks = TaskSubmit.objects.filter(user=request.user).order_by('starttime')
     # FOR THE MODEL
-    last_bonus = 0.01 #asc
+    last_bonus = 0.0002 #asc
     # last_bonus = 0.0712 #desc
     # last_bonus = 0.04 #uni
     print tasks
@@ -115,7 +115,7 @@ def work(request,task_id):
     print assigned, assigned.id
     # FOR THE MODEL
     # Asc:
-    bonus = last_bonus + 0.001
+    bonus = last_bonus + 0.0004
     # Desc: bonus = last_bonus + 0.0012
     # Uniform: 
     # bonus = 0.03
@@ -192,7 +192,7 @@ def submit(request, task_id):
 
 def welcome(request):
     num_users = UserProfile.objects.count();
-    if num_users >= 5:
+    if num_users >= 50:
         return render_to_response('error.html', context_instance=RequestContext(request))
     print "welcome ! "
     batch = Batch.objects.get(id=1)
