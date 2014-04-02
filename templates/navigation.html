@@ -113,7 +113,9 @@
   {% block content %}{% endblock content %}
 
   <script language="Javascript">
-    document.getElementById('assignmentId').value = gup('assignmentId');
+    if( document.getElementById('assignmentId') ){
+      document.getElementById('assignmentId').value = gup('assignmentId');
+    }
     if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE" || gup('assignmentId')=="")
     {
       // If we're previewing, disable the button and give it a helpful message
