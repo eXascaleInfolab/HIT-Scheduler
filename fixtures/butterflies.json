@@ -1,0 +1,918 @@
+[
+  {
+    "pk": 1,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Classify a butterfly image into its specie",
+      "value": 0.01,
+      "numtask": 200,
+      "bclass": "classify",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Classify a butterfly image into its specie. We have 7 species, please take your time to learn a bit about each one (wikipedia) to complete the task faster."
+    }
+  },
+  {
+    "pk": 1,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm032.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 2,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno037.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa037.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 4,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm031.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 5,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea016.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 6,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa006.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 7,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa024.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 8,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea021.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 9,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno040.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 10,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea035.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 11,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa016.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 12,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno002.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 13,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch038.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 14,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb025.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 15,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa010.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 16,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea029.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 17,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc023.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 18,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm025.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 19,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno019.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 20,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno039.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 21,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa032.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 22,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm040.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 23,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm040.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 24,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm038.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 25,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb018.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 26,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc027.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 27,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm010.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 28,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno003.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 29,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm030.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 30,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea016.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 31,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm012.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 32,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno007.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 33,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc039.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 34,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea033.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 35,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea005.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 36,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm028.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 37,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc013.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 38,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm028.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 39,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb017.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 40,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb025.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 41,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc040.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 42,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno036.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 43,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm035.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 44,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea029.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 45,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea020.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 46,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea016.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 47,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea024.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 48,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch032.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 49,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm024.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 50,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno033.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 51,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm005.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 52,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch017.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 53,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea018.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 54,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno002.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 55,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb018.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 56,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa033.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 57,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc022.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 58,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb018.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 59,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc023.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 60,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch027.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 61,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno034.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 62,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc040.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 63,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb021.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 64,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea028.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 65,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc001.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 66,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb030.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 67,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa013.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 68,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm001.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 69,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc038.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 70,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno007.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 71,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch004.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 72,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea026.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 73,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa005.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 74,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb012.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 75,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch041.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 76,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb014.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 77,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb001.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 78,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc038.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 79,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc009.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 80,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa004.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 81,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc015.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 82,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm012.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 83,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm035.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 84,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_open/mno017.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 85,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch027.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 86,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea035.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 87,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb006.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 88,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch028.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 89,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm011.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 90,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch012.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 91,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea041.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 92,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "admiral/adm039.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 93,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa016.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 94,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "machaon/mch011.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 95,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "black_swallowtail/swa020.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 96,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "zebra/zeb040.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 97,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea004.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 98,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc024.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 99,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "monarch_closed/mnc001.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 100,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 1,
+      "question": "peacock/pea021.jpg",
+      "choice": ""
+    }
+  }
+]
