@@ -1,4 +1,6 @@
 from django.contrib import admin
+from django.contrib.admin import SimpleListFilter
+from django.utils.translation import ugettext_lazy as _
 from accounts.models import Batch,Task, UserProfile, TaskSubmit
 
 class TaskAdmin(admin.ModelAdmin):
@@ -24,6 +26,7 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 class TaskSubmitAdmin(admin.ModelAdmin):
     list_display = ('user', 'task', 'elapsed', 'bonus')
+    list_filter = ('user',)
 
 admin.site.register(TaskSubmit, TaskSubmitAdmin)
 admin.site.register(Batch, BatchAdmin)
