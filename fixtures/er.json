@@ -4,16 +4,15 @@
     "model": "accounts.batch",
     "fields": {
       "finishtime": null,
-      "name": "celebrities join",
+      "name": "Match Items from a list, based on description and price",
       "value": 0.01,
-      "numtask": 96,
-      "bclass": "er_multi",
+      "numtask": 200,
+      "bclass": "classify",
       "runtask": 0,
-      "done": false,
       "deadline": "2013-09-25T11:21:25Z",
       "repetition": 3,
       "pulication": "2013-09-25T11:21:18Z",
-      "description": "Select the closest matching item based on description and price."
+      "description": "Given an item description and its price, match the closest item from the presented list."
     }
   },
 

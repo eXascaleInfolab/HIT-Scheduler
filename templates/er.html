@@ -27,14 +27,17 @@
           </div> 
           <div class="panel-body text-sm"> 
                       <small class="text-uc text-xs text-muted">Product's Name</small>
-                      <p>{{item.0}}</p>
+                      <p><h5>{{item.0}}</h5></p>
                       <small class="text-uc text-xs text-muted">Product's Price</small>
                       {% if item.1 %}
-                        <p>{{item.1}}</p>
+                        <p><h5>{{item.1}}</h5></p>
                       {% else %}
-                        <p>N/A</p>
+                        <p><h5>Not Available (N/A)</h5></p>
                       {% endif %}   
            </div> 
+        </div>
+                <div class="alert alert-info alert-block">
+          <h6>*Hourly Rate is defined as: The reward + The extra bonus, divided by the time to finish the HIT.</h6>
         </div>
       </div>
       <div class="col-sm-4">
@@ -56,7 +59,7 @@
                 <tbody>
                   {% for it in items%}
                   <tr>
-                    <td><input type="radio" name="post[]" value="2"></td>
+                    <td><input type="radio" name="answer" value="ans{{ forloop.counter }}"></td>
                     <td>{{it.0}}</td>
                     {% if it.1 %}
                       <td>{{it.1}}</td>
@@ -66,9 +69,9 @@
                   </tr>
                   {% endfor %}
                   <tr>
-                    <td><input type="radio" name="post[]" value="5"></td>
+                    <td><input type="radio" name="post[]" value="na"></td>
                     <td>None of the above</td>
-                    <td>N/A</td>
+                    <td>.</td>
                   </tr>
                 </tbody>
               </table>
@@ -76,7 +79,7 @@
               <footer class="panel-footer text-right bg-light lter">
                 <div class="row"> 
                   <div class="col-sm-12 hidden-xs"> 
-                    <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-info">Submit</button>
+                    <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
                   </div>  
                 </div>
               </footer>
@@ -84,9 +87,6 @@
             {% csrf_token %}
           </section>
         </form>
-      </div>
-      <div class="alert alert-info alert-block">
-        <h6>*Hourly Rate is defined as: The reward + The extra bonus, divided by the time to finish the HIT.</h6>
       </div>
   </div>
 </section>
