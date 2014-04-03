@@ -6,7 +6,7 @@
       "finishtime": null,
       "name": "celebrities join",
       "value": 0.01,
-      "numtask": 200,
+      "numtask": 96,
       "bclass": "er_multi",
       "runtask": 0,
       "done": false,
@@ -16,3362 +16,993 @@
       "description": "Select the closest matching item based on description and price."
     }
   },
-  {
-      "pk": 751,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Bose Acoustimass 5 Series III Speaker System - AM53BK', '$399.00'), ('Bose Acoustimass 5 Series III Speaker System - 21725', '$359.00')]",
-        "choice": "yes, no"
-      }
-    },
 
   {
-      "pk": 752,
+      "pk": 1,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Denon Stereo Tuner - TU1500RD', '$375.00'), ('Denon TU-1500RD Stereo Radio Tuner - TU1500RD', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 753,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('KitchenAid Pasta Roller And Cutter - KPRA', ''), ('KitchenAid Pasta Roller And Cutter - KPRA', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 754,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Cuisinart Convection-Oven-Toaster-Broiler With Exact Heat Sensor - TOB165WH', '$149.00'), ('Cuisinart TOB-195 Cuisinart Exact Heat Convection Toaster Oven Broiler - TOB195', '$178.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 755,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Frigidaire 24` White Built-In Dishwasher - FDB130WH', '$229.00'), ('Frigidaire FDB130RGS 24` Built-In Dishwasher (White)', '$246.54')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 756,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Compact Disc Player/Recorder - RCDW500C', '$299.00'), ('Sony Compact Disc Player/Recorder - RCDW500C', '$219.76')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 757,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Super Audio CD Player - SCDCE595', '$149.00'), ('Sony SCD-CE595 CD Player - SCDCE595', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 758,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Omnimount TV Top Shelf Mount - CCH1P', ''), ('OmniMount TV Top Shelf Mount', '$21.49'), ('OmniMount TV Top Shelf Mount - CCH1P', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 759,
+      "pk": 2,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Omnimount TV Top Shelf Mount - CCH1B', ''), ('OmniMount TV Top Shelf Mount', '$21.49'), ('OmniMount TV Top Shelf Mount - CCH1P', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 760,
+      "pk": 3,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Delonghi Twenty Four Seven Coffee Maker In Black - DC50B', '$22.00'), ('DeLonghi DC50B Twenty Four Seven Drip Coffee Maker Black', '$22.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 761,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sanus Silver LCD Television Turntable - TVLCDS', '$29.99'), ('Sanus Television Turntable - TV/LCDS', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 762,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Frigidaire 27` Electric Stack Washer Dryer Combo - FEX831WH', ''), ('Frigidaire 27`` Electric Stack Washer Dryer Combo - FEX831WH Extra-Large Capacity Wash Tub', '$895.39')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 763,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Rechargeable Battery - 9763A001', ''), ('Canon NB-4L Rechargeable Camera Battery - 9763A001', '$36.89')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 764,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Delonghi Twenty Four Seven Coffee Maker - DC50W', '$22.00'), ('DeLonghi DC50B Twenty Four Seven Drip Coffee Maker Black', '$22.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 765,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Universal IR/RF Remote - MX350', '$149.95'), ('Universal Aeros IR/RF Remote Control - MX850', '$256.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 766,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Universal IR/RF Aeros Remote Control- MX850 - MX850', '$399.95'), ('Universal Aeros IR/RF Remote Control - MX850', '$256.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 767,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 13` - 30` VisionMount Flat Panel TV Silver Wall Mount - VMFS', '$39.99'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 768,
+      "pk": 4,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 13` - 30` Flat Panel TV Black Wall Mount - VM1B', '$69.99'), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 769,
+      "pk": 5,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 15` - 40` Flat Panel TV Silver Wall Mount - VM400S', '$219.99'), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 770,
+      "pk": 6,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 15` - 40` Flat Panel TV Black Wall Mount - VM400B', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 771,
+      "pk": 7,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Mosquito Magnet Defender Replacement Net - MM4000NET1', ''), ('Mosquito Magnet Defender Net (replacement)', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 772,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Soft Cyber-Shot Carrying Case - LCSCST', '$14.00'), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 773,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sanus Universal Projector Ceiling Mount -  Black Finish - VMPR1B', '$129.99'), ('Sanus Universal Projector Ceiling Mount - VMPR1B', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 774,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Kenwood iPod Mobile Interface - KCAIP500', '$49.99'), ('Kenwood KCA-IP500 iPod Interface/Controller - KCAIP500', '$47.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 775,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 32` - 84` Flat Panel TV Black Tilting Wall Mount - VMPL3B', ''), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 776,
+      "pk": 8,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony DVD-R Recordable Camcorder Media - 3DMR30L1H', '$9.99'), ('Sony Mini DVD-R Media - 3DMR30L1H', '$6.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 777,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Cyan Photo Ink Cartridge - Cyan - CLI8PC', '$16.00'), ('Canon CLI-8PC Photo Cyan Ink Cartridge - 0624B002', '$13.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 778,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Magenta Photo Ink Cartridge - Magenta - CLI8PM', '$16.00'), ('Canon CLI-8PM Photo Magenta Ink Cartridge - 0625B002', '$13.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 779,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Yellow Ink Cartridge - Yellow - CLI8Y', '$16.00'), ('Canon CLI-221 Yellow Ink Cartridge - 2949B001', '$11.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 780,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon Black Ink Cartridge - Black - PG40BK', '$19.00'), ('Canon PGI-5BK Black Ink Cartridge - 0628B002', '$14.99'), ('Canon CLI-221 Black Ink Cartridge - 2946B001', '$11.99'), ('Canon Black Ink Cartridge - 0615B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 781,
+      "pk": 9,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony VAIO Neoprene Notebook With AC Adapter Case - Black Finish - VGPAMC2', '$24.00'), ('Sony VAIO Notebook and AC Adapter Case - VGPAMC2', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 782,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('NetGear ProSafe 24 Port Smart Switch - FS726TP', '$605.00'), ('Netgear ProSafe FS726TP 24 Port 10/100 Smart Switch - FS726TPNA', ''), ('Netgear ProSafe GS724TP 24 Port Smart Switch with PoE - GS724TP-100NAS', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 783,
+      "pk": 10,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('GE Platinum HDTV Millennium TV Antenna - TV24734', ''), ('GE Millennium TV Antenna - 24734', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 784,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Memory Stick Duo Replacement Adaptor - Silver/Blue Finish - MSACM2', ''), ('Sony Memory Stick Duo Replacement Adapter - MSACM2', '$19.48')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 785,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Logitech Harmony 890 Advanced Universal Remote Control - H890', ''), ('Logitech Harmony 1000 Advanced Universal Remote Control - 966230-0403', ''), ('Logitech Harmony One Advanced Universal Remote Control - 915-000035', '$179.99'), ('Logitech Harmony 890 Advanced Universal Remote - 966193-0403', '$248.90')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 786,
+      "pk": 11,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sennheisser Hi-Fi Wireless Headphone - RS120', ''), ('Sennheiser RS 120 Wireless Hi-fi Headphone - RS120', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 787,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sanus Center Channel Speaker Mount - Black Finish - VMCC1B', '$99.99'), ('Sanus Center Channel Speaker Mount - VMCC1B', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 788,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 32` - 50` Flat Panel TV Black Wall Mount - VMPL50B', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 789,
+      "pk": 12,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Netgear RangeMax Wireless Access Point - White Finish - WPN802NA', '$130.00'), ('Netgear RangeMax WPN802 Wireless Access Point - WPN802NA', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 790,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Universal RF Series MasterControl Remote Control - RF20', '$79.99'), ('Universal MasterControl Universal Learning Remote Control - RF20', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 791,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Learning Remote Control - Silver Finish - RMVL600', ''), ('Sony Learning Remote Control - RMVL600', '$19.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 792,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('KitchenAid 5-Speed Blender - Red Finish - KSB560ER', ''), ('KitchenAid 5-Speed Blender - Red Finish - KSB560ER', '$106.98')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 793,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony DSCH2 Soft Carrying Camera Case - Black Finish - LCSCSH', ''), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 794,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Omnimount Moda 2 Shelf Wall Furniture - MWFS', '$299.00'), ('OmniMount MWFS Moda Collection 2 Shelf Wall Mounted Furniture System - Espresso', '$158.16')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 795,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Denon Progressive Scan Universal DVD Player - DVD2930CI', '$849.00'), ('Denon DVD-2930CI DVD Player - DVD2930CI', '$448.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 796,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Olympus Digital Camera Neoprene Soft Case - Black With Grey Finish - 202066', ''), ('Olympus Neoprene Soft Camera Case - 202066', '$11.89')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 797,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 15` To 40` Flat Panel Black TV Wall Mount - ML22B1', ''), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 798,
+      "pk": 13,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Olympus Premium Slim Leather Case In Black - 202087', ''), ('Olympus Slim Leather Case - 202087', '$18.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 799,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 15` - 40` VisionMount Flat Panel TV Black Wall Mount - MT25B1', '$99.99'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 800,
+      "pk": 14,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Nikon 70-300mm f/4.5-5.6G ED-IF AF-S VR Zoom-Nikkor Lens - 2161', ''), ('Nikon 55-200mm f/4-5.6G ED IF AF-S DX VR Zoom Telephoto Nikkor Lens - Niko_216687518', '$189.95'), ('Nikon Nikkor 70-300mm f/4.5-5.6G ED-IF AF-S VR Telephoto Zoom Lens - 2161', '$449.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 801,
+      "pk": 15,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 15` - 40` VisionMount Flat Panel TV Black Wall Mount - MF110B', '$179.99'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 802,
+      "pk": 16,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Garmin 010-10702-00 Black GA 25MCX Remote GPS Antenna - 0101070200', '$30.00'), ('Garmin GA 25MCX Low Profile Remote GPS Antenna - 010-10702-00', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 803,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Whirlpool WED6400SB Cabrio Super Capacity Plus Electric Black Dryer - WED6400SBK', ''), ('WED6400SB Cabrio Super Capacity Plus Electric Black Dryer', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 804,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Wireless-G VPN Broadband Silver Router - WRV54G', '$149.00'), ('Linksys WRV54G Wireless-G VPN Broadband Router', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 805,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Bose SL2 Wireless Black Surround Link - SL2WIRELESS', '$249.00'), ('Bose SL2 Wireless Surround Link', '$249.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 806,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon PGI-5BK Black Ink Tank Cartridge - PGI5BK', '$16.00'), ('Canon PGI-5BK Black Ink Cartridge - 0628B002', '$14.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 807,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Charger And Rechargable AA Battery Kit - 1169B001', ''), ('Canon Battery and Charger Kit - 1169B001', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 808,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Monster PS3 CV/FO-10 Playstation 3 GameLink Component Video And Fiber Optic Digital Audio AV Kit - PS3CVFO10', ''), ('Monster Cable GameLink Component Video and Fiber Optic Digital Audio Cable for PlayStation 3 - 3 x RCA - Toslink - 10ft - PS3 CV/FO-10', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 809,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Monster PS3 HDMI-2M Playstation 3 GameLink HDMI Digital Video/Audio Cable - PS3HDMI2M', ''), ('Monster Cable GameLink HDMI Digital Video/Audio Cable for PlayStation 3 - 1 x HDMI - 6.56ft - PS3 HDMI-2M', '$55.79')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 810,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Logitech Harmony RF Wireless Extender - RFEXT', ''), ('Logitech Harmony RF Extender - 915-000044', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 811,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Belkin F3H982-10 Pro Series High Integrity 10 Feet Monitor Cable - F3H98210', ''), ('Belkin Pro Series High Integrity VGA/SVGA Monitor Extension Cable - F3H982-10', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 812,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Kenwood KCA-IP200 Black iPod Direct Cable - KCAIP200', ''), ('Kenwood iPod Direct Cable - kcaip200', '$19.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 813,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Kenwood KCA-IP300V iPod Video Direct Cable - KCAIP300V', '$49.99'), ('Kenwood iPod-Video Direct Adapter - KCAiP300V', '$26.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 814,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony SCPH-98046 PlayStation 3 Blu-Ray DVD Remote Control - 711719804604', '$24.99'), ('Sony Playstation 3 Blu-Ray DVD Remote - 98046', '$18.44')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 815,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Tripp-Lite PV375 PowerVerter 375-Watt Ultra-Compact Inverter - PV375', '$49.00'), ('Tripp Lite PowerVerter 375-Watt Ultra-Compact Inverter - PV375', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 816,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sirius FMDA25 Wired FM Modulation Relay - FMDA25', '$20.00'), ('SIRIUS FMDA25 Wired FM Relay Kit', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 817,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony LCS-CSJ Black Soft Carrying Case - LCSCSJ', ''), ('Sony LCS-CSH Soft Camera Case - LCSCSH', ''), ('Sony LCS-CSJ Soft Camera Case - LCSCSJ', ''), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 818,
+      "pk": 17,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony LCS-CSQ/B Black Soft Carrying Case - LCSCSQB', ''), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95'), ('Sony LCS-CSQ Soft Cyber-shot Camera Case - LCSCSQ/B', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 819,
+      "pk": 18,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony VAIO VGP-PRSZ1 SZ Series Docking Station - VGPPRSZ1', '$199.00'), ('Sony VAIO SZ Series Docking Station - VGPPRSZ1', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 820,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Progressive Scan Black DVD Player - DVPNS57PB', ''), ('Sony DVPNS57P DVD Player - DVPNS57PS', '$45.32'), ('Sony DVPNS57P DVD Player - DVPNS57PB', '$39.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 821,
+      "pk": 19,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Transcend 2GB Micro SD Memory Card - TS2GUSD', ''), ('Transcend 2GB microSD Card - TS2GUSD', '$1.75')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 822,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('DeLonghi Magnifica Super-Automatic Espresso/Coffee Machine - ESAM3300', '$799.95'), ('DeLonghi ESAM3300 Esclusivo Magnifica Super-Automatic Espresso/Coffee Machine', '$916.55')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 823,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Belkin F3H982-25 Black 25 Ft Pro Series High Integrity VGA/SVGA Monitor Replacement Cable - F3H98225', ''), ('Belkin Pro Series High Integrity VGA/SVGA Monitor Extension Cable - F3H982-10', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 824,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Yamaha Silver USB Powered Stereo Speaker - NXU10SIL', '$180.00'), ('Yamaha NX-U10 USB Powered Stereo Speaker - NX-U10SL', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 825,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon FAX-JX200 Inkjet Fax Machine - FAXJX200', '$78.00'), ('Canon FAX-JX200 Fax Machine - 1735B002AA', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 826,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Pioneer CD-I200 iBus Interface Cable For iPod - CDI200', ''), ('Pioneer iBus Interface Cable for iPod - CD-I200', '$26.50')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 827,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony InfoLithium H Series Standard Rechargeable Battery Pack - NPFH70', ''), ('Sony InfoLithium H-Series NP-FH70 Camcorder Battery - NPFH70', '$57.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 828,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG WM3431HS All-In-One Front Load Titanium Washer And Dryer Combo - WM3431TT', ''), ('LG Electronics 24` Front-Load All-In-One Washer and Dryer: Titanium', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 829,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Microsoft Office Home And Student 2007 For Windows Vista - 79G00007', ''), ('Microsoft Office 2007 Home and Student - 79G-00007', '$82.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 830,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Weber 3758301 Blue Genesis EP-320 LP Gas Grill - 3758301', '$749.00'), ('Weber Genesis EP-320 Blue LP Gas Grill', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 831,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Progressive Scan Silver DVD Player - DVPNS57PS', ''), ('Sony DVPNS57P DVD Player - DVPNS57PS', '$45.32'), ('Sony DVPNS57P DVD Player - DVPNS57PB', '$39.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 832,
+      "pk": 20,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('GE Pre-Amplifier For Stereo Turntable - AV23292', ''), ('GE Pre-Amplifier for Stereo Turntable - 23292', '$23.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 833,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony MRW62E/S1/181 17-In-1 External USB Memory Card Reader - MRW62ES1181', '$29.00'), ('Sony 17-in-1 External USB Memory Card Reader And Writer - MRW62E/S1/181', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 834,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony MS-A1GD 1GB Memory Stick Micro (M2) - MSA1GD', ''), ('Sony 1GB Memory Stick Micro (M2) Card - MSA1GD', '$21.47')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 835,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Olympus PS-BLS1 Lithium Ion Rechargeable Battery - LIIONPSBLS1', ''), ('Olympus PS-BLS1 Lithium Ion Digital Camera Battery - 260236', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 836,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sirius External Home Antenna - 14240', ''), ('Sirius Outdoor Home Antenna - 14240', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 837,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Altec Lansing inMotion iPod Portable Audio System - IM600USB', ''), ('Altec Lansing inMotion iM600 Portable Audio Speaker System - IM600', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 838,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Countertop Microwave Oven In Black - NNSN667BK', '$129.00'), ('Panasonic NNSN667B 1.2 cu. ft. Countertop Microwave Oven In Black', '$108.63')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 839,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Stainless Steel Luxury Full Size Countertop Microwave Oven - NNSD967SS', ''), ('Panasonic 2.2 cu. ft. Stainless Steel Luxury Full Size Countertop Microwave Oven - NNSD967SS', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 840,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Countertop Microwave Oven In White - NNSN667WH', '$129.00'), ('Panasonic NNSN667W 1.2 cu. ft. Countertop Microwave Oven In White', '$107.81')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 841,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Countertop Microwave Oven In Stainless Steel - NNSD667SS', ''), ('Panasonic NNSD667S 1.2 cu. ft. Countertop Microwave Oven In Stainless Steel', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 842,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nikon COOLPIX Leather Camera Case In Black - 5811', ''), ('Nikon Digital Camera Leather Case - 5811', '$7.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 843,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Expandable Digital Cordless DECT 6.0 Handset In Silver - KXTGA101S', '$39.00'), ('Panasonic KX-TG9332S DECT 6.0 Expandable Digital Cordless Phone', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 844,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Kensington MicroSaver Keyed Notebook Lock - 64068F', ''), ('Kensington MicroSaver Notebook Lock - 64068F', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 845,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Memory Stick USB Adaptor - MSACUS40', '$29.00'), ('Sony Memory Stick USB Card Reader/Writer - MSACUS40', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 846,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Netgear ProSafe 24-Port Smart Switch - GS724TP', '$780.00'), ('Netgear ProSafe FS726TP 24 Port 10/100 Smart Switch - FS726TPNA', ''), ('Netgear ProSafe GS724TP 24 Port Smart Switch with PoE - GS724TP-100NAS', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 847,
+      "pk": 21,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Panasonic NNSD767S Stainless Steel Countertop Microwave Oven - NNSD767SS', ''), ('Panasonic NNSD767S 1.6 cu. ft. Stainless Steel Countertop Microwave Oven', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 848,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon Black Ink Cartridge - PG50', '$29.00'), ('Canon PGI-5BK Black Ink Cartridge - 0628B002', '$14.99'), ('Canon CLI-221 Black Ink Cartridge - 2946B001', '$11.99'), ('Canon Black Ink Cartridge - 0615B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 849,
+      "pk": 22,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Linksys Wireless N Access Point - WAP4400N', ''), ('Linksys WAP4400N Wireless-N Access Point With POE - WAP4400N', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 850,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG DLE3733W White XL Capacity Electric Dryer - DLE3733WH', ''), ('LG XL Capacity Electric Dryer', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 851,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG DLE5955W White XL Capacity Electric Dryer - DLE5955WH', ''), ('LG XL Capacity Electric Dryer', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 852,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG WM2233W 4.0 Cu Ft White Front Load Washer - WM2233WH', ''), ('LG 4.0 cu. ft. Capacity Front Load Washer w/ Sanitary cycle', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 853,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LaCie 1TB FireWire 800/FireWire 400/USB 2.0 External Hard Drive - 301199U', ''), ('LaCie USB 2.0 External Hard Drive - 301304U', ''), ('LaCie USB 2.0 External Hard Drive - 301302U', '$86.95')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 854,
+      "pk": 23,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Apple Wireless Mighty Mouse - MB111LLA', '$69.00'), ('Apple Wireless Mighty Mouse - MB111LL/A', '$69.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 855,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Yamaha Black Digital Sound Projector - YSP4000BK', ''), ('Yamaha YSP-4000 Digital Sound Projector -- Black - YSP-4000BL', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 856,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Yamaha Mounting Installation Bracket - SPMK30', ''), ('Yamaha SPM-K30 Mounting Installation Bracket - SPM-K30', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 857,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Apple Mini-DVI To DVI Adapter - M9321GB', '$19.00'), ('Apple DVI to mini-DVI Video Cable Adapter - M9321GB', '$19.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 858,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('GE 24` GSD2400NWW White Built-In Dishwasher - GSD2400WH', '$259.00'), ('Frigidaire FDB130RGS 24` Built-In Dishwasher (White)', '$246.54')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 859,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Expandable Digital Cordless DECT 6.0 Phone System - KXTG1032S', '$69.00'), ('Panasonic KX-TG9332S DECT 6.0 Expandable Digital Cordless Phone', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 860,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Uniden DECT 6.0 Cordless Digital Answering System - DECT20802', ''), ('Uniden DECT 6.0 1.9GHz Cordless Phone - DECT2080-2', '$46.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 861,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon EOS 40D Digital SLR Camera In Black - EOS40DBODY', ''), ('Canon EOS 40D Digital SLR Camera - 1901B004', '$849.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 862,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Wireless-G Broadband Router - WRT54GL', '$79.00'), ('Linksys Wireless-G WRT54GL Broadband Router', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 863,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon EOS 40D Digital SLR Camera And 28-135MM Lens - EOS40D28135', ''), ('Canon EOS 40D Digital SLR Camera - 1901B004', '$849.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 864,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PIXMA Multifunction Printer - MX310', ''), ('Canon PIXMA MX310 Multifunction Photo Printer - 2184B002', '$89.99'), ('Canon PIXMA MX700 Multifunction Photo Printer - 2186B002', ''), ('Canon PIXMA MX850 Multifunction Photo Printer - 2436B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 865,
+      "pk": 24,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Universal Remote Commander Remote Control - RMV310', ''), ('Sony Universal Remote Control - RM-EZ4', '$12.72'), ('Sony Remote Control - RMV310', '$14.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 866,
+      "pk": 25,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Universal Remote Control - RMEZ4', '$16.00'), ('Sony Remote Control - RMV310', '$14.72'), ('Sony Universal Remote Control - RM-EZ4', '$12.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 867,
+      "pk": 26,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 15` - 32` Flat Panel TV Black Wall Mount - MF209B1', '$96.00'), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 868,
+      "pk": 27,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Kenwood Sirius Radio Translator For In-Dash Head Units - KCASR50', '$60.00'), ('KENWOOD KCA-SR50 SIRIUS Radio Translator for In-Dash Head Units', '$42.36')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 869,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PIXMA MX700 Multifunction Printer - MX700C', ''), ('Canon PIXMA MX310 Multifunction Photo Printer - 2184B002', '$89.99'), ('Canon PIXMA MX850 Multifunction Photo Printer - 2436B002', ''), ('Canon PIXMA MX700 Multifunction Photo Printer - 2186B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 870,
+      "pk": 28,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Nikon D300 Digital SLR Digital Camera - D300BODY', ''), ('Nikon D300 Digital SLR Camera - 25432', '$1521.09')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 871,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Transcend 4GB Secure Digital High-Capacity (SDHC) Class 6 Memory Card - TS4GSDHC6', ''), ('Transcend 8GB Secure Digital High Capacity (SDHC) Card - Class 6 - TS8GSDHC6', '$11.45'), ('Transcend 4GB Secure Digital High Capacity (SDHC) Card - Class 6 - TS4GSDHC6', '$5.74')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 872,
+      "pk": 29,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Microsoft Office Standard 2007 - 02107746', '$399.00'), ('Microsoft Office 2007 Standard - 021-07746', '$319.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 873,
+      "pk": 30,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Kensington Orbit Optical Trackball Mouse - 64327', '$38.00'), ('Kensington Orbit Optical Trackball - USB w/PS2 Adapter - 64327', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 874,
+      "pk": 31,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Haier 13` TV/DVD Combo - TCR13', ''), ('13in Crt Tv/dvd Combo - TCR13', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 875,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Motorola Portable Bluetooth Car Kit Speaker Phone - T305', '$69.00'), ('MOTOROLA T305 BLUETOOTH VISOR SPEAKER PHONE CAR KIT - RETAIL - 89082J', '$46.93')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 876,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Altec Lansing Orbit-MP3 Portable Audio System - IM207', ''), ('Altec Lansing Orbit-MP3 Portable Audio System - IM207', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 877,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Uniden Dect 6.0 Accessory Handset  And Charging Cradle - DCX200', ''), ('UNIDEN DCX200 DECT 6.0 Accessory Handset & Charger', ''), ('Uniden DCX300 DECT 6.0 Accessory Handset and Cradle for the DECT2000 series', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 878,
+      "pk": 32,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Fellowes Personal Powershred Shredder - SB97CS', ''), ('Fellowes Powershred Personal W11C Shredder - 30100', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 879,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Transcend JetFlash V10 8GB USB Flash Drive - TS8GJFV10', ''), ('Transcend 16GB JetFlash USB Flash Drive - TS16GJFV10', '$30.95'), ('Transcend 8GB JetFlash V10 USB Flash Drive - TS8GJFV10', '$14.50')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 880,
+      "pk": 33,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Black Expandable Digital Cordless Dect 6.0 Phone System - KXTG8232B', ''), ('Panasonic KX-TG9332S DECT 6.0 Expandable Digital Cordless Phone', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 881,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Logitech Blue V470 Cordless Laser Mouse For Notebooks - 910000298', ''), ('Logitech V470 Cordless Laser Mouse for Notebooks - 910-000298', ''), ('Logitech V470 Cordless Laser Mouse for Notebooks - 910-000692', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 882,
+      "pk": 34,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Belkin Hi-Speed USB 2.0 7-Port Hub - F5U237APLS', '$49.00'), ('Belkin Hi-Speed USB 2.0 7-Port Hub - F5U237-APL-S', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 883,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Mylo Black Personal Communicator - COM2BLACK', ''), ('Sony Mylo COM-2 Personal Communicator - Black - COM2BLACK', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 884,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LaCie 500GB USB 2.0 External Hard Drive - 301302U', ''), ('LaCie USB 2.0 External Hard Drive - 301304U', ''), ('LaCie USB 2.0 External Hard Drive - 301302U', '$86.95')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 885,
+      "pk": 35,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Netgear Wireless Access Point - WG102', '$186.00'), ('Netgear RangeMax WPN802 Wireless Access Point - WPN802NA', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 886,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic PT-AX200U White Home Theater Projector - PTAX200', ''), ('Panasonic PT-AX200U Home Theater Projector', '$999.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 887,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Apple 500GB Time Capsule Wireless Hard Drive - MB276LLA', '$299.00'), ('Apple Time Capsule Network Hard Drive - MB277LL/A', '$439.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 888,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Apple 1TB Time Capsule Wireless Hard Drive  - MB277LLA', '$499.00'), ('Apple Time Capsule Network Hard Drive - MB277LL/A', '$439.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 889,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Microsoft Office 2008 For Mac Home And Student Edition - GZA00006', ''), ('Microsoft Office:mac 2008 Home and Student Edition - GZA-00006', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 890,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Garmin Vehicle Suction Cup Mount - 0101093600', '$25.00'), ('Garmin Vehicle Suction Cup mount', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 891,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Garmin Suction Cup Mount And 12-Volt Adapter Kit - 0101097900', '$30.00'), ('Garmin Suction cup mount/12-volt adapter kit - 010-10979-00', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 892,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sanus 15` - 37` VisionMount Full-Motion Flat Panel TV Black Wall Mount - MF215B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 893,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Black Photo Ink Cartridge - CLI8B', '$16.00'), ('Canon Black Ink Cartridge - 0615B002', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 894,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony High Definition HDV Handycam Camcorder - HDRHC9', ''), ('Sony Handycam HDR-HC9 High Definition Digital Camcorder - HDRHC9', '$824.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 895,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Silver Cyber-Shot 7.2 Megapixel Digital Camera - DSCW120', ''), ('Sony Cyber-shot DSC-W120 Digital Camera - Silver - DSCW120', '$106.42')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 896,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Pink Cyber-Shot 7.2 Megapixel Digital Camera - DSCW120P', ''), ('Sony Cyber-shot DSC-W120 Digital Camera - Pink - DSCW120/P', '$109.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 897,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon Vixia High Definition Camcorder - HF100', ''), ('Canon VIXIA HV30 High Definition Digital Camcorder - 2680B001', '$650.99'), ('Canon VIXIA HF100 High Definition Digital Camcorder - 2708B001', '$529.00'), ('Canon VIXIA HG20 High Definition Camcorder - 3085B001AA', '$557.64'), ('Canon VIXIA HG21 High Definition Camcorder - 2704B001AA', '$798.97'), ('Canon VIXIA HF10 High Definition Digital Camcorder - 2573B001', '$638.09')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 898,
+      "pk": 36,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon Vixia High Definition Camcorder - HV30', ''), ('Canon VIXIA HV30 High Definition Digital Camcorder - 2680B001', '$650.99'), ('Canon VIXIA HF100 High Definition Digital Camcorder - 2708B001', '$529.00'), ('Canon VIXIA HF10 High Definition Digital Camcorder - 2573B001', '$638.09'), ('Canon VIXIA HG20 High Definition Camcorder - 3085B001AA', '$557.64'), ('Canon VIXIA HG21 High Definition Camcorder - 2704B001AA', '$798.97')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 899,
+      "pk": 37,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Transcend 133X High-Speed 4GB Compact Flash Card - TS4GCF133', ''), ('Transcend 4GB CompactFlash Card (133x) - TS4GCF133', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 900,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon Vixia High Definition Camcorder - HF10', ''), ('Canon VIXIA HV30 High Definition Digital Camcorder - 2680B001', '$650.99'), ('Canon VIXIA HF100 High Definition Digital Camcorder - 2708B001', '$529.00'), ('Canon VIXIA HF10 High Definition Digital Camcorder - 2573B001', '$638.09'), ('Canon VIXIA HG20 High Definition Camcorder - 3085B001AA', '$557.64'), ('Canon VIXIA HG21 High Definition Camcorder - 2704B001AA', '$798.97')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 901,
+      "pk": 38,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Yamaha  All-Weather Pair Speaker System - NSAW390WH', '$149.00'), ('Yamaha NS-AW190 All-Weather Speaker System - NS-AW190BL', '$51.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 902,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Yamaha NS-AW390BL All-Weather Pair Speaker System - NSAW390BK', '$149.00'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390WH', '$79.96'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390BL', '$78.89'), ('Yamaha NS-AW190 All-Weather Speaker System - NS-AW190BL', '$51.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 903,
+      "pk": 39,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Yamaha NS-AW190BL All-Weather Pair Speaker System - NSAW190BK', '$99.00'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390WH', '$79.96'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390BL', '$78.89'), ('Yamaha NS-AW190 All-Weather Speaker System - NS-AW190BL', '$51.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 904,
+      "pk": 40,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Silver Cyber-Shot Digital Camera - DSCS750', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W120 Digital Camera - Silver - DSCW120', '$106.42'), ('Sony Cyber-shot DSC-W150 Digital Camera - Silver - DSCW150', '$129.99'), ('Sony Cyber-shot DSC-W170 Digital Camera - Silver - DSCW170', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 905,
+      "pk": 41,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Silver Cyber-Shot Digital Camera - DSCW150', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W120 Digital Camera - Silver - DSCW120', '$106.42'), ('Sony Cyber-shot DSC-W170 Digital Camera - Silver - DSCW170', ''), ('Sony Cyber-shot DSC-W150 Digital Camera - Silver - DSCW150', '$129.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 906,
+      "pk": 42,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Transcend 2GB 133x Ultra Speed Compact Flash Card - TS2GCF133', ''), ('Transcend 2GB CompactFlash Card (133x) - TS2GCF133', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 907,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Black Cyber-Shot Digital Camera - DSCW150B', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-T300 Digital Camera - Black - DSCT300/B', '$273.95'), ('Sony Cyber-shot DSC-H10 Digital Camera - Black - DSCH10/B', '$213.72'), ('Sony Cyber-shot DSC-H50 Digital Camera - Black - DSCH50B', '$329.00'), ('Sony Cyber-shot DSC-W150 Digital Camera - Gold - DSCW150N', '$129.99'), ('Sony Cyber-shot DSC-W150 Digital Camera - Red - DSCW150R', '$139.94'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 908,
+      "pk": 43,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Red Cyber-Shot Digital Camera - DSCW150R', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W150 Digital Camera - Gold - DSCW150N', '$129.99'), ('Sony Cyber-shot DSC-W170 Digital Camera - Red - DSCW170R', '$169.00'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99'), ('Sony Cyber-shot DSC-W150 Digital Camera - Red - DSCW150R', '$139.94')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 909,
+      "pk": 44,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Gold Cyber-Shot Digital Camera - DSCW150N', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W150 Digital Camera - Red - DSCW150R', '$139.94'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99'), ('Sony Cyber-shot DSC-W150 Digital Camera - Gold - DSCW150N', '$129.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 910,
+      "pk": 45,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Silver Cyber-Shot Digital Camera - DSCW170', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W120 Digital Camera - Silver - DSCW120', '$106.42'), ('Sony Cyber-shot DSC-W150 Digital Camera - Silver - DSCW150', '$129.99'), ('Sony Cyber-shot DSC-W170 Digital Camera - Silver - DSCW170', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 911,
+      "pk": 46,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Red Cyber-Shot Digital Camera - DSCW170R', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W150 Digital Camera - Red - DSCW150R', '$139.94'), ('Sony Cyber-shot DSC-W170 Digital Camera - Red - DSCW170R', '$169.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 912,
+      "pk": 47,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PIXMA MX850 Multifunction Printer - MX850C', ''), ('Canon PIXMA MX310 Multifunction Photo Printer - 2184B002', '$89.99'), ('Canon PIXMA MX700 Multifunction Photo Printer - 2186B002', ''), ('Canon PIXMA MX850 Multifunction Photo Printer - 2436B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 913,
+      "pk": 48,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Canon Black EOS Rebel XSi Digital SLR Camera - XSIREB1855', ''), ('Canon EOS Rebel XSi Digital SLR Camera - Silver - 2757B001', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 914,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Cyber-Shot Black Digital Camera - DSCH10B', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-T300 Digital Camera - Black - DSCT300/B', '$273.95'), ('Sony Cyber-shot DSC-H50 Digital Camera - Black - DSCH50B', '$329.00'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99'), ('Sony Cyber-shot DSC-H10 Digital Camera - Black - DSCH10/B', '$213.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 915,
+      "pk": 49,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Denon Blu-ray Disc DVD/CD Player - DVD3800BDCI', '$1999.00'), ('Denon DVD-2500BTCI Blu-ray Disc Player', '$655.97'), ('Denon DVD-1800BD Blu-ray Disc Player', '$499.00'), ('Denon DVD-3800BDCI Blu-ray Disc Player - DVD3800BDCI', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 916,
+      "pk": 50,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Bracketron Nav-Mat Portable GPS Dash Mount - UFM100BL', ''), ('Bracketron Nav-Mat Portable GPS Dash Mount - UFM-100-BL', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 917,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Bracketron iPod Docking Kit - IPM202BL', '$14.95'), ('Bracketron iPod Docking Kit', '$4.65')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 918,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nikon CoolPix S550 10 Megapixel Black Digital Camera - COOLPIXS550GB', ''), ('Nikon Coolpix S550 Digital Camera - Graphite Black - 26108', '$168.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 919,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nikon CoolPix S550 10 Megapixel Compact Plum Digital Camera - COOLPIXS550P', ''), ('Nikon Coolpix S550 Digital Camera - Plum - 26110', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 920,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nikon Coolpix S210 Plum 8.1 Megapixels Digital Camera - COOLPIXS210P', ''), ('Nikon Coolpix S210 Digital Camera - Plum - 26103', '$118.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 921,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sharp Aquos 37` LCD HDTV In Black - LC37D44U', ''), ('Sharp AQUOS LC37D44U 37` LCD TV - LC37D44U', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 922,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Boston Acoustics Solo AM/FM Large Display Clock Radio - HSOLOMDNT', '$99.00'), ('Boston Acoustics Horizon Solo AM/FM Radio - HSOLOMNDT', '$90.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 923,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony DVP-FX820 Black 8` Portable DVD Player - DVPFX820', ''), ('Sony DVP-FX820/L Portable DVD Player - DVPFX820/L', '$131.54'), ('Sony DVP-FX820/R Portable DVD Player - DVPFX820/R', '$159.94'), ('Sony DVP-FX820/P Portable DVD Player - DVPFX820/P', '$148.72'), ('Sony DVP-FX820 Portable DVD Player - DVPFX820', '$158.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 924,
+      "pk": 51,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony DVP-FX820 Blue 8` Portable DVD Player - DVPFX820LI', ''), ('Sony DVP-FX820/L Portable DVD Player - DVPFX820/L', '$131.54'), ('Sony DVP-FX820/R Portable DVD Player - DVPFX820/R', '$159.94'), ('Sony DVP-FX820/P Portable DVD Player - DVPFX820/P', '$148.72'), ('Sony DVP-FX820 Portable DVD Player - DVPFX820', '$158.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 925,
+      "pk": 52,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony DVP-FX820 Pink 8` Portable DVD Player - DVPFX820P', ''), ('Sony DVPFX820 Portable DVD Player - DVPFX820/W', '$149.00'), ('Sony DVP-FX820 Portable DVD Player - DVPFX820', '$158.72'), ('Sony DVP-FX820/L Portable DVD Player - DVPFX820/L', '$131.54'), ('Sony DVP-FX820/R Portable DVD Player - DVPFX820/R', '$159.94'), ('Sony DVP-FX820/P Portable DVD Player - DVPFX820/P', '$148.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 926,
+      "pk": 53,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony DVP-FX820 Red 8` Portable DVD Player - DVPFX820R', ''), ('Sony DVPFX820 Portable DVD Player - DVPFX820/W', '$149.00'), ('Sony DVP-FX820 Portable DVD Player - DVPFX820', '$158.72'), ('Sony DVP-FX820/L Portable DVD Player - DVPFX820/L', '$131.54'), ('Sony DVP-FX820/R Portable DVD Player - DVPFX820/R', '$159.94'), ('Sony DVP-FX820/P Portable DVD Player - DVPFX820/P', '$148.72')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 927,
+      "pk": 54,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony White 8` Portable DVD Player - DVPFX820W', ''), ('Sony DVP-FX820/L Portable DVD Player - DVPFX820/L', '$131.54'), ('Sony DVP-FX820/R Portable DVD Player - DVPFX820/R', '$159.94'), ('Sony DVP-FX820/P Portable DVD Player - DVPFX820/P', '$148.72'), ('Sony DVPFX820 Portable DVD Player - DVPFX820/W', '$149.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 928,
+      "pk": 55,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Panasonic 5.8 GHz Black Expandable Digital Cordless Phone - KXTG4321B', ''), ('Panasonic KX-TG4323B 5.8 GHz Expandable Digital Cordless Phone', ''), ('Panasonic KX-TG4324B 5.8 GHz Expandable Digital Cordless Phone', '$78.33'), ('Panasonic KX-TG4321B 5.8 GHz Expandable Digital Cordless Phone', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 929,
+      "pk": 56,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Panasonic 5.8 GHz Black Expandable Digital Cordless Phone System - KXTG4323B', '$79.00'), ('Panasonic KX-TG4323B 5.8 GHz Expandable Digital Cordless Phone', ''), ('Panasonic KX-TG4324B 5.8 GHz Expandable Digital Cordless Phone', '$78.33'), ('Panasonic KX-TG4321B 5.8 GHz Expandable Digital Cordless Phone', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 930,
+      "pk": 57,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony Silver Digital Voice Recorder - ICDB600', '$39.00'), ('Sony ICD-B600 512MB Digital Voice Recorder - ICDB600', '$30.45')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 931,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Boston Acoustics Duo-I AM/FM Clock Radio With iPod Dock - HDUOIMDNT', '$199.00'), ('Boston Acoustics Horizon Duo-i AM/FM Stereo Radio - HDUOIMDNT', '$135.52')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 932,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Whirlpool Cabrio White Top Loading Washer - WTW6700TWH', ''), ('Whirlpool WTW6700TW 28` Cabrio Series Top Loader Washer (Metallic/White)', '$925.91')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 933,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Logitech Harmony One Advanced Universal Remote Control - HARMONY1', '$249.00'), ('Logitech Harmony 890 Advanced Universal Remote - 966193-0403', '$248.90'), ('Logitech Harmony 1000 Advanced Universal Remote Control - 966230-0403', ''), ('Logitech Harmony One Advanced Universal Remote Control - 915-000035', '$179.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 934,
+      "pk": 58,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony Digital SLR Camera With Lens Kit - DSLRA200W', '$849.99'), ('Sony alpha DSLR-A200 Digital SLR Camera with Dual Lens Kit - DSLRA200W', '$699.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 935,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Remote Control Tripod - VCT60AV', '$99.00'), ('Sony Remote Control - RMV310', '$14.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 936,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Samsung 5 Disc Black Home Theater System - HTZ410T', ''), ('Samsung HTZ410T Home Theater System - HTZ410T', '$279.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 937,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Soft Camera Carrying Case - LCSMX100', ''), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 938,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Panasonic 5.8 GHz Black Expandable Digital Cordless Phone System - KXTG4324B', ''), ('Panasonic KX-TG4323B 5.8 GHz Expandable Digital Cordless Phone', ''), ('Panasonic KX-TG4324B 5.8 GHz Expandable Digital Cordless Phone', '$78.33'), ('Panasonic KX-TG4321B 5.8 GHz Expandable Digital Cordless Phone', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 939,
+      "pk": 59,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Belkin Neoprene Sleeve For MacBook Air - F8N065BLK', ''), ('Belkin Neoprene Sleeve for MacBook Air - Neoprene - Black', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 940,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Klipsch Groove PM20 Computer Speakers - GROOVEPM20BK', '$99.00'), ('Klipsch Groove PM20 Computer Speakers - 1007596', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 941,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Denon Blu-ray Disc DVD/CD Digital Player/Transport - DVD2500BTCI', ''), ('Denon DVD-3800BDCI Blu-ray Disc Player - DVD3800BDCI', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 942,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Black Soft Carrying Case - LCSX30', ''), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 943,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LaCie 1TB USB 2.0 External Hard Drive - 301304U', ''), ('LaCie USB 2.0 External Hard Drive - 301302U', '$86.95'), ('LaCie USB 2.0 External Hard Drive - 301304U', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 944,
+      "pk": 60,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Alpha DSLR Black Camera Body With 18-70mm Zoom Lens - DSLRA300K', '$599.99'), ('Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K', '$686.24'), ('Sony alpha DSLR-A300 Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA300K', '$599.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 945,
+      "pk": 61,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Polk Audio 5.1 Channel Black Home Theater Speaker System - RM705BK', '$499.95'), ('Polk Audio RM705 Black 5.1 Channel Home Theater System - RM 705', '$398.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 946,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Stereo Bluetooth Speaker - SRSBTM30', ''), ('Sony SRS-BTM30 Wireless Stereo Bluetooth Speaker - SRSBTM30', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 947,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Hoover EmPower Bagless Upright Vacuum - U5269', '$99.00'), ('Hoover EmPower U5269-900 Vacuum (Upright HEPA Bagless)', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 948,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Black Speaker Dock And Clock Radio For iPod And iPhone - ICFC1IPMK2BLK', ''), ('SONY IPOD/PHONE DOCK CLOCK RADIO BLACK NIC - ICFC1IPMK2BLK', '$80.25')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 949,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LaCie 500GB d2 Quadra External Hard Drive - 301825U', '$159.00'), ('LaCie d2 Quadra Hard Drive - 301825U', '$138.88')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 950,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic DECT 6.0 Black Expandable Digital Cordless Phone - KXTG9361B', '$48.00'), ('Panasonic KX-TG9332S DECT 6.0 Expandable Digital Cordless Phone', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 951,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony 1GB Memory Stick PRO Duo Mark 2 Media Card - MSMT1G', '$19.00'), ('Sony 16GB Memory Stick PRO Duo Card (Mark 2) - MSMT16G', '$110.99'), ('Sony 1GB Memory Stick PRO Duo Card - MSMT1G', '$13.41')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 952,
+      "pk": 62,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony 2GB Memory Stick PRO Duo Mark 2 Media Card - MSMT2G', '$29.99'), ('Sony 16GB Memory Stick PRO Duo Card (Mark 2) - MSMT16G', '$110.99'), ('Sony 2GB Memory Stick PRO Duo Card - MSMT2G', '$15.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 953,
+      "pk": 63,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony 4GB Memory Stick PRO Duo Mark 2 Media Card - MSMT4G', ''), ('Sony 16GB Memory Stick PRO Duo Card (Mark 2) - MSMT16G', '$110.99'), ('Sony 4GB Memory Stick PRO Duo Card - MSMT4G', '$26.92')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 954,
+      "pk": 64,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony 8GB Memory Stick PRO Duo Mark 2 Media Card - MSMT8G', ''), ('Sony 16GB Memory Stick PRO Duo Card (Mark 2) - MSMT16G', '$110.99'), ('Sony 8GB Memory Stick PRO Duo Card - MSMT8G', '$49.85')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 955,
+      "pk": 65,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony 16GB Memory Stick PRO Duo Mark 2 Media Card - MSMT16G', ''), ('Sony 16GB Memory Stick PRO Duo Card (Mark 2) - MSMT16G', '$110.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 956,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon BCI-6 Multipack Ink Tanks - 4705A018', ''), ('Canon BCI-6 Color Ink Cartridges - 4705A018', '$59.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 957,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic DECT 6.0 Black Expandable Digital Cordless Phone System - KXTG9372B', ''), ('Panasonic KX-TG9332S DECT 6.0 Expandable Digital Cordless Phone', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 958,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PG-40 Black Ink Cartridge Twin Pack - PG40TBK', ''), ('Canon PG-40 Black Ink Cartridge - PG-40-BK-TWIN', '$41.46'), ('Canon PG-40 Twin Pack Black Ink Cartridge - 0615B013', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 959,
+      "pk": 66,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony DSLR-A350 Digital Camera And 18-70mm Zoom Lens - DSLRA350K', ''), ('Sony alpha DSLR-A350K Digital SLR Camera with 18-70mm Zoom Lens - Black - DSLRA350K', '$686.24')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 960,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Picture Station Digital Photo Printer - DPPFP95', ''), ('Sony Picture Station Digital Photo Printer - DPPFP95', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 961,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 19` BRAVIA M-Series Silver LCD Flat Panel HDTV - KDL19M4000S', ''), ('Sony BRAVIA M Series KDL-19M4000 19` LCD TV - kdl19m4000s', '$379.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 962,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 26` BRAVIA M-Series Black LCD Flat Panel HDTV - KDL26M4000', ''), ('Sony BRAVIA M Series KDL-26M4000 26` LCD TV - KDL26M4000', '$538.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 963,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 46` BRAVIA S-Series Black LCD Flat Panel HDTV - KDL46S4100', ''), ('Sony BRAVIA S Series KDL-46S4100 46` LCD TV - KDL46S4100', '$1188.65')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 964,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 46` BRAVIA W-Series Black LCD Flat Panel HDTV - KDL46W4100', ''), ('Sony BRAVIA W Series KDL-46W4100 46` LCD TV - KDL46W4100', '$1399.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 965,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 52` BRAVIA V-Series Black LCD Flat Panel HDTV - KDL52V4100', ''), ('Sony BRAVIA V Series KDL-52V4100 52` LCD TV - KDL52V4100', '$1599.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 966,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 52` BRAVIA W-Series Black LCD Flat Panel HDTV - KDL52W4100', ''), ('Sony BRAVIA W Series KDL-52W4100 52` LCD TV - KDL52W4100', '$1998.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 967,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Black 9 Megapixel Cyber-Shot Digital Camera - DSCH50B', ''), ('Sony Cyber-shot DSC-T300 Digital Camera - Black - DSCT300/B', '$273.95'), ('Sony Cyber-shot DSC-H10 Digital Camera - Black - DSCH10/B', '$213.72'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99'), ('Sony Cyber-shot DSC-H50 Digital Camera - Black - DSCH50B', '$329.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 968,
+      "pk": 68,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LG 5.6 Cu. Ft. White Freestanding Electric Range - LRE30453WH', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 969,
+      "pk": 69,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LG 5.6 Cu. Ft. Black Freestanding Electric Range - LRE30453BK', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', ''), ('LG 5.6 cu.ft. Freestanding Electric Range', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 970,
+      "pk": 70,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('LG LFC23760ST 22.6 Cu. Ft. Stainless Steel French Door Bottom Freezer Refrigerator - LFC23760SS', ''), ('LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 971,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG LFC25770ST 25.0 Cu. Ft. Stainless Steel French Door Bottom Freezer Refrigerator - LFC25770SS', ''), ('LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 972,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Weather Shower CD Clock Radio - ICFCD73W', ''), ('Sony ICF-CD73W AM/FM/Weather Shower CD Clock Radio (White)', '$68.96')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 973,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG LFX25971SW 24.7 Cu. Ft. Smooth White French Door Bottom Freezer Refrigerator - LFX25971WH', ''), ('LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 974,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG LFX25971SB 24.7 Cu. Ft. Smooth Black French Door Bottom Freezer Refrigerator - LFX25971BK', ''), ('LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 975,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG LFX25971ST 24.7 Cu. Ft. Stainless Steel French Door Bottom Freezer Refrigerator - LFX25971SS', ''), ('LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 976,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Onkyo Black 7.1-Channel Home Theater System - HTS5100B', ''), ('Onkyo HTS5100 Home Theater System - HTS5100B', '$478.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 977,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LG 2.0 Cu. Ft. Over-The-Range White Microwave Oven - LMVM2085WH', ''), ('LG 1.6 cu.ft. Over the Range Microwave', ''), ('Maytag 2.0 Cu. Ft. Over-the-Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 978,
+      "pk": 71,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LG 2.0 Cu. Ft. Over-The-Range Black Microwave Oven - LMVM2085BK', ''), ('LG 1.6 cu.ft. Over the Range Microwave', ''), ('Maytag 2.0 Cu. Ft. Over-the-Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 979,
+      "pk": 72,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LG 2.0 Cu. Ft. Over-The-Range Stainless Steel Microwave Oven - LMVM2085SS', ''), ('Maytag 2.0 Cu. Ft. Over-the-Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', ''), ('LG 2.0 cu.ft. Over the Range Microwave Oven', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 980,
+      "pk": 73,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('LG 24` LDF6920BB Fully Integrated Built In Black Dishwasher - LDF6920BK', ''), ('LG LDF6920BB Fully Integrated Dishwasher', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 981,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 37` BRAVIA XBR Series Black LCD Flat Panel HDTV - KDL37XBR6', ''), ('Sony BRAVIA XBR Series KDL-37XBR6 37` LCD TV - KDL37XBR6', '$1197.66')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 982,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 40` BRAVIA Z Series Black LCD Flat Panel HDTV - KDL40Z4100B', ''), ('Sony BRAVIA Z Series KDL-40Z4100 40` LCD TV - KDL40Z4100/B', '$1327.47')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 983,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Samsung Black Blu-ray Player - BDP1500', ''), ('Samsung BDP-1500 Blu-ray DVD Player - BDP1500', '$218.20')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 984,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 46` BRAVIA Z Series Black LCD Flat Panel HDTV - KDL46Z4100B', ''), ('Sony BRAVIA Z Series KDL-46Z4100 46` LCD TV - KDL46Z4100/B', '$1687.98')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 985,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 42` BRAVIA V Series Black LCD Flat Panel HDTV - KDL42V4100', ''), ('SONY 42IN BRAVIA LCD V-SERIES 1080P HDTV - KDL42V4100', '$1098.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 986,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('LG LMX25981ST 24.7 Cu. Ft. Capacity Stainless Steel French Door Refrigerator - LMX25981SS', ''), ('LG 24.7 cu. ft. Stainless Steel French Door Bottom Mount Refrigerator', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 987,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nikon COOLPIX P80 Digital Camera In Black - COOLPIXP80', ''), ('Nikon Coolpix P80 Digital Camera - 26114', '$271.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 988,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Panasonic DECT 6.0 Silver Expandable Digital Cordless Phone System - KXTG9332S', ''), ('Panasonic KX-TG9332S DECT 6.0 Expandable Digital Cordless Phone', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 989,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Uniden DECT 6.0 Digital Accessory Handset  - DCX300', '$34.00'), ('UNIDEN DCX200 DECT 6.0 Accessory Handset & Charger', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 990,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Peerless 23` - 46` Universal Flat Panel TV Black Wall Mount - SF640P', ''), ('Peerless Universal Flat Wall Mount - SF640P', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 991,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Griffin iTrip FM Transmitter - 4052TRPSEB', ''), ('Griffin iTrip AutoPilot FM Transmitter - 4046-TRPAUTOC', ''), ('Griffin iTrip FM Transmitter - 4052-TRPSEB', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 992,
+      "pk": 74,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Panasonic Black Expandable Digital Cordless Dect 6.0 Phone System - KXTG9348T', ''), ('Panasonic KX-TG9332S DECT 6.0 Expandable Digital Cordless Phone', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 993,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Garmin Vehicle Adjustable Suction Cup Mount - 0101082303', ''), ('Garmin Vehicle Suction Cup mount', ''), ('Garmin Adjustable Vehicle Suction Cup - 010-10823-03', '$7.22')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 994,
+      "pk": 75,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Sony Black 5.1 Channel Home Theater System - HTDDWG700', '$199.00'), ('Polk Audio RM705 Black 5.1 Channel Home Theater System - RM 705', '$398.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 995,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Danby White Countertop Dishwasher - DDW497WH', '$222.00'), ('Danby DDW497W Countertop Dishwasher', '$247.05')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 996,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon EF-S 55-250mm f/4-5.6 IS Telephoto Zoom Lens - 2044B002', ''), ('Canon EF 75-300mm f/4-5.6 III Telephoto Zoom Lens - 6473A003', '$159.95'), ('Canon EF 70-300mm f/4-5.6 IS USM Telephoto Zoom Lens - 0345B002', '$549.00'), ('Canon EF-S 55-250mm f/4-5.6 IS Telephoto Zoom Lens - 2044B002', '$232.98')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 997,
+      "pk": 76,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Linksys Ultra RangePlus Wireless-N Broadband Router - WRT160N', '$79.00'), ('Linksys RangePlus WRT160N 4-Port Wireless-N Broadband Router - WRT160N', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 998,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon White Selphy CP760 Compact Photo Printer - 2565B001', '$95.00'), ('Canon SELPHY CP760 Dye Sublimation Printer - 2565B001', '$90.10')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 999,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony 2GB Memory Stick Micro (M2) - MSA2GU2', '$29.99'), ('Sony 1GB Memory Stick Micro (M2) Card - MSA1GD', '$21.47'), ('Sony 2GB Memory Stick Micro (M2) - MSA2GD', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1000,
+      "pk": 75,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Directed 50ft Extension Cable - 14230', ''), ('Directed Electronics Antenna Extension Cable - 14230', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1001,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Deluxe Soft Black Camera Case - 0716B001', ''), ('Canon PSC-75 Deluxe Soft Case - 0716B001', '$19.94')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1002,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Battery Charger - 0763B001', ''), ('Canon Canon CB-2LW Battery Charger - 0763B001', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1003,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Battery Charger - 1133B001', ''), ('Canon CB-2LX Battery Charger - 1133B001', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1004,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon NB-5L Lithium Battery - 1135B001', ''), ('Canon NB-5L Lithium-Ion Digital Camera Battery - 1135B001', '$36.49')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1005,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Black Leather Camera Case - 1588B001', ''), ('Canon PSC-55 Deluxe Leather Camera Case - 1588B001', '$16.82')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1006,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon 9517A002 EF-S 17mm - 85mm f/4.0-5.6 USM IS Zoom Lens - 9517A002', ''), ('Canon EF 70-300mm f/4-5.6 IS USM Telephoto Zoom Lens - 0345B002', '$549.00'), ('Canon EF-S 55-250mm f/4-5.6 IS Telephoto Zoom Lens - 2044B002', '$232.98'), ('Canon EF-S 17-85MM f/4-5.6 IS USM Standard Zoom Lens', '$515.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1007,
+      "pk": 76,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon CB-2LV Battery Charger - 9764A001', ''), ('Canon CB-2LX Battery Charger - 1133B001', ''), ('Canon CB-2LV Battery Charger - 9764A001', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1008,
+      "pk": 77,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Monster iCarPlay Wireless 250 FM Transmitter With AutoScan for iPod And iPhone - AIPFMCH250', '$100.00'), ('MONSTER A IP FM-CH 250 iCarPlay Wireless 250 FM Transmitter for iPod & iPhone - AIPFM-CH250', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1009,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Nikon D700 Digital SLR Digital Camera - D700BODY', ''), ('Nikon D300 Digital SLR Camera - 25432', '$1521.09'), ('Nikon D700 Digtal SLR Camera - 25444', '$2699.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1010,
+      "pk": 78,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('LaCie USB 2.0 Floppy Disk Drive - 706018', '$49.00'), ('LaCie Pocket Floppy Disk Drive - 706018', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1011,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Transcend 16GB SDHC Card And Compact Card Reader - TS16GSDHC6S5W', ''), ('Transcend 16GB SDHC Card & Compact Card Reader S5 - TS16GSDHC6-S5W', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1012,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Wireless-N Security Router - WRVS4400N', ''), ('Linksys Wireless-N WRVS4400N Gigabit Security Router with VPN', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1013,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon EOS Rebel XS Black Digital SLR Camera - XSREB1855B', ''), ('Canon EOS Rebel XSi Digital SLR Camera - Silver - 2757B001', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1014,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Yamaha Black Digital Sound Projector - YSP3050BK', ''), ('Yamaha YSP-4000 Digital Sound Projector -- Black - YSP-4000BL', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1015,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LaCie Little Disk 320GB Black Portable Hard Drive - 301829', '$119.00'), ('LaCie Little Disk Hard Drive - 301278', '$79.99'), ('LaCie Little Disk Hard Drive - 301829', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1016,
+      "pk": 79,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('LaCie Little Disk 250GB Black Portable Hard Drive - 301278', '$99.00'), ('LaCie Little Disk Hard Drive - 301829', ''), ('LaCie Little Disk Hard Drive - 301278', '$79.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1017,
+      "pk": 80,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Nikon Graphite Black 14.5 Megapixel COOLPIX Digital Camera - COOLPIXS710BK', ''), ('Nikon Coolpix S550 Digital Camera - Graphite Black - 26108', '$168.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1018,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('AppleCare Protection Plan For iPod Touch Or iPod Classic - MB591LLA', '$59.00'), ('AppleCare for iPod touch or iPod classic - MB591LL/A', '$49.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1019,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nikon CoolPix S610 10 Megapixel Black  Digital Camera - COOLPIXS610BK', '$249.00'), ('Nikon Coolpix S610 Digital Camera - Midnight Black - 26125', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1020,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony VAIO Black USB Docking Station - VGPUPR1', '$199.99'), ('Sony VAIO USB Docking Station - VGPUPR1', '$142.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1021,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 46` BRAVIA XBR Series Black LCD Flat Panel HDTV - KDL46XBR6', ''), ('Sony BRAVIA XBR Series KDL-46XBR6 46` LCD TV - KDL46XBR6', '$1977.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1022,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony 52` BRAVIA XBR Series Black LCD Flat Panel HDTV - KDL52XBR6', ''), ('Sony BRAVIA XBR Series KDL-52XBR6 52` LCD TV - KDL52XBR6', '$2573.72')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1023,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Alpha Digital SLR Black Camera Body - DSLRA350', ''), ('Sony alpha DSLR-A350 Digital SLR Camera - DSLRA350', '$594.73')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1024,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon PIXMA iP2600 Photo Printer - IP2600', '$49.00'), ('Canon PIXMA iP2600 Inkjet Photo Printer - 2435B002', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1025,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sony Cyber-Shot Black Digital Camera - DSCT500B', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-T300 Digital Camera - Black - DSCT300/B', '$273.95'), ('Sony Cyber-shot DSC-H10 Digital Camera - Black - DSCH10/B', '$213.72'), ('Sony Cyber-shot DSC-H50 Digital Camera - Black - DSCH50B', '$329.00'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1026,
+      "pk": 81,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PowerShot Silver Digital Camera - SX110IS', ''), ('Canon PowerShot SX110 IS Digital Camera - Silver - 2666B001', ''), ('Canon PowerShot SD880 IS Digital Camera - Silver - 3197B001', '$246.88')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1027,
+      "pk": 82,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PowerShot A1000 IS Gray Digital Camera - A1000ISG', ''), ('Canon PowerShot A590 IS Digital Camera - 2462B001', ''), ('Canon PowerShot SD790 IS Digital Camera - 2554B001', ''), ('Canon PowerShot SD890 IS Digital Camera - 2566B001', '$198.00'), ('Canon PowerShot SX10 IS Digital Camera - 2665B001', '$339.88'), ('Canon PowerShot A1000 IS Digital Camera - Gray - 3210B001', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1028,
+      "pk": 83,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Toshiba Black 15` LCD Flat Panel HDTV/DVD Combo - 15LV505', ''), ('15` LCD HDTV/DVD Combo Black - 15LV505', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1029,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PIXMA Photo All-In-One Printer - MP620', '$149.00'), ('Canon PIXMA MP980 Wireless All-in-One Color Photo Inkjet Printer - 2922B002', ''), ('Canon PIXMA MP480 Color Inkjet All-In-One Photo Printer - 2918B002', ''), ('Canon PIXMA MP620 Wireless Photo All-In-One Inkjet Printer - 2921B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1030,
+      "pk": 84,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('TiVo HD XL Black Digital Video Recorder - TCD658000', '$599.00'), ('TiVo TCD658000 - HD XL Digital Video Recorder', '$544.07')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1031,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Apple 8GB Silver 4th Generation iPod Nano - MB598LLA', '$144.00'), ('Apple 8GB iPod nano Blue (4th Generation) - MB732LL/A', '$146.75'), ('Apple 8GB iPod nano Pink (4th Generation) - MB735LL/A', '$146.75'), ('Apple 8GB iPod nano Purple (4th Generation) - MB739LL/A', '$146.75'), ('Apple 8GB iPod nano Green (4th Generation) - MB745LL/A', '$139.88'), ('Apple 8GB iPod nano Black (4th Generation) - MB754LL/A', '$146.75'), ('Apple 8GB iPod nano Silver (4th Generation) - MB598LL/A', '$146.75')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1032,
+      "pk": 85,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Apple 8GB Blue 4th Generation iPod Nano - MB732LLA', '$149.00'), ('Apple 8GB iPod nano Silver (4th Generation) - MB598LL/A', '$146.75'), ('Apple 8GB iPod nano Pink (4th Generation) - MB735LL/A', '$146.75'), ('Apple 8GB iPod nano Purple (4th Generation) - MB739LL/A', '$146.75'), ('Apple 8GB iPod nano Green (4th Generation) - MB745LL/A', '$139.88'), ('Apple 8GB iPod nano Black (4th Generation) - MB754LL/A', '$146.75'), ('Apple 8GB iPod nano Blue (4th Generation) - MB732LL/A', '$146.75')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1033,
+      "pk": 86,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Apple 8GB Pink 4th Generation iPod Nano - MB735LLA', '$144.00'), ('Apple 8GB iPod nano Silver (4th Generation) - MB598LL/A', '$146.75'), ('Apple 8GB iPod nano Blue (4th Generation) - MB732LL/A', '$146.75'), ('Apple 8GB iPod nano Purple (4th Generation) - MB739LL/A', '$146.75'), ('Apple 8GB iPod nano Green (4th Generation) - MB745LL/A', '$139.88'), ('Apple 8GB iPod nano Black (4th Generation) - MB754LL/A', '$146.75'), ('Apple 8GB iPod nano Pink (4th Generation) - MB735LL/A', '$146.75')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1034,
+      "pk": 87,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Apple 8GB Purple 4th Generation iPod Nano - MB739LLA', '$149.00'), ('Apple 8GB iPod nano Silver (4th Generation) - MB598LL/A', '$146.75'), ('Apple 8GB iPod nano Blue (4th Generation) - MB732LL/A', '$146.75'), ('Apple 8GB iPod nano Pink (4th Generation) - MB735LL/A', '$146.75'), ('Apple 8GB iPod nano Green (4th Generation) - MB745LL/A', '$139.88'), ('Apple 8GB iPod nano Black (4th Generation) - MB754LL/A', '$146.75'), ('Apple 8GB iPod nano Purple (4th Generation) - MB739LL/A', '$146.75')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1035,
+      "pk": 88,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Apple 16GB Green 4th Generation iPod Nano - MB913LLA', ''), ('Apple 8GB iPod nano Green (4th Generation) - MB745LL/A', '$139.88')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1036,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Apple 8GB Green 4th Generation iPod Nano - MB745LLA', '$149.00'), ('Apple 8GB iPod nano Silver (4th Generation) - MB598LL/A', '$146.75'), ('Apple 8GB iPod nano Blue (4th Generation) - MB732LL/A', '$146.75'), ('Apple 8GB iPod nano Pink (4th Generation) - MB735LL/A', '$146.75'), ('Apple 8GB iPod nano Purple (4th Generation) - MB739LL/A', '$146.75'), ('Apple 8GB iPod nano Black (4th Generation) - MB754LL/A', '$146.75'), ('Apple 8GB iPod nano Green (4th Generation) - MB745LL/A', '$139.88')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1037,
+      "pk": 87,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Apple 8GB Black 4th Generation iPod Nano - MB754LLA', '$144.00'), ('Apple 8GB iPod nano Silver (4th Generation) - MB598LL/A', '$146.75'), ('Apple 8GB iPod nano Blue (4th Generation) - MB732LL/A', '$146.75'), ('Apple 8GB iPod nano Pink (4th Generation) - MB735LL/A', '$146.75'), ('Apple 8GB iPod nano Purple (4th Generation) - MB739LL/A', '$146.75'), ('Apple 8GB iPod nano Green (4th Generation) - MB745LL/A', '$139.88'), ('Apple 8GB iPod nano Black (4th Generation) - MB754LL/A', '$146.75')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1038,
+      "pk": 88,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Yamaha YAS-71 Black Front Surround System - YAS71BK', ''), ('Yamaha YAS-71 Front Surround System - YAS-71BL', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1039,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PIXMA Photo All-In-One Printer - MP980', '$299.00'), ('Canon PIXMA MP980 Wireless All-in-One Color Photo Inkjet Printer - 2922B002', ''), ('Canon PIXMA MP480 Color Inkjet All-In-One Photo Printer - 2918B002', ''), ('Canon PIXMA MP620 Wireless Photo All-In-One Inkjet Printer - 2921B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1040,
+      "pk": 89,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Nintendo DS Lite Onyx Black Portable Gaming System - NDSUSGSKB', '$139.00'), ('Nintendo DS Lite (Black Onyx) - USGSKB', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1041,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nintendo DS Lite Metallic Silver Portable Gaming System - NDSUSGSVB', '$139.00'), ('Nintendo DS Lite (Metallic Silver)', '$139.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1042,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nintendo DS Lite Metallic Rose Portable Gaming System - NDSUSGSZPB', '$139.00'), ('Nintendo DS Lite (Metallic Rose) - USGSZPB', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1043,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Case Logic Vertical Universal Leather BlackBerry Case - CLP104BB', '$15.00'), ('Case Logic Universal Vertical PDA Leather Pouch - CLP104BB', '$9.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1044,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Blu-Ray Disc Player - BDPS550', ''), ('Sony HESV1000 Blu-ray Player/Recorder', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1045,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Nintendo DS Lite Crimson/Black Portable Gaming System - NDSUSGSRMKB', '$139.00'), ('Nintendo DS Lite (Crimson & Black) - USGSRMKB', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1046,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Netgear Prosafe 5 Port Gigabit Ethernet Desktop Switch - GS105NA', '$55.00'), ('Netgear ProSafe GS105 Ethernet Switch - GS105NA', ''), ('Netgear ProSafe JGS524F 24-Port Gigabit Ethernet Switch - JGS524FNA', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1047,
+      "pk": 90,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Canon Printer Black Ink Cartridge - CLI221BLK', ''), ('Canon Black Ink Cartridge - 0615B002', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1048,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon PIXMA Photo All-In-One Printer - MP480', '$99.00'), ('Canon PIXMA MP980 Wireless All-in-One Color Photo Inkjet Printer - 2922B002', ''), ('Canon PIXMA MP480 Color Inkjet All-In-One Photo Printer - 2918B002', ''), ('Canon PIXMA MP620 Wireless Photo All-In-One Inkjet Printer - 2921B002', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1049,
+      "pk": 91,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Sanus 30` - 58` VisionMount Flat Panel TV Black Tilting Wall Mount - LT25B1', '$199.00'), ('Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1050,
+      "pk": 92,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Apple iPod Nano Gray Armband - MB769GA', '$29.00'), ('Apple iPod nano Armband - MB769G/A', '$29.00')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1051,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Kensington Combosaver Ultra Combination Notebook Lock - K64516US - K64516US', '$39.00'), ('Kensington ComboSaver Ultra Notebook Lock - K64516US', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1052,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Escort Passport 9500IX Radar Detector - 9500IX', '$503.95'), ('Escort Passport 9500ix Radar/Laser Detector', '$439.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1053,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Logitech White V470 Cordless Laser Mouse For Apple Notebooks - 910000692', '$49.00'), ('Logitech V470 Cordless Laser Mouse for Notebooks - 910-000298', ''), ('Logitech V470 Cordless Laser Mouse for Notebooks - 910-000692', '')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1054,
+      "pk": 93,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Logitech Black V450 Nano Cordless Laser Mouse For Notebooks - 910000619', '$49.00'), ('Logitech V450 Nano Cordless Laser Mouse For Notebooks - 910-000619', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1055,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Logitech Black V220 Cordless Optical Mouse For Notebooks - 910000153', '$29.00'), ('Logitech V220 Cordless Optical Mouse for Notebooks - 910-000153', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1056,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony VAIO LV Series Silver All-In-One Desktop Computer - VGCLV140J', ''), ('Sony VAIO LV All-in-One Desktop - VGCLV150J', '$1954.27')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1057,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony VAIO LV Series Silver All-In-One Desktop Computer - VGCLV150J', '$1899.00'), ('Sony VAIO LV All-in-One Desktop - VGCLV150J', '$1954.27')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1058,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony VAIO RT Series Black All-In-One Desktop Computer - VGCRT150Y', '$3999.00'), ('Sony VAIO RT All-in-One Desktop - VGCRT150Y', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1059,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Logitech MX Air Rechargeable Cordless Air Mouse - 931633', '$149.00'), ('Logitech MX Air Rechargeable Cordless Air Mouse - 931633-0403', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1060,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Denon Black Blu-ray Disc DVD-CD Player - DVD1800BD', ''), ('Denon DVD-3800BDCI Blu-ray Disc Player - DVD3800BDCI', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1061,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon Silver PowerShot Digital Camera - SD880IS', ''), ('Canon PowerShot SX110 IS Digital Camera - Silver - 2666B001', ''), ('Canon PowerShot SD880 IS Digital Camera - Silver - 3197B001', '$246.88')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1062,
+      "pk": 94,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon Black EF 70-300mm F/4-5.6 IS USM Telephoto Zoom Lens - 0345B002', ''), ('Canon EF-S 55-250mm f/4-5.6 IS Telephoto Zoom Lens - 2044B002', '$232.98'), ('Canon EF 75-300mm f/4-5.6 III Telephoto Zoom Lens - 6473A003', '$159.95'), ('Canon EF 70-300mm f/4-5.6 IS USM Telephoto Zoom Lens - 0345B002', '$549.00')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1063,
+      "pk": 95,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Canon EF 75-300mm F/4-5.6 III Telephoto Zoom Lens - 6473A003', '$246.00'), ('Canon EF-S 55-250mm f/4-5.6 IS Telephoto Zoom Lens - 2044B002', '$232.98'), ('Canon EF 70-300mm f/4-5.6 IS USM Telephoto Zoom Lens - 0345B002', '$549.00'), ('Canon EF 75-300mm f/4-5.6 III Telephoto Zoom Lens - 6473A003', '$159.95')]",
         "choice": "yes, no"
       }
     },
 
   {
-      "pk": 1064,
+      "pk": 96,
       "model": "accounts.task",
       "fields": {
-        "batch": 3,
-        "question": "[('Case-Mate Carbon Fiber Black Leather Case For iPhone 3G - IPH3GCBCF', ''), ('CASE MATE CARBON FIBER IPHONE 3G CASE BLACK - IPH3GC-BCF', '$28.08')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1065,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Black BP-808 Camcorder Battery Pack - 2740B002', ''), ('Canon BP-808 Lithium Ion Camcorder Battery Pack - 2740B002', '$51.84')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1066,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Logitech diNovo Edge Keyboard Mac Edition - 920000924', '$159.00'), ('Logitech diNovo Edge Mac Edition - 920-000924', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1067,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon Digital EOS Rebel XS Starter Kit - 9320A010', ''), ('Canon Rebel XSi/XS Starter Kit - 9320A009', '$69.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1068,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony VAIO JS Series Black All-In-One Desktop Computer - VGCJS130JB', '$1099.00'), ('Sony VAIO JS All-in-One Desktop - VGCJS130J/B', '$1028.53')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1069,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Dual-Band Wireless-N Notebook Adapter - WPC600N', '$69.00'), ('Linksys Ultra RangePlus Dual Band Wireless-N PC Card - WPC600N', '$44.08')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1070,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Simultaneous Dual-N Band Wireless Router - WRT610N', '$179.00'), ('Linksys WRT610N Simultaneous Dual-N Band Wireless Router', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1071,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Compact Wireless-G USB Adapter - WUSB54GC', '$39.00'), ('Linksys Wireless-G WUSB54GC Compact USB Adapter', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1072,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Dual-Band Wireless-N USB Network Adapter - WUSB600N', '$69.00'), ('Linksys WUSB600N Dual-Band Wireless-NUSB Network Adapter - WUSB600N', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1073,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Wireless-G Internet Home Monitoring Camera - WVC54GCA', '$99.00'), ('Linksys Wireless-G Internet Video Camera - WVC54GCA', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1074,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Transcend 133X High-Speed 8GB Compact Flash Card - TS8GCF133', '$38.00'), ('Transcend 8GB Compact Flash Card (133x) - TS8GCF133', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1075,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Sony Telephoto Converter Lens - VCLDH1774', '$169.99'), ('Sony VCL-DH1774 Telephoto Lens - VCLDH1774', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1076,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Black Media Center Extender - DMA2100', '$119.00'), ('Linksys Media Center Extender - DMA2100', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1077,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Transcend 2.5` SATA Solid State Disk - TS128GSSD25SM', ''), ('Transcend 2.5 Solid State Disk (SSD) 128GB SATA MLC with Build-In ECC - TS128GSSD25S-M', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1078,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Logitech Cordless Desktop MX 5500 Revolution Keyboard And Mouse Combination - 920000383', '$169.00'), ('Logitech Cordless Desktop MX 5500 Revolution Keyboard and Mouse - 920-000383', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1079,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('VMware Fusion 2 For Mac - VMFM20BX2', '$79.00'), ('VMware Fusion 2 - VMFM20BX2', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1080,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Kensington Mini Battery Pack And Charger For iPhone And iPod - K33442US', ''), ('Kensington Mini Battery Pack and Charger for iPhone and iPod - K33442US', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1081,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Belkin White Switch-To-Mac Cable - F4U001', ''), ('Belkin Switch-to-Mac Cable - F4U001', '$21.80')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1082,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Belkin Leather Folio For 2G iPod Touch - F8Z373', '$29.00'), ('Belkin Folio for iPod touch - F8Z373', '$19.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1083,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Canon EOS Rebel XSi Silver Digital SLR Camera - XSIREB1855S', '$799.00'), ('Canon EOS Rebel XSi Digital SLR Camera - Silver - 2757B001', '')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1084,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
+        "batch": 1,
         "question": "[('Transcend JetFlash V10 16GB USB Flash Drive - TS16GJFV10', '$38.00'), ('Transcend 8GB JetFlash V10 USB Flash Drive - TS8GJFV10', '$14.50'), ('Transcend 16GB JetFlash USB Flash Drive - TS16GJFV10', '$30.95')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1085,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Logitech Digital Precision PC Gaming Headset - 981000040', '$49.00'), ('Logitech Digital Precision PC Gaming Headset - 981-000040', '$31.99')]",
-        "choice": "yes, no"
-      }
-    },
-
-  {
-      "pk": 1086,
-      "model": "accounts.task",
-      "fields": {
-        "batch": 3,
-        "question": "[('Linksys Wireless-G Range Expander - WRE54G', '$99.00'), ('Linksys Wireless-G Range Expander Wireless Bridge - WRE54G', '')]",
         "choice": "yes, no"
       }
   }
