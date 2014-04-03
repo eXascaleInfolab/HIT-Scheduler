@@ -73,7 +73,7 @@ def work(request,task_id):
     BASE_PAY = batch.value
     tasks = TaskSubmit.objects.filter(user=request.user).order_by('starttime')
     # FOR THE MODEL
-    last_bonus = 0.0002 #asc
+    last_bonus = 0.0202 #asc
     # last_bonus = 0.0712 #desc
     # last_bonus = 0.04 #uni
     print tasks
@@ -115,7 +115,7 @@ def work(request,task_id):
     print assigned, assigned.id
     # FOR THE MODEL
     # Asc:
-    bonus = last_bonus + 0.0004
+    bonus = last_bonus - 0.0004
     # Desc: bonus = last_bonus + 0.0012
     # Uniform: 
     # bonus = 0.03
