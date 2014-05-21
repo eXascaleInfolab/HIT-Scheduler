@@ -1,0 +1,90 @@
+[
+  {
+    "pk": 14,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Image Labeling",
+      "value": 0.01,
+      "numtask": 8,
+      "bclass": "tag",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:47:49Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:47:49Z",
+      "description": "Enter a list of keywords that describe the objects in the image bellow"
+    }
+  },
+  {
+    "pk": 3299,
+    "model": "accounts.task",
+    "fields": {
+      "question": "ec302a2cacdcb27f3fc630589ac81dfbcc9b1567d4eeed3a0938190188b5ca04.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3300,
+    "model": "accounts.task",
+    "fields": {
+      "question": "ed74fbbf194ba3f7b4db2e2fa5e4b04be4da168619209cb66825fb329c10f80a.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3301,
+    "model": "accounts.task",
+    "fields": {
+      "question": "f0710da32ee19cfdf11c9bd51db947cd3570426bddfd8d8a8e1b98d9914e0717.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3302,
+    "model": "accounts.task",
+    "fields": {
+      "question": "f380f994ce14ec85a3263f602f179ff1a047dea0f5b07db2e48a7e595d3c66d8.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3303,
+    "model": "accounts.task",
+    "fields": {
+      "question": "f540f2c823b972c7f1e78dca469d536ad55f251c53c6957f7172021f102e5abe.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3304,
+    "model": "accounts.task",
+    "fields": {
+      "question": "f8ae98f001037dc909f16ef5bdd764a43cf577ce2540406eb4d05d87c20a9ec6.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3305,
+    "model": "accounts.task",
+    "fields": {
+      "question": "fa5549d0c01c597812ffb342a6d141bb66b59b4544696fbd279adbbd2e921ebd.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3306,
+    "model": "accounts.task",
+    "fields": {
+      "question": "fb309367ae15e282a50f091bb0920cff0b4719f685fa89a6bcbaf632476fb012.jpg",
+      "batch": 14,
+      "choice": ""
+    }
+  }
+  ]

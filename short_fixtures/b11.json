@@ -1,0 +1,54 @@
+[
+  {
+    "pk": 11,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Sentiment Analysis",
+      "value": 0.01,
+      "numtask": 4,
+      "bclass": "sentiment",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Read the following text, then select the sentiment expressed"
+    }
+  },
+  {
+    "pk": 4321,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I first used the router in the free hand mode and liked it a lot. I find it very stable and comfortable to use, it doesn't jump around or make me feel like I need to use a lot of arm strength to keep it under control, and  it has very good visibility to see your cut. It came with a good fence that  is simple yet precise and thats well made and won't break. Also I like the  position of all the controls and the fact that it doesn't have any extra  knobs or gizmos. I prefer things that are simple. I prefer to use my mind  to figure out how I'm going to build something not how my tools work. I now  have it as a permenant fixture  in my router table. The router has plenty  of power for any type of bit or wood I need to cut, and the speed control  knob is easy to get to. I did have to cut off the ears  that hold the  template guide in place so I could get those big panel raising bits in it. It will take 31/2 inchers now. I also removed the springs in the plunge  tubes to make it easier to raise. I added a crank for those times when I  need to make fine adjustments, but I seldom use it. I also put a bend in  the wrench so I can remove and install bits from the top of the table. Its  not a perfect system but its a very good one. I need it back as a hand held so I'm going to buy another one.",
+      "batch": 11,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4322,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I've owned this router for over 8 years and am somewhat satisfied with it. It is quiet and has plenty of power. I find that it is stable in my hands and its' weight actually contributes to that stability. That said, I am disappointed in the plunging mechanism. Shortly after I brought it, the plunging shafts started sticking. After repeatly cleaning and recleaning, it still stuck after using it for a little while. I no longer use it as a plunge router, only as a stationary or table mounted router. If the plunging action isn't that important, then this is a great router. If the plunging action is critical to your work, look elsewhere.",
+      "batch": 11,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4323,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I love the performance and features of this router. For the money, I'm not sure you can do better. It's very quiet for a universal motor-driven tool, and the height adjustment stick and variable speed control are great. I bought this specifically for a router table I built, and it has performed flawlessly in that capacity. I've done some hand-held routing with it and it works good for that as well. Smooth plunging mechanism. The guide fence for freehand routing is well made and solid. The only thing I hate (and this pretty much goes for any router I've used) is changing the bits. It's oftentimes hard to get a good grip on the router, activate the chuck lock, and get enough muscle behind the wrench to get the collet loosened up. Even with that, I highly recommend this router - outstanding performer.",
+      "batch": 11,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4324,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I purchased two of these beauties. For exclusive use in a double router table I have been building. I have a tendency to do quite a bit of research before I drop money on a tool and everyone I talked to loved this router. One cabinet shop has been using one regularly in a router table for 11 years without a problem. My routers arrived promptly and I actually used one of them in the construction of the router table. The design of the collets is excellent and far exceeds any of the craftman (toy/junk) routers I have previously purchased. I have since used them to cut all the stiles and rails for my first kitchen. They were easy to setup with plenty of power to hog through anything I have encountered. I have less money invested in the router table and dual routers than I would have if I had purchased a single cheap reliant shaper. The setup works awesome, as with any tool I look closely at the individual tool for it's merits, and not just the company as a whole. I say this because I am not particulary fond of the hitachi compound miter saw. As I find it inheritly inaccurate by design. I would however highly recommend the m12v router !",
+      "batch": 11,
+      "choice": "positive, neutral, negative"
+    }
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "pk": 26,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Sentiment Analysis",
+      "value": 0.01,
+      "numtask": 5,
+      "bclass": "sentiment",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Read the following text, then select the sentiment expressed"
+    }
+  },
+    {
+    "pk": 4336,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I have owned this router for nearly five years. Until recently it was my only router. Most of the time I use it mounted in a table, but obviously I also used it for hand held work. It it is a bit heavy for hand held work, but any router this size will be. Recenly the variable speed control went out. It would work fine for a while then as the motor warmed up it would die. The authorized Hitachi service center said they didn't know what was wrong as they hardly ever get these things in for service. I bypassed the speed control, which was easy to do, now it works again, but with no speed control. I didn't use the speed control that often so that is not a big deal. The only other problem with this router that I have encountered is the plunge action will start to stick, then it needs to be cleaned and lubricated. Overall it is a great value. For the price I don't think you can beat it.",
+      "batch": 26,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4337,
+    "model": "accounts.task",
+    "fields": {
+      "question": " This is a fantastic tool to use. Only problem is that is a bit heavy. This is a quality product, not to be confused with teh cheap junk that Hitachi gets manufactured in China.",
+      "batch": 26,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4338,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I've had this beauty for nearly 2 months now and I truely love it. The only disappointment so far has been battery life. Mine generally requires a charege every 48 hours or so and I don't really talk on it that much. Why is this phone so great? Simple. It has it all. This is the first phone I know of that has the large bright screen, infrared, bluetooth, USB connector and a speakerphone. If you are looking for an upgrade, this is definitely the phone for you.",
+      "batch": 26,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4339,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I got this with the need for a nokia GSM camera-phone with speakerphone. 3660 had similar features, but that is big in size. 6600 looks and feels nice. This one is full of features(has bluetooth). Especially the LCD is big and the camera quality is among the very best around. I have set up it's PDA features with avantgo.com where you can download info from sites like weather,mapquest maps/directions into it, which is great. Using supplied s/w, you can transfer all addresses from a different nokia phone into it. Goes ~3 days after a charge.",
+      "batch": 26,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4340,
+    "model": "accounts.task",
+    "fields": {
+      "question": " Its been 11 months now that I've held on to my Nokia 6600 for. I purchased this phone knowing it was slightly old as compared to the newer models of Nokia phones available. I thought it was kind of steeply priced at that time. I must add to the dismay/delight of readers this phone is simply the most groundbreaking phone mankind has ever held. It has raised the bar owing to number of features it offers and the absolute ease of use delight. Now I'm a techy and like getting technical about things so I'd brief you in on the few features I liked about this phone- 1.The Phone has the best keypad any Nokia phone has to offer. My dad has a Nokia 6670 before which he has a Nokia 7210 and before that he had a Nokia 6610. I think the keypad on your cell phone is the most important thing for me as Im constantly sending messages , calling people and fiddling around with my phone. Believe me when I say this I have used and fingered all Nokia phones and the 6600 has the best keypad 2. The looks are absolutely no nonsensical. Some complain it being a tad too bulky looking. I must admit its not the best looking phone ever but then it has this look of static and absolute conviction that looks like everything a phone should be 3. The Nokia 6600 has a brilliant Java interface. There's a whole lot of things you can do with this phone besides reading a book , playing various Java games , having a variety of software installed. The Phone offers a 32 Mb MMC card and I think that is certainly the most exciting feature. I upgraded mine to a 128 MB MMC Card via which I can store unlimited number of messages, take a thousand pictures and videos. Capacity is not a problem here. 4. The Build is just right. The phone is sturdy. I've dropped it atleast a dozen times to my recolletion and it still works as good as ever. Its a tough one this unless you wanna drive your car over it. This isn't the most rugged phone ever but then your not gonna play aeroplane with this,are you. 5.The Camera installed on this phone is awesome. I click pictures in JPG format and because the phone has a bluetooth device I find it extremely easy to transfer pics to my pc and forth. The display and brightness on this phone is quite extraordinary. The use of 65536 (36bit) colors ensures you get your share of animations and icons on your phone Besides the above mentioned Merits , the phone has decent ear volume and loudspeaker functionality. It has great upgradibility. I can play MP3 files on my phone by simply downloading softwares freely available on the net. Now that is neat. The log functions helps you track down the incoming , outgoing calls in the most easy of ways. The handsfree provided by the phone is useful for those who talk on the phone while driving. I wouldn't do that because it's not worth my life. Anyhow some demerits of this phone, The phone has a slow processor and the ear volume is lower than 6610 but then the 6610 has the best ear volume among most Nokia variants. The battery life of this phone is at most 2 days and at least one day at excessive use. Video recording is limited at just 9 seconds. You can upgrade but then there's a certain level of trouble involved. Overall I dont think I will ever upgrade from this phone. When I purchased this phone , I thought to myself that I had purchased the most popular phone around and the thought didn't please me. In any case , putting aside how common it is in my city , I dont think I can be anymore satisfied. This makes for a great phone. Did I mention the note feature and how you can send notes via Bluetooth? gee anyways ENJOY WHAT WORKS!",
+      "batch": 26,
+      "choice": "positive, neutral, negative"
+    }
+  }
+]

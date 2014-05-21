@@ -1,0 +1,27 @@
+[
+  {
+    "pk": 16,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Sentiment Analysis",
+      "value": 0.01,
+      "numtask": 1,
+      "bclass": "sentiment",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Read the following text, then select the sentiment expressed"
+    }
+  },
+    {
+    "pk": 4330,
+    "model": "accounts.task",
+    "fields": {
+      "question": " This router was a huge disapointment. The depth adjustment was sloppy. The speed control is recessed too far in the housing and required a tool (screwdriver or dowel rod) to effect any speed change. It was impossible to change the speed with just my fingers. My son tried it and he too couldn't change the speed without an assist. I did like the heft of the machine. It felt rather stable in my hands (heavy though.) I sent it back, as I think that the speed control is either poorly designed or defective. All in all, not very good.",
+      "batch": 16,
+      "choice": "positive, neutral, negative"
+    }
+  }
+  ]

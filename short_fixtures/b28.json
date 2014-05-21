@@ -1,0 +1,99 @@
+[
+  {
+    "pk": 28,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Sentiment Analysis",
+      "value": 0.01,
+      "numtask": 9,
+      "bclass": "sentiment",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Read the following text, then select the sentiment expressed"
+    }
+  },
+  {
+    "pk": 4341,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I've had Nokia's for years, and while this one is packed with whiz bang features it is disappointing for its primary use - a phone. Before buying, I'd urge you to actually use one and not just handle it in the store. On the plus side it's packed with features, including BlueTooth that works fine - it's really a tiny computer that is also a phone... and that's the negative. As a computer, or PDA its weak since the screen, while large by phone standards, is still tiny to really do anything on. And remember, this is a PHONE first and foremost which is where I have my biggest complaints... When you dial a number, you'll need to check the screen to see that the number entered is correct. You'll do that because the keys are tightly packed in and your fingers will likely press two keys at once. I hope you have a magnifying glass, because the number displayed as well as most of the pop up options are tiny. It's as though Nokia has segregated 90% of the screen for fancy features rarely used and leave just 10% for the day to day use. I've have many Nokia's and while this is the best for features, it's the worst as a phone. Sorry, try something else or at least trying using one. You'll see what I mean ... if you have a magnifying glass.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4342,
+    "model": "accounts.task",
+    "fields": {
+      "question": " This phone is flashy and feels good in the hand, but it could not hold a connection to any of my bluetooth devices (headset, handheld, or desktop computer). My old Siemens s56, on the other hand, worked beautifully with all of the above.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4343,
+    "model": "accounts.task",
+    "fields": {
+      "question": " Don't get me wrong. I love gadgets, technology and whatever electronic equipment you throw my way. I've gone from almost every Nokia phone since they were only known and operational in Europe. In those days I've gone from Oki, Motorolla and progressed (actually regressed) to Sony Ericsson's T610. Now I'm back to Nokia to try their 6600 model.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4344,
+    "model": "accounts.task",
+    "fields": {
+      "question": " who in the hell needs a frigging *VGA* camera on their CELLPHONE??? What is that, .00000001 megapixel quality? Ha!",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4345,
+    "model": "accounts.task",
+    "fields": {
+      "question": " i bought this phone last march, almost a year ago, in saudi arabia (it came out there before it did here). since then, i have not found one major problem with it. i highly recommend it if you are looking for a phone with great camera quality and/or lots of features you would find in a PDA.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4346,
+    "model": "accounts.task",
+    "fields": {
+      "question": " Sure, it is a relatively bulky, but it is really packed with many great features. I own this phone for about 6 months now, I have used the following features: bluetooth connection to laptop and desktop for sync contacts and calendars with Outlook, transfer files (movies, songs), I have many movies on it now with a 512MB memory card that it takes. Bought a bluetooth headset and it works like a wonder. Handsfree future is good, but not too exciting. Camera is nice, and video recording for some reason is only limited to 9 seconds. Only thing I don't like about it is slow in changing apps, boot up, and sometime it has problem connect thru bluetooth.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4347,
+    "model": "accounts.task",
+    "fields": {
+      "question": " This one has a good looking. It's oval and... nice. I like it's shape and it's keypad and joystick. It's easy to use. Not too small, and not too big. The screen is quite big (between all handphone), but the just about 65000 color. And, other else,  the camera is still VGA. I must say, this one is quite slow to open an application. Sometimes, it needs few minutes to open an application. What's wrong with it? Is it really slow, or what? Few month ago, it's very popular among my community. It's good. But not good enough for me. :! OK, score 7.0 Oh yes, the newest color of this phone is quite cool.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4348,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I have overall been disappointed with Nokia in the past, finding that Samsung and Motorola tended to have better quality phones. While this phone obviously doesn't have the same quality construction as Motorola does, the Nokia 6600 is one of the better phones I've used. What makes it so great is the versatility and the number of features it has. The best features that I use most often are: 1) Great audio quality overall. Handset quality is great, as is the speakerphone quality and the headset audio quality. 2) Camera phone. A decent camera phone for taking quick pictures, movies, and having general all around fun with. 3) The joystick design they are using on the new Nokias gives you a great degree of control. The only problem is that occasionally the joystick does start to dig into your thumb while gaming. 4) One nice thing about Nokias is that they have a ton of ring tone and game choices. If you love your cell phone games or changing your ring tones everyday, Nokia beats everyone else. 5) Bluetooth wireless technology, so that I can transfer data to and from my computer without messing with any cables. This is great for putting photos and memos on the computer and transferring calander data to my phone. 6) The phone is really wide, which seems to be a turnoff for many people, but the phone is actually easier to grip and feel more ergonomic. I feel much less likely to drop this phone than others, which are actually starting to get too small. You will probably have to get a belt clip for it, however, unless you wear the pants with the cargo pockets. My biggest concern is that I have found Nokia phones lower quality construction to lead to lower prices, but they also don't last as long. I can tell using the phone that it feels a little flimsier than Motorolas do, but as long as I'm not planning on dropping the phone or running over it with my car it should be just fine. I wouldn't use it for business purposes and hand one out to all my employees, because you tend to want a little more rugged a phone for that. Other than that it meets or surpasses all of my needs and surely won't disappoint any already established Nokia phone fans.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4349,
+    "model": "accounts.task",
+    "fields": {
+      "question": " OPERATION: It's like BMW's I-Drive - It does it's job, but has the most unintuitive, overly-layered interface. For example, the memory card is under the battery. The phone must be shut down & taken apart to change the memory card... and turning the phone back on takes a little while. This is representative of the entire phone operation. Not for the impatient. If you've never used an advanced mobile phone before, you might assume this is par for the course, but it simply isn't. Even the instruction booklet is out of order. APPLICATIONS: It has lots of applications and they work very well... when you eventually find where they are and they finally open. No matter how accustomed to the phone you become, too much time is required to get to, open and close applications. On the other hand, one may leave many applications open at once, hide them and return to them just where they left off - similar to a Mac. Me likes. The 6600 has more ameneties than most - World phone, Camera (VGA/zoom/night mode/timer), Video (w/ audio & zoom), Speaker (good sound), Bluetooth, infrared, Modem for computers, electronic wallet, Internet access, Calendar, calculator, converter and more. The phone does not have an Mp3-player, FM radio, 200k+ color screen, megapixel camera, quad band, PDA, photo editor. I'm not sure that a phone w/ these and all of the above features exists just yet. ...I'm not sure I'd want to spend THAT much time w/ a device, anyhow. DEPENDABILITY: I've seen no glitches. I've had no problems w/ this phone. STYLING/ERGONOMICS: The keys are small, which generally doesn't bother me if they are spaced because I can employ a little 'Braille,' but the keys run into each other, so careful attn. must be paid when dialing. As for appearance, well, that's subjective. Few will look at the phone and know it's 'all that'. It's not as stylized as a Sony or Samsung. Less Benz/obvious; more Audi/understated. Although it has chubby hips, the device isn't really so big. Solid, squeak-free, large screen. MEMORY/STORAGE - Seemingly boundless. First of all, the phone houses a great deal of memory for multiple videos, sound clips, photos, texts, etc. Secondly, all info can be sent to a computer and w/o the hassle of USB wires. Still not sure? If you max out the phone memory and have sent all you wish to a computer, there is a memory card w/ a good deal of storage as well. This is no small deal. If you're still whining about storage, deleting some games will free-up still more memory. RECEPTION: This really depends on locale & carrier. The 6600 (T-Mobile) is the true 'world phone' in that it has the mhz to operate around the globe, including New Zealand and Australia (900) whereas the  6620 (available from Cingular) replaces it w/ 800mhz (some refer to as 850). The latter will provide better coverage in more remote areas of The States but still operates in many countries, excluding New Zealand and Australia. The 6600 will provide similar service in more developed areas of The States and not as well in more remote areas. As the 6600 uses 900mhz, it operates in more countries than the 6620. The battery life is less than stellar, but it charges w/ the quickness. Remember, this phone uses an operating system - Symbian... and it's feature-rich w/ 65k colors. It films 10 second video, for crying out loud. The battery life can't be very long; let's not be greedy. GAMES - Java. Don't use them, so I delete them for addtl space. In my humble opinion, games, along w/ 'flip phones' belong in the hands of teenagers. IMP: Two important pieces of advice - Visit Nokia's site. There are number of downloads needed/available for this phone & they will be texted to you at no cost. The downloads are for basic and advanced operations. The second piece of advice - Be prepared to spend a lot of time w/ this phone. If you expect to be able to pick things up when you're out and in a rush via common sense, many times you'll end up frustrated. A Sony Ericcson may be the phone for you... but good luck finding one w/ all the features & such a competitive price. Keep in mind that for nearly every screen, there are a number 'along side' and 'beneath' them... for every 'save,' there are choices of phone memory, memory card or sim card. Despite a critical start, this phone deserves four stars because it accomplishes what it sets out to do (which is pretty lofty)... does more than most... does it well... is dependable. It's a high-line Audi, on a Cadillac suspension, at a reasonable price. When you consider expandability (downloads via computer), the numerous features, two transmission programs and multiple storage devices, dependability - this is a phone that isn't easy to out-grow. I would suggest this phone for all but the simple-minded... or those who simply don't need so many features.",
+      "batch": 28,
+      "choice": "positive, neutral, negative"
+    }
+  }
+]

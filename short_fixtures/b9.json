@@ -1,0 +1,348 @@
+[
+  {
+    "pk": 9,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Item matching",
+      "value": 0.01,
+      "numtask": 33,
+      "bclass": "er_multi",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Given an item description and its price, match the closest item from the presented list."
+    }
+  },
+
+  {
+      "pk": 1001,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Omnimount TV Top Shelf Mount - CCH1P', ''), ('OmniMount TV Top Shelf Mount', '$21.49'), ('OmniMount TV Top Shelf Mount - CCH1P', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1002,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Omnimount TV Top Shelf Mount - CCH1B', ''), ('OmniMount TV Top Shelf Mount', '$21.49'), ('OmniMount TV Top Shelf Mount - CCH1P', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1003,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 13` - 30` VisionMount Flat Panel TV Silver Wall Mount - VMFS', '$39.99'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1004,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 13` - 30` Flat Panel TV Black Wall Mount - VM1B', '$69.99'), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1005,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 15` - 40` Flat Panel TV Silver Wall Mount - VM400S', '$219.99'), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1006,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 15` - 40` Flat Panel TV Black Wall Mount - VM400B', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1007,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 32` - 84` Flat Panel TV Black Tilting Wall Mount - VMPL3B', ''), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1008,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Canon Black Ink Cartridge - Black - PG40BK', '$19.00'), ('Canon PGI-5BK Black Ink Cartridge - 0628B002', '$14.99'), ('Canon CLI-221 Black Ink Cartridge - 2946B001', '$11.99'), ('Canon Black Ink Cartridge - 0615B002', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1009,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('NetGear ProSafe 24 Port Smart Switch - FS726TP', '$605.00'), ('Netgear ProSafe FS726TP 24 Port 10/100 Smart Switch - FS726TPNA', ''), ('Netgear ProSafe GS724TP 24 Port Smart Switch with PoE - GS724TP-100NAS', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1010,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Logitech Harmony 890 Advanced Universal Remote Control - H890', ''), ('Logitech Harmony 1000 Advanced Universal Remote Control - 966230-0403', ''), ('Logitech Harmony One Advanced Universal Remote Control - 915-000035', '$179.99'), ('Logitech Harmony 890 Advanced Universal Remote - 966193-0403', '$248.90')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1011,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 32` - 50` Flat Panel TV Black Wall Mount - VMPL50B', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1012,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 15` To 40` Flat Panel Black TV Wall Mount - ML22B1', ''), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1013,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 15` - 40` VisionMount Flat Panel TV Black Wall Mount - MT25B1', '$99.99'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1014,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Nikon 70-300mm f/4.5-5.6G ED-IF AF-S VR Zoom-Nikkor Lens - 2161', ''), ('Nikon 55-200mm f/4-5.6G ED IF AF-S DX VR Zoom Telephoto Nikkor Lens - Niko_216687518', '$189.95'), ('Nikon Nikkor 70-300mm f/4.5-5.6G ED-IF AF-S VR Telephoto Zoom Lens - 2161', '$449.00')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1015,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 15` - 40` VisionMount Flat Panel TV Black Wall Mount - MF110B', '$179.99'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', ''), ('Sanus VisionMount Tilting Flat Panel TV Wall Mount - MT25-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - ML22-B1', ''), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus VisionMount Flat Panel TV Wall Mount - MF110-B1', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1016,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sony LCS-CSJ Black Soft Carrying Case - LCSCSJ', ''), ('Sony LCS-CSH Soft Camera Case - LCSCSH', ''), ('Sony LCS-CSJ Soft Camera Case - LCSCSJ', ''), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1017,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sony LCS-CSQ/B Black Soft Carrying Case - LCSCSQB', ''), ('Sony LCS Soft Carrying Case - LCSCST', '$9.95'), ('Sony LCS-CSQ Soft Cyber-shot Camera Case - LCSCSQ/B', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1018,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sony Progressive Scan Black DVD Player - DVPNS57PB', ''), ('Sony DVPNS57P DVD Player - DVPNS57PS', '$45.32'), ('Sony DVPNS57P DVD Player - DVPNS57PB', '$39.00')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1019,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sony Progressive Scan Silver DVD Player - DVPNS57PS', ''), ('Sony DVPNS57P DVD Player - DVPNS57PS', '$45.32'), ('Sony DVPNS57P DVD Player - DVPNS57PB', '$39.00')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1020,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Netgear ProSafe 24-Port Smart Switch - GS724TP', '$780.00'), ('Netgear ProSafe FS726TP 24 Port 10/100 Smart Switch - FS726TPNA', ''), ('Netgear ProSafe GS724TP 24 Port Smart Switch with PoE - GS724TP-100NAS', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1021,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Canon Black Ink Cartridge - PG50', '$29.00'), ('Canon PGI-5BK Black Ink Cartridge - 0628B002', '$14.99'), ('Canon CLI-221 Black Ink Cartridge - 2946B001', '$11.99'), ('Canon Black Ink Cartridge - 0615B002', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1022,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('LaCie 1TB FireWire 800/FireWire 400/USB 2.0 External Hard Drive - 301199U', ''), ('LaCie USB 2.0 External Hard Drive - 301304U', ''), ('LaCie USB 2.0 External Hard Drive - 301302U', '$86.95')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1023,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Canon PIXMA Multifunction Printer - MX310', ''), ('Canon PIXMA MX310 Multifunction Photo Printer - 2184B002', '$89.99'), ('Canon PIXMA MX700 Multifunction Photo Printer - 2186B002', ''), ('Canon PIXMA MX850 Multifunction Photo Printer - 2436B002', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1024,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sony Universal Remote Commander Remote Control - RMV310', ''), ('Sony Universal Remote Control - RM-EZ4', '$12.72'), ('Sony Remote Control - RMV310', '$14.72')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1025,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sony Universal Remote Control - RMEZ4', '$16.00'), ('Sony Remote Control - RMV310', '$14.72'), ('Sony Universal Remote Control - RM-EZ4', '$12.72')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1026,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Sanus 15` - 32` Flat Panel TV Black Wall Mount - MF209B1', '$96.00'), ('Sanus VisionMount Flat Panel TV Wall Mount - VMPL3B', '$144.05'), ('Sanus Flat Panel TV Wall Mount - VMF', ''), ('Sanus Flat Panel TV Wall Mount - VMPL50-B', ''), ('Sanus Flat Panel TV Wall Mount - VM1B', '$69.99'), ('Sanus Flat Panel TV Wall Mount - VM400S', ''), ('Sanus Flat Panel TV Wall Mount - VM400B', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1027,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Canon PIXMA MX700 Multifunction Printer - MX700C', ''), ('Canon PIXMA MX310 Multifunction Photo Printer - 2184B002', '$89.99'), ('Canon PIXMA MX850 Multifunction Photo Printer - 2436B002', ''), ('Canon PIXMA MX700 Multifunction Photo Printer - 2186B002', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1028,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Transcend 4GB Secure Digital High-Capacity (SDHC) Class 6 Memory Card - TS4GSDHC6', ''), ('Transcend 8GB Secure Digital High Capacity (SDHC) Card - Class 6 - TS8GSDHC6', '$11.45'), ('Transcend 4GB Secure Digital High Capacity (SDHC) Card - Class 6 - TS4GSDHC6', '$5.74')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1029,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Microsoft Office Standard 2007 - 02107746', '$399.00'), ('Microsoft Office 2007 Standard - 021-07746', '$319.99')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1030,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Kensington Orbit Optical Trackball Mouse - 64327', '$38.00'), ('Kensington Orbit Optical Trackball - USB w/PS2 Adapter - 64327', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1031,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Uniden Dect 6.0 Accessory Handset  And Charging Cradle - DCX200', ''), ('UNIDEN DCX200 DECT 6.0 Accessory Handset & Charger', ''), ('Uniden DCX300 DECT 6.0 Accessory Handset and Cradle for the DECT2000 series', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1032,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Transcend JetFlash V10 8GB USB Flash Drive - TS8GJFV10', ''), ('Transcend 16GB JetFlash USB Flash Drive - TS16GJFV10', '$30.95'), ('Transcend 8GB JetFlash V10 USB Flash Drive - TS8GJFV10', '$14.50')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1033,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 9,
+        "question": "[('Logitech Blue V470 Cordless Laser Mouse For Notebooks - 910000298', ''), ('Logitech V470 Cordless Laser Mouse for Notebooks - 910-000298', ''), ('Logitech V470 Cordless Laser Mouse for Notebooks - 910-000692', '')]",
+        "choice": "yes, no"
+      }
+    }
+]

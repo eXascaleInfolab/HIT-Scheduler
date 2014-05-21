@@ -1,0 +1,144 @@
+[
+  {
+    "pk": 24,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Classify a butterfly image into its specie",
+      "value": 0.01,
+      "numtask": 14,
+      "bclass": "classify",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Classify a butterfly image into its specie."
+    }
+  },
+   {
+    "pk": 45,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm045.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 46,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm046.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 47,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm047.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 48,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm048.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 49,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm049.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 50,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm050.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 51,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm051.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 52,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm052.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 53,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm053.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 54,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm054.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 55,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm055.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 56,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm056.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 57,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm057.jpg",
+      "choice": ""
+    }
+  },
+  {
+    "pk": 58,
+    "model": "accounts.task",
+    "fields": {
+      "batch": 24,
+      "question": "adm058.jpg",
+      "choice": ""
+    }
+  }
+]

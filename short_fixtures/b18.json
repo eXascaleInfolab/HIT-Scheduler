@@ -1,0 +1,63 @@
+[
+  {
+    "pk": 18,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Sentiment Analysis",
+      "value": 0.01,
+      "numtask": 5,
+      "bclass": "sentiment",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Read the following text, then select the sentiment expressed"
+    }
+  },
+  {
+    "pk": 4331,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I was skeptical about this router due to low price but have been totally impressed using it. I also have the very popular Bosch 1617EVSPK kit and had planned to use it on my cabinets, routing dados for shelves. Unfortunately, the Bosch fixed base has no flat edge to ride against a guide, and both bases have a sub-base that extends past the metal base to prevent using against any kind of guide. The Hitachi, on the other hand has a beautiful large flat edge to run against a guide, and the sub-base is recessed so as not to interfere. The power is incredible, it cut through MDF and plywood like butter. The edge guide has a nice micro adjust feature that works well. The only not-so-positive comment I have is about the depth adjustment, it is not easy to micro-adjust accurately. I do not count this as a negative, however, because it is not that much of a nuisance and at the price for what you get this router is way too good to pass up!!!",
+      "batch": 18,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4332,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I have 6 routers, but have owned about 10 over the years. If one fails or simply doesn't perform I know I'll let it sit on the shelf so I either sell it or give it away. The ones I've kept (Porter Cables, Dewalts, Bosch, and this Hitachi) have proven their worth over the years, however, when I need a real workhorse, I grab this router. I recently had to run a 3/4\" straight bit through hard maple to make a deep dado and was amazed that this machine didn't even slow down. I could take 1/2\" passes and it still didn't skip a beat. As much as I like my other routers, I know their limitations because I've pushed them all to them. I've yet to find the limitation for this Hitachi (my only Hitachi tool, by the way) and quite frankly, I don't know that I have the muscle to push this machine any harder. Bottom line is that at $160, this is an absolute steal. I've got a buddy who's trying to offload his almost new $300 Speedmatic because he saw what this router can do. It is without even a slight doubt, my new favorite.",
+      "batch": 18,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4333,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I reciently purchased this when a 1 1/2hp plunge router (different name brand) couldn't hack it. The Hitachi M12V is a dream to work with, smooth starts, adjustable speeds, micro-adjustable depth, and plenty of power to spare. I couldn't believe what I had been missing. If you're looking for a 3hp plunge router, the Hitachi M12V is your best bet to stretch your equipment budget. I'll be getting a second one for my router table!",
+      "batch": 18,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4334,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I have been impressed with the power of the Hitachi M12V. It doesn't bog down under load. Cuts are easy and smooth. I use it on a router table, and it is works well. The major reasons I didn't give it a five are:  One, I didn't think the fine adjustment worked well. I replaced it with a Router Raizer and it works much better. Two, the single wrench just doesn't work well. The sliding latch is does not stay in place. It is almost all you can do to change bits with two hands (you need three). I am trying to purchase a second wrench, and I think it will improve the function greatly. Other than this, I am very pleased with the router and would buy it again. I really liked the price...",
+      "batch": 18,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4335,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I use the Hitachi M12V in a router table. It is a little large for my table (Rockler), but that isn't the fault of the router. Because of this I have removed the handles. I like the speed control. It works well with the larger bits. (I prefer 1/2 inch bits). It has plenty of power. The fine adustment knob which came with the router was very difficult to use on a router table. Finally, I gave up and I purchased a Router Razier. After getting it installed (which wasn't an easy task), it makes fine adjustments easy. The one wrench systems makes changing bits somewhat difficult. I am seriously considering purchasing another wrench and just not using the \"sliding wrench\" which comes on the router. All in all I am pleased with the router. The power, low noise operation, and speed control makes up for the problems I have experienced.",
+      "batch": 18,
+      "choice": "positive, neutral, negative"
+    }
+  }
+]

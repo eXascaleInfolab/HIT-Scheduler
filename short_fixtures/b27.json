@@ -1,0 +1,99 @@
+[
+  {
+    "pk": 27,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Classify a butterfly image into its specie",
+      "value": 0.01,
+      "numtask": 9,
+      "bclass": "classify",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Classify a butterfly image into its specie."
+    }
+  },
+   {
+      "pk": 60,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm060.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 61,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm061.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 62,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm062.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 63,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm063.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 64,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm064.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 65,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm065.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 66,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm066.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 67,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm067.jpg",
+        "choice": ""
+      }
+    },
+    {
+      "pk": 68,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 27,
+        "question": "adm068.jpg",
+        "choice": ""
+      }
+    }
+  ]

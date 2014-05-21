@@ -1,0 +1,45 @@
+[
+  {
+    "pk": 15,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Spelling mistake correction",
+      "value": 0.01,
+      "numtask": 3,
+      "bclass": "data",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Correct the spelling mistakes in the following sentence"
+    }
+  },
+    {
+    "pk": 764,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I realize you have a differnt phone, but I hope this helps.",
+      "batch": 15,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 765,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is out there any advanced contact manager?",
+      "batch": 15,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 766,
+    "model": "accounts.task",
+    "fields": {
+      "question": "suppose I don't have to root and thinker with it right?",
+      "batch": 15,
+      "choice": ""
+    }
+  }
+]

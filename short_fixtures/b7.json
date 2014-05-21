@@ -1,0 +1,117 @@
+ [
+  {
+    "pk": 7,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Spelling mistake correction",
+      "value": 0.01,
+      "numtask": 11,
+      "bclass": "data",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Correct the spelling mistakes in the following sentence"
+    }
+  },
+  {
+    "pk": 741,
+    "model": "accounts.task",
+    "fields": {
+      "question": "and don't frget that higher speeds means higher heat -- your tiny pocket-sized squeeze-asmuch-as-possible-into-this-small-area has very little in the way of cooling fins.",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 742,
+    "model": "accounts.task",
+    "fields": {
+      "question": "when disabling iit I loose more often my wifi connection.",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 743,
+    "model": "accounts.task",
+    "fields": {
+      "question": "turning on APN also does take a lot of time occasinally.",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 744,
+    "model": "accounts.task",
+    "fields": {
+      "question": "can you suggest a way to turn of APN in a less harmful way?",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 745,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have an eletronic device the model is K599 was built in china.",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 746,
+    "model": "accounts.task",
+    "fields": {
+      "question": "when it is downloaded, it displays an 'successfully updated' icon.",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 747,
+    "model": "accounts.task",
+    "fields": {
+      "question": "yesterday i have got a warning that the \"phone storage space is low. because of that i can't recieve SMS messages. i tried to uninstall applications and the system show me the the application is being uninstalled, but after restart i see the application again (when i tried to remove Adobe AIR - 16 MB), also when i try to delete threads of messages, it doesn't delete theme. and the weirdest thing is that after i \"free\" space and i check the internal storage in the system phone storage setting, i see that the available space in the internal phone storage is lower than before.moreover i can't install any application that can help me, cache cleaner or something else.do someone know how to overcome this problem ?",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 748,
+    "model": "accounts.task",
+    "fields": {
+      "question": "what will I loose?",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 749,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the free version allow 2-way video chat between Android and Mac (plus many other platforms)They are expected to release a version for the Galaxy Tab in February according to this site",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 750,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is it possible to run android application on PC (with emulator) ?",
+      "batch": 7,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 751,
+    "model": "accounts.task",
+    "fields": {
+      "question": "how to stop galaxy S, for not to automatically converts SMS to MMS ?",
+      "batch": 7,
+      "choice": ""
+    }
+  }
+]

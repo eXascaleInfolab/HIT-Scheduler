@@ -1,0 +1,62 @@
+[  
+  {
+    "pk": 13,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Sentiment Analysis",
+      "value": 0.01,
+      "numtask": 5,
+      "bclass": "sentiment",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Read the following text, then select the sentiment expressed"
+    }
+  } , {
+    "pk": 4325,
+    "model": "accounts.task",
+    "fields": {
+      "question": " I'm not overly fond of GREEN but when I used this Hitachi M12V it turns out that now I'm very fond of it. This router does GREAT in hand held jobs and Router Tables. I mounted mine in a home brew table and used a router lift. The smooth operation variable speed and a set of good Jasada Bits will provide just the right combination for great predictable results. Its well made and user friendly. You'll love it!",
+      "batch": 13,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4326,
+    "model": "accounts.task",
+    "fields": {
+      "question": " This router is 1 of 4 in my shop. It is currently permanently mounted (3 years now) in my router table and will most likely stay there until its shot. I have added the router raizer kit(simple installation) to it and cannot live without this setup! This router has soft start and runs smooth and true. I use the router with a 3 1/2in raised panel bit with no problems. It has enough power to hog out all the material in one pass, but I usually take multiple to prevent blowout and a smoother finish. For the price, I am considering purchasing a spare just to have as a backup. You just can't go wrong with this one! Enjoy.",
+      "batch": 13,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4327,
+    "model": "accounts.task",
+    "fields": {
+      "question": " This is an excellent router for the price. This is my second one. The first one lasted about 6 years of heavy use.",
+      "batch": 13,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4328,
+    "model": "accounts.task",
+    "fields": {
+      "question": " This is a well-made and powerful tool.",
+      "batch": 13,
+      "choice": "positive, neutral, negative"
+    }
+  },
+  {
+    "pk": 4329,
+    "model": "accounts.task",
+    "fields": {
+      "question": " At the last Anahiem WW Show I decided to get the M12V. I was some what sceptical when I seen the price deference between the other makers of comparible HP. I bought it! I have 5 routers, I use them all! I make furniture and cabinetry. I cut 30-50 raised panel doors a month using every specie of wood imaginable. Maple, Koa and Cherry giving us the hardest time with burning and splintering. The M12V has been great. The height adjustment works well- not perfect. The wood can be pushed thru fast or slow with little bog. The true test is its ability to be forgiving when coping a rail. What I really like about- its quite, it can handle my workload and it was so cheap that I can throw it away and buy another one without blinking. Good luck and cut wood!!!!",
+      "batch": 13,
+      "choice": "positive, neutral, negative"
+    }
+  }
+]

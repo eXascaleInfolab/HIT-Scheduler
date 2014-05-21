@@ -1,0 +1,58 @@
+[
+  {
+    "pk": 21,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Item matching",
+      "value": 0.01,
+      "numtask": 4,
+      "bclass": "er_multi",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Given an item description and its price, match the closest item from the presented list."
+    }
+  },
+
+  {
+      "pk": 1042,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 21,
+        "question": "[('Sony Black Cyber-Shot Digital Camera - DSCW150B', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-T300 Digital Camera - Black - DSCT300/B', '$273.95'), ('Sony Cyber-shot DSC-H10 Digital Camera - Black - DSCH10/B', '$213.72'), ('Sony Cyber-shot DSC-H50 Digital Camera - Black - DSCH50B', '$329.00'), ('Sony Cyber-shot DSC-W150 Digital Camera - Gold - DSCW150N', '$129.99'), ('Sony Cyber-shot DSC-W150 Digital Camera - Red - DSCW150R', '$139.94'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1043,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 21,
+        "question": "[('Sony Red Cyber-Shot Digital Camera - DSCW150R', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W150 Digital Camera - Gold - DSCW150N', '$129.99'), ('Sony Cyber-shot DSC-W170 Digital Camera - Red - DSCW170R', '$169.00'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99'), ('Sony Cyber-shot DSC-W150 Digital Camera - Red - DSCW150R', '$139.94')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1044,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 21,
+        "question": "[('Sony Gold Cyber-Shot Digital Camera - DSCW150N', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W150 Digital Camera - Red - DSCW150R', '$139.94'), ('Sony Cyber-shot DSC-W150 Digital Camera - Black - DSCW150/B', '$129.99'), ('Sony Cyber-shot DSC-W150 Digital Camera - Gold - DSCW150N', '$129.99')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1045,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 21,
+        "question": "[('Sony Silver Cyber-Shot Digital Camera - DSCW170', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W120 Digital Camera - Silver - DSCW120', '$106.42'), ('Sony Cyber-shot DSC-W150 Digital Camera - Silver - DSCW150', '$129.99'), ('Sony Cyber-shot DSC-W170 Digital Camera - Silver - DSCW170', '')]",
+        "choice": "yes, no"
+      }
+    }
+]

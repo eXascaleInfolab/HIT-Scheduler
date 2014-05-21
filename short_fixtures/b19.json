@@ -1,0 +1,57 @@
+[
+  {
+    "pk": 19,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Item matching",
+      "value": 0.01,
+      "numtask": 4,
+      "bclass": "er_multi",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Given an item description and its price, match the closest item from the presented list."
+    }
+  },
+    {
+      "pk": 1038,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 19,
+        "question": "[('Yamaha NS-AW390BL All-Weather Pair Speaker System - NSAW390BK', '$149.00'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390WH', '$79.96'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390BL', '$78.89'), ('Yamaha NS-AW190 All-Weather Speaker System - NS-AW190BL', '$51.72')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1039,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 19,
+        "question": "[('Yamaha NS-AW190BL All-Weather Pair Speaker System - NSAW190BK', '$99.00'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390WH', '$79.96'), ('Yamaha Outdoor NS-AW390 All-Weather Speaker System - NS-AW390BL', '$78.89'), ('Yamaha NS-AW190 All-Weather Speaker System - NS-AW190BL', '$51.72')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1040,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 19,
+        "question": "[('Sony Silver Cyber-Shot Digital Camera - DSCS750', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W120 Digital Camera - Silver - DSCW120', '$106.42'), ('Sony Cyber-shot DSC-W150 Digital Camera - Silver - DSCW150', '$129.99'), ('Sony Cyber-shot DSC-W170 Digital Camera - Silver - DSCW170', '')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1041,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 19,
+        "question": "[('Sony Silver Cyber-Shot Digital Camera - DSCW150', ''), ('Sony DSC-750 Cyber-shot Digital Camera - DSC750', '$99.72'), ('Sony Cyber-shot DSC-W120 Digital Camera - Silver - DSCW120', '$106.42'), ('Sony Cyber-shot DSC-W170 Digital Camera - Silver - DSCW170', ''), ('Sony Cyber-shot DSC-W150 Digital Camera - Silver - DSCW150', '$129.99')]",
+        "choice": "yes, no"
+      }
+    }
+    ]

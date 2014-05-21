@@ -1,0 +1,63 @@
+[
+  {
+    "pk": 25,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Spelling mistake correction",
+      "value": 0.01,
+      "numtask": 5,
+      "bclass": "data",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Correct the spelling mistakes in the following sentence"
+    }
+  },
+    {
+    "pk": 777,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I switched off d cell, removed battery,sd card ,sim and then put them back and restarted but still no luck :( Then i installed GPS ESSENTIALS from android market.launched the application and changed settingsGps update interval -> 10 secondsTracking update interval -> 10 secondsafter this tapped on \"satellites\" on main screen.(outside my room)I couldn't believe my eyes. it detected 8 satellites in few seconds and even it was able to lock to 7 of them.",
+      "batch": 25,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 778,
+    "model": "accounts.task",
+    "fields": {
+      "question": "any idea on this",
+      "batch": 25,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 779,
+    "model": "accounts.task",
+    "fields": {
+      "question": "just reived one of these (Sim Free, UK Version, Android 2.3 with Sense UI) , can anybody point me towards the simplest and most easy way to Root one?",
+      "batch": 25,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 780,
+    "model": "accounts.task",
+    "fields": {
+      "question": "please not that merely showing Bengali characters won't help.",
+      "batch": 25,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 781,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I am finding problem to connect my android mobile to server on a windows machine.",
+      "batch": 25,
+      "choice": ""
+    }
+  }
+]

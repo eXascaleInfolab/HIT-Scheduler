@@ -1,0 +1,108 @@
+[
+  {
+    "pk": 22,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Spelling mistake correction",
+      "value": 0.01,
+      "numtask": 10,
+      "bclass": "data",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Correct the spelling mistakes in the following sentence"
+    }
+  },
+    {
+    "pk": 767,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I heard about the complain of Nexus S lack of 720p video recording?",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 768,
+    "model": "accounts.task",
+    "fields": {
+      "question": "how does that compared to Samsung Galaxy S?",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 769,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have two android tablet device, and I want to use the first device to control the second device.",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 770,
+    "model": "accounts.task",
+    "fields": {
+      "question": "thanks",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 771,
+    "model": "accounts.task",
+    "fields": {
+      "question": "day or two ago I have troubles in default Market Application, When I try to scroll in selection \"Just In\" application just stop working and I get screen black for while and after that I get error process com.android.vending is crashed.",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 772,
+    "model": "accounts.task",
+    "fields": {
+      "question": "can,i uninstall default applications that comes with android os.",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 773,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you have more than 1 browser and you haven't set a dfault, Android will assk you which one to choose.",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 774,
+    "model": "accounts.task",
+    "fields": {
+      "question": "as Seth and Hcpl have said VLC Player can play almost any format ad should be able to play your videos.",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 775,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you want to know what codec is being used, then try opening the video in a codec identifying app like GSpot, this should tell you exactly which audio and video foprmats and codecs are in your videos.",
+      "batch": 22,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 776,
+    "model": "accounts.task",
+    "fields": {
+      "question": "odly, some it left off randomly.",
+      "batch": 22,
+      "choice": ""
+    }
+  }
+]

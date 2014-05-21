@@ -1,0 +1,56 @@
+[
+  {
+    "pk": 12,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Item matching",
+      "value": 0.01,
+      "numtask": 4,
+      "bclass": "er_multi",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Given an item description and its price, match the closest item from the presented list."
+    }
+  },
+  {
+      "pk": 1034,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 12,
+        "question": "[('LaCie 500GB USB 2.0 External Hard Drive - 301302U', ''), ('LaCie USB 2.0 External Hard Drive - 301304U', ''), ('LaCie USB 2.0 External Hard Drive - 301302U', '$86.95')]",
+        "choice": "yes, no"
+      }
+    },
+  {
+      "pk": 1035,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 12,
+        "question": "[('Canon Vixia High Definition Camcorder - HF100', ''), ('Canon VIXIA HV30 High Definition Digital Camcorder - 2680B001', '$650.99'), ('Canon VIXIA HF100 High Definition Digital Camcorder - 2708B001', '$529.00'), ('Canon VIXIA HG20 High Definition Camcorder - 3085B001AA', '$557.64'), ('Canon VIXIA HG21 High Definition Camcorder - 2704B001AA', '$798.97'), ('Canon VIXIA HF10 High Definition Digital Camcorder - 2573B001', '$638.09')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1036,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 12,
+        "question": "[('Canon Vixia High Definition Camcorder - HV30', ''), ('Canon VIXIA HV30 High Definition Digital Camcorder - 2680B001', '$650.99'), ('Canon VIXIA HF100 High Definition Digital Camcorder - 2708B001', '$529.00'), ('Canon VIXIA HF10 High Definition Digital Camcorder - 2573B001', '$638.09'), ('Canon VIXIA HG20 High Definition Camcorder - 3085B001AA', '$557.64'), ('Canon VIXIA HG21 High Definition Camcorder - 2704B001AA', '$798.97')]",
+        "choice": "yes, no"
+      }
+    },
+
+  {
+      "pk": 1037,
+      "model": "accounts.task",
+      "fields": {
+        "batch": 12,
+        "question": "[('Canon Vixia High Definition Camcorder - HF10', ''), ('Canon VIXIA HV30 High Definition Digital Camcorder - 2680B001', '$650.99'), ('Canon VIXIA HF100 High Definition Digital Camcorder - 2708B001', '$529.00'), ('Canon VIXIA HF10 High Definition Digital Camcorder - 2573B001', '$638.09'), ('Canon VIXIA HG20 High Definition Camcorder - 3085B001AA', '$557.64'), ('Canon VIXIA HG21 High Definition Camcorder - 2704B001AA', '$798.97')]",
+        "choice": "yes, no"
+      }
+    }
+]

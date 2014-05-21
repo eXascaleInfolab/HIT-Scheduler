@@ -1,0 +1,117 @@
+[
+  {
+    "pk": 10,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Spelling mistake correction",
+      "value": 0.01,
+      "numtask": 11,
+      "bclass": "data",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Correct the spelling mistakes in the following sentence"
+    }
+  },
+  {
+    "pk": 753,
+    "model": "accounts.task",
+    "fields": {
+      "question": "samasung Galaxy S GT I9000 comes with 512 MB RAM but it shows only 326 or less Why ?",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 754,
+    "model": "accounts.task",
+    "fields": {
+      "question": "what where the developers/engineers thinking?",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 755,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you look at your Manage Your Kindle page on Amazon (the same page where you set the email address up) you can see that the Kindle email address is secifically assigned to one Kindle device.",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 756,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I assume they are stored in./data/data/com.android.providers.telephony/databases/smsmms.db.and that this file (originally with 500+ messages) has been overwritten by a new smsmms.db (now containing ~5 messages), but as I am new to Android/Linux am not sure if this assumption is right e.g. the new smsmms.db file could be written to a different disk location (as is commin on FAT32/NTFS file systems in Windows) and hence with the right know-how the original file can be recovered (I've recvered many files like this in Windows without issue).",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 757,
+    "model": "accounts.task",
+    "fields": {
+      "question": "we know that google calendar application has a way to set reminder / alarm.",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 758,
+    "model": "accounts.task",
+    "fields": {
+      "question": "my question is, is there an application (preferably free, as I don't have CC and google's android market doesn't support paypal, yet) that can help me set defult reminder for every event I have?",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 759,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I just switched got a Droid X and I love it.",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 760,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have many video files. and want convert it all to a playable format as my phone <br>H264 or xvid ?",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 761,
+    "model": "accounts.task",
+    "fields": {
+      "question": "setting Manage Applications -> Third Pary App -> Force Stop not working T on Force Stop Button not changed.",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 762,
+    "model": "accounts.task",
+    "fields": {
+      "question": "this is on ATT&T.",
+      "batch": 10,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 763,
+    "model": "accounts.task",
+    "fields": {
+      "question": "there is only ways to purge the whole certificate store (for ssl root certificates used e.g. in 802.1x).",
+      "batch": 10,
+      "choice": ""
+    }
+  }
+]

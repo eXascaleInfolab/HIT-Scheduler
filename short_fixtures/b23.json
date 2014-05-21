@@ -1,0 +1,54 @@
+[
+  {
+    "pk": 23,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Image Labeling",
+      "value": 0.01,
+      "numtask": 4,
+      "bclass": "tag",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:47:49Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:47:49Z",
+      "description": "Enter a list of keywords that describe the objects in the image bellow"
+    }
+  },
+  {
+    "pk": 3276,
+    "model": "accounts.task",
+    "fields": {
+      "question": "c13ed82cb3b7b7e23b74eb1c80c81048cc823ed4adbba6ad7491cb9aef039a43.jpg",
+      "batch": 23,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3277,
+    "model": "accounts.task",
+    "fields": {
+      "question": "c2dc5a81ddf67880f25cfa2829b72d3ca496575f699a5a65fc6ebfa3ed2401e.jpg",
+      "batch": 23,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3278,
+    "model": "accounts.task",
+    "fields": {
+      "question": "c622b9b881ddb80005d570395609a4f63626cfcf9600deff7db1b6c6ff42e515.jpg",
+      "batch": 23,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 3279,
+    "model": "accounts.task",
+    "fields": {
+      "question": "c75fb6057a3c37c165c19b648c200b0e8b81ba1965b105d39761d80076dbc735.jpg",
+      "batch": 23,
+      "choice": ""
+    }
+  }
+]
