@@ -9,17 +9,19 @@ class TaskAdmin(admin.ModelAdmin):
 class TaskInline(admin.StackedInline):
     model = Task
     extra = 3
+    
 class BatchAdmin(admin.ModelAdmin):
+    list_display = ('name','bclass','value','numtask','done','runtask','repetition')
     fieldsets = [
-        (None,     {'fields': ['name','bclass','done','value','repetition','numtask']}),
+        (None,     {'fields': ['name','bclass','value','numtask','done','runtask', 'repetition']}),
     ]
     def formfield_for_choice_field(self, db_field, request, **kwargs):
         if db_field.name == "bclass":
-            kwargs['class'] = (('classify','classify'),('extract','extract'),('curate','curate'),('data','data'),('study','study'))
+            kwargs['class'] = (('classify','classify'),('tag','tag'),('curate','curate'),('data','data'),('study','study'))
         return super(BatchAdmin, self).formfield_for_choice_field(db_field, request, **kwargs)
 
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display=('user','credit','score')
+    list_display=('user','credit','score','lastbatch')
 
 
 class TaskSubmitAdmin(admin.ModelAdmin):

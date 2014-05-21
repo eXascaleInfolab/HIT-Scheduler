@@ -3,14 +3,14 @@
 {% block content %}
 <script type="application/javascript">
   $(document).ready(function() {
-      $('#taskcustomer').show();
+      $("#taskcustomer").show();
       $("#submitButton").click(function( event ) {
         event.preventDefault();
         if ( $("#mturk_form").parsley('validate') ) {
           $(this).button('loading');
           $(this).attr('disabled', 'disabled');
           $.ajax({
-            url: "{% url "submit" task.id %}",
+            url: "{% url "submit" batch.id %}",
             type: "POST"
           }).always(function() {
             $("#mturk_form").submit();
@@ -19,12 +19,14 @@
       });
   });
 </script>
-<section class="scrollable wrapper" id="taskcustomer" style="display:none;">
+<section class="scrollable wrapper" id="taskcustomer">
   <div class="row">
       <div class="col-sm-6 col-sm-offset-3">
         <form data-validate="parsley" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit" method="post">
+          {% csrf_token %}
           <input type="hidden" id="assignmentId" name="assignmentId" value="">
           <input type="hidden" id="hitId" name="hitId" value="">
+          <input type="hidden" name="batch" value="{{batch.id}}">
             <section class="panel">
               <header class="panel-heading bg-info">
                 <span class="h4">{{batch.description}}</span>
@@ -32,7 +34,7 @@
               <div class="panel-body">
                 <div class="col-sm-6">
                   <div class="post-media">
-                      <a href="#"><img src="https://s3-us-west-2.amazonaws.com/butterflies/{{task.question}}" class="img-full"></a>
+                      <a href="#"><img src="https://s3-us-west-2.amazonaws.com/butterflies/a/{{task.question}}" class="img-full"></a>
                   </div>
                 </div>
                 <div class="col-sm-6">                     
@@ -87,12 +89,7 @@
                 <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-info">Submit</button>
               </footer>
             </section>
-            <input type="hidden" name="bonus" value="{{bonus}}"> 
-            {% csrf_token %}
         </form>
-          <div class="alert alert-info alert-block">
-            <h6>*Hourly Rate is defined as: The reward + The extra bonus, divided by the time to finish the HIT.</h6>
-          </div>
       </div>
       <div class="col-sm-3"> 
           <div class="alert alert-warning alert-block">

@@ -1,8 +1,8 @@
 import os.path
 from os.path import abspath, dirname, basename, join
 
-#DEBUG = True
-DEBUG = False
+DEBUG = True
+# DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 PROJECT_DIR = os.path.dirname(__file__)
@@ -16,7 +16,7 @@ MANAGERS = ADMINS
 
 # DATABASES = {'default': dj_database_url.config(default='postgres://localhost/train')}
 import dj_database_url
-DATABASES = {'default': dj_database_url.config(default='postgres://localhost/train')}
+DATABASES = {'default': dj_database_url.config(default='postgres://localhost/fast')}
 
 # DATABASES = {
 #     'default': {
@@ -125,7 +125,6 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
     'accounts',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',

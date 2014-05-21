@@ -4,11 +4,12 @@
     <title>{% block title %}{% endblock title %} trained</title>
     <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="{{ STATIC_URL }}css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/font.css" type="text/css" cache="false" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/font.css" type="text/css"/>
     <link rel="stylesheet" href="{{ STATIC_URL }}css/plugin.css" type="text/css" />
     <link rel="stylesheet" href="{{ STATIC_URL }}css/app.css" type="text/css" />
     <link rel="stylesheet" href="{{ STATIC_URL }}js/fuelux/fuelux.css" type="text/css">
     <link rel="stylesheet" href="{{ STATIC_URL }}js/select2/select2.css" type="text/css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
       <script src="{{ STATIC_URL }}js/ie/respond.min.js" cache="false"></script>
       <script src="{{ STATIC_URL }}js/ie/html5.js" cache="false"></script>
@@ -41,7 +42,12 @@
       }
 
       </script>
-    <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+
+  </head>
+  <body>
+  {% block content_title %}{% endblock %}
+  {% block content %}{% endblock content %}
+
     <!-- Bootstrap -->
     <script src="{{ STATIC_URL }}js/bootstrap.js"></script>
     <!-- Sparkline Chart -->
@@ -51,90 +57,27 @@
     <script src="{{ STATIC_URL }}js/app.plugin.js"></script>
     <script src="{{ STATIC_URL }}js/app.data.js"></script>
     <script src="{{ STATIC_URL }}js/fuelux/fuelux.js"></script>
-    <script src="{{ STATIC_URL }}js/select2/select2.min.js" cache="false"></script>
+    <script src="{{ STATIC_URL }}js/select2/select2.min.js"></script>
     
-    <script src="{{ STATIC_URL }}js/parsley/parsley.min.js" cache="false"></script>
-    <script src="{{ STATIC_URL }}js/parsley/parsley.extend.js" cache="false"></script>
-  </head>
-  <body>
-  <section>
-    {% if user.is_authenticated %}
-    <div class="header bg-dark">
-      <div class="row m-l-none m-r-none">
-        <div class="col-sm-6 col-sm-offset-3">
-          <div class="clearfix m-t-lg m-b-sm pull-none-xs">
-            <div class="pull-right  m-l-lg">                  
-              <div class="pull-right m-r-xs">
-                <div data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Fixed reward as shown by mturk">
-                    <span class="text-muted">Fixed Reward:</span>
-                    <span class="h4 text-info block">${{batch.value}}</span>
-                  </div>
-              </div>
-            </div>
-            <div class="pull-right  m-l-lg">                  
-              <div class="pull-right m-r-xs">
-                <div data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Total extra bonus you will get from this batch upon approval">
-                    <span class="text-muted">Total Bonus:</span>
-                    <span class="h4 text-success block">${% if user_profile%}{{user_profile.credit}}{%else%}-.--{%endif%}</span>
-                  </div>
-              </div>
-            </div>
-            <div class="pull-right  m-l-lg">                  
-              <div class="pull-right m-r-xs">
-                <div data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Extra bonus you will get for this single HIT upon approval">
-                    <span class="text-muted">Bonus:</span>
-                    <span class="h4 text-success block">${% if bonus%}{{bonus}}{%else%}-.--{%endif%}</span>
-                  </div>
-              </div>
-            </div>
-            <div class="pull-right  m-l-lg">
-              <div class="clear" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Hourly Rate* of the previous task submitted">
-                <span class="text-muted block">Last Hourly Rate:</span>                    
-                <span class="h4 text-success">${{last}}/Hour</span>
-                {% if upside%}
-                <i class="icon-level-up text-success"></i>
-                {%else%}
-                <i class="icon-level-down text-danger"></i>
-                {%endif%}
-              </div>
-            </div>
-            <div class="pull-right  m-l-lg">
-              <div class="pull-left m-r-xs" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Speed of all the HITs you submitted">
-                <div id="superchart" class="sparkline inline" data-type="bar" data-height="35" data-bar-width="4" data-bar-spacing="2" data-bar-color="#fb6b5b">{{data}}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    {% endif %}
-  </section>
-  {% block content_title %}{% endblock %}
-  {% block content %}{% endblock content %}
-
-  <script language="Javascript">
-    if( document.getElementById('assignmentId') ){
-      document.getElementById('assignmentId').value = gup('assignmentId');
-    }
-    if (document.getElementById('submitButton')) {
-      if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE" || gup('assignmentId')=="")
-      {
-        // If we're previewing, disable the button and give it a helpful message
-        document.getElementById('submitButton').disabled = true;
-        document.getElementById('submitButton').innerHTML = "You must ACCEPT the HIT before you can submit the results.";
-      } else {
-          var form = document.getElementById('mturk_form');
-          if (document.referrer && ( document.referrer.indexOf('workersandbox') != -1) ) {
-              form.action = "https://www.mturk.com/mturk/externalSubmit";
-          }
+    <script src="{{ STATIC_URL }}js/parsley/parsley.min.js"></script>
+    <script src="{{ STATIC_URL }}js/parsley/parsley.extend.js"></script>
+    <script language="Javascript">
+      if( document.getElementById('assignmentId') ){
+        document.getElementById('assignmentId').value = gup('assignmentId');
       }
-    }
-
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#welcomebody').show();
-});
-</script>
+      if (document.getElementById('submitButton')) {
+        if (gup('assignmentId') == "ASSIGNMENT_ID_NOT_AVAILABLE" || gup('assignmentId')=="")
+        {
+          // If we're previewing, disable the button and give it a helpful message
+          document.getElementById('submitButton').disabled = true;
+          document.getElementById('submitButton').innerHTML = "You must ACCEPT the HIT before you can submit the results.";
+        } else {
+            var form = document.getElementById('mturk_form');
+            if (document.referrer && ( document.referrer.indexOf('workersandbox') != -1) ) {
+                form.action = "https://www.mturk.com/mturk/externalSubmit";
+            }
+        }
+      }
+    </script>
 </body>
 </html>

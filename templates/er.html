@@ -3,14 +3,14 @@
 {% block content %}
 <script type="application/javascript">
   $(document).ready(function() {
-      $('#taskcustomer').show();
+    $("#taskcustomer").show();
       $("#submitButton").click(function( event ) {
         event.preventDefault();
         if ( $("#mturk_form").parsley('validate') ) {
           $(this).button('loading');
           $(this).attr('disabled', 'disabled');
           $.ajax({
-            url: "{% url "submit" task.id %}",
+            url: "{% url "submit" batch.id %}",
             type: "POST"
           }).always(function() {
             $("#mturk_form").submit();
@@ -19,11 +19,11 @@
       });
   });
 </script>
-<section class="scrollable wrapper" id="taskcustomer" style="display:none;">
+<section class="scrollable wrapper" id="taskcustomer">
   <div class="row">
       <div class="col-sm-4 col-sm-offset-2">
         <div class="panel"> 
-          <div class="panel-heading bg-primary"> Item to be matched 
+          <div class="panel-heading bg-info"> Item to be matched 
           </div> 
           <div class="panel-body text-sm"> 
                       <small class="text-uc text-xs text-muted">Product's Name</small>
@@ -36,17 +36,15 @@
                       {% endif %}   
            </div> 
         </div>
-                <div class="alert alert-info alert-block">
-          <h6>*Hourly Rate is defined as: The reward + The extra bonus, divided by the time to finish the HIT.</h6>
-        </div>
       </div>
       <div class="col-sm-4">
         <form data-validate="parsley" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit" method="post">
           <input type="hidden" id="assignmentId" name="assignmentId" value="">
           <input type="hidden" id="hitId" name="hitId" value="">
+          <input type="hidden" name="batch" value="{{batch.id}}">
           {% csrf_token %}
           <section class="panel">
-            <header class="panel-heading bg-primary">{{batch.description}}</header>
+            <header class="panel-heading bg-info">{{batch.description}}</header>
               <table class="table-responsive">
               <table class="table table-striped m-b-none text-sm">
                 <thead>
@@ -79,12 +77,10 @@
               <footer class="panel-footer text-right bg-light lter">
                 <div class="row"> 
                   <div class="col-sm-12 hidden-xs"> 
-                    <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-primary">Submit</button>
+                    <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-info">Submit</button>
                   </div>  
                 </div>
               </footer>
-            <input type="hidden" name="bonus" value="{{bonus}}"> 
-            {% csrf_token %}
           </section>
         </form>
       </div>
