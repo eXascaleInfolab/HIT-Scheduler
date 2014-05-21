@@ -10,6 +10,6 @@ for line in f.readlines():
 	s = int(line.strip())
 	print "sleeping", s
 	# sleep for the next one
-	# time.sleep(s)
+	time.sleep(s)
 	
 f.close()
