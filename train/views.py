@@ -174,6 +174,7 @@ def work(request, task_id):
     batch = getNextBatch_Delay_FAIR(user_profile)
     print "Selected Batch:", batch.id
     task = getTask(batch)
+    print "Selected Task:", task.id
     user_profile.lastbatch = batch
     user_profile.save()
 
