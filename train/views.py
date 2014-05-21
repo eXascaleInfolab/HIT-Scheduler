@@ -134,8 +134,7 @@ def work(request, task_id):
     
     # Assignement Id not available
     if assignmentId == "ASSIGNMENT_ID_NOT_AVAILABLE":
-        return render_to_response('accept.html', {'data': data, 'batch': batch,
-            'last': last, 'max': max_data, 'avg':avg_data, 'upside': upside}, context_instance=RequestContext(request))
+        return render_to_response('accept.html', {}, context_instance=RequestContext(request))
 
     # User management
     if request.user.is_authenticated() == False:
