@@ -1,0 +1,74 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+<script type="application/javascript">
+  $(document).ready(function() {
+      $("#taskcustomer").show();
+      $("#submitButton").click(function( event ) {
+        event.preventDefault();
+        if ( $("#mturk_form").parsley('validate') ) {
+          $(this).button('loading');
+          $(this).attr('disabled', 'disabled');
+          $.ajax({
+            url: "{% url "submit" batch.id %}",
+            type: "POST"
+          }).always(function() {
+            $("#mturk_form").submit();
+          });
+        }
+      });
+  });
+</script>
+<section class="scrollable wrapper" id="taskcustomer">
+  <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <form data-validate="parsley" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit" method="post">
+          {% csrf_token %}
+          <input type="hidden" id="assignmentId" name="assignmentId" value="">
+          <input type="hidden" id="hitId" name="hitId" value="">
+          <input type="hidden" name="batch" value="{{batch.id}}">
+            <section class="panel">
+              <header class="panel-heading bg-info">
+                <span class="h4">{{batch.description}}</span>
+              </header>
+              <div class="panel-body">
+                <div class="col-sm-11">
+                  <div class="panel-body text-sm">
+                      {{task.question}}
+                  </div>      
+                  <hr>            
+                  <div class="form-group">                  
+                            <!-- radio -->
+                          <div class="radio">
+                            <label class="radio-custom">
+                              <input type="radio" name="answer" value="Positive">
+                              <i class="icon-circle-blank"></i>
+                              Positive
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label class="radio-custom">
+                              <input type="radio" name="answer" value="Negative">
+                              <i class="icon-circle-blank"></i>
+                              Negative
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label class="radio-custom">
+                              <input type="radio" name="answer" value="Neutral">
+                              <i class="icon-circle-blank"></i>
+                              Neutral
+                            </label>
+                          </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="panel-footer text-right bg-light lter">
+                <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-info">Submit</button>
+              </footer>
+            </section>
+        </form>
+      </div>
+  </div>
+</section>
+{% endblock content %}

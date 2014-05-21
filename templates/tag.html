@@ -1,0 +1,57 @@
+{% extends "navigation.html" %}
+
+{% block content %}
+<script type="application/javascript">
+  $(document).ready(function() {
+      $("#taskcustomer").show();
+      $("#submitButton").click(function( event ) {
+        event.preventDefault();
+        if ( $("#mturk_form").parsley('validate') ) {
+          $(this).button('loading');
+          $(this).attr('disabled', 'disabled');
+          $.ajax({
+            url: "{% url "submit" batch.id %}",
+            type: "POST"
+          }).always(function() {
+            $("#mturk_form").submit();
+          });
+        }
+      });
+  });
+</script>
+<section class="scrollable wrapper" id="taskcustomer">
+  <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <form data-validate="parsley" id="mturk_form" action="https://www.mturk.com/mturk/externalSubmit" method="post">
+          {% csrf_token %}
+          <input type="hidden" id="assignmentId" name="assignmentId" value="">
+          <input type="hidden" id="hitId" name="hitId" value="">
+          <input type="hidden" name="batch" value="{{batch.id}}">
+            <section class="panel">
+              <header class="panel-heading bg-info">
+                <span class="h4">{{batch.description}}</span>
+              </header>
+              <div class="panel-body">
+                <div class="col-sm-6">
+                  <div class="post-media">
+                      <a href="#"><img src="https://s3.amazonaws.com/esp_images/images/{{task.question}}" class="img-full"></a>
+                  </div>
+                </div>
+                <div class="col-sm-6">                     
+                  <div class="form-group">
+                  <div class="input-group m-b"> 
+                    <label>Tags:</label> 
+                    <textarea name="tags" class="form-control parsley-validated" rows="6" cols="70" data-required="true"></textarea>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <footer class="panel-footer text-right bg-light lter">
+                <button id="submitButton" type="submitButton" name="submitButton" class="btn btn-info">Submit</button>
+              </footer>
+            </section>
+        </form>
+      </div>
+  </div>
+</section>
+{% endblock content %}
