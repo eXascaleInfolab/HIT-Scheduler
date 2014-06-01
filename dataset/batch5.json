@@ -1,0 +1,1818 @@
+[
+  {
+    "pk": 5,
+    "model": "accounts.batch",
+    "fields": {
+      "finishtime": null,
+      "name": "Spelling mistake correction",
+      "value": 0.01,
+      "numtask": 200,
+      "bclass": "data",
+      "runtask": 0,
+      "deadline": "2013-09-25T11:21:25Z",
+      "repetition": 3,
+      "pulication": "2013-09-25T11:21:18Z",
+      "description": "Correct the spelling mistakes in the following sentence"
+    }
+  },
+  {
+    "pk": 730,
+    "model": "accounts.task",
+    "fields": {
+      "question": "batter life seems awful.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 731,
+    "model": "accounts.task",
+    "fields": {
+      "question": "are there any issues already occured with Android 2.2 ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 732,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i'm prettyy sure that everything I've ever read says that the <kbd>Back</kbd> button is the right way to exit out of apps.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 733,
+    "model": "accounts.task",
+    "fields": {
+      "question": "probably I will change ROM often, so my question.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 734,
+    "model": "accounts.task",
+    "fields": {
+      "question": "btw mine is a nexus one",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 735,
+    "model": "accounts.task",
+    "fields": {
+      "question": ", how about the file itself, is it just an archive such as zip where during install the installer actually just extract and copy the file into system app?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 736,
+    "model": "accounts.task",
+    "fields": {
+      "question": "this made me wondering how to see the version info of an application on my Galaxy S mobile phone.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 737,
+    "model": "accounts.task",
+    "fields": {
+      "question": "do I loose all my widgets too or will it mostly change the way my Home screen looks?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 738,
+    "model": "accounts.task",
+    "fields": {
+      "question": "other than the HTC mail and messaging apps having a possible memory leak issue [I replaced their use with K9 and Gmail, and Hancent], I've been pleased with Sense.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 739,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the phone checks the [IMSI][2] code of the inserted SIM card and check that it corresponds with the allowed country or network codes that the phone has been programmed with.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 740,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I find that unlocking the screen usually requires a few attempts and is difficult for me to do with just one hand (heh, ironicly the screen is too large to swipe across).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 741,
+    "model": "accounts.task",
+    "fields": {
+      "question": "and don't frget that higher speeds means higher heat -- your tiny pocket-sized squeeze-asmuch-as-possible-into-this-small-area has very little in the way of cooling fins.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 742,
+    "model": "accounts.task",
+    "fields": {
+      "question": "when disabling iit I loose more often my wifi connection.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 743,
+    "model": "accounts.task",
+    "fields": {
+      "question": "turning on APN also does take a lot of time occasinally.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 744,
+    "model": "accounts.task",
+    "fields": {
+      "question": "can you suggest a way to turn of APN in a less harmful way?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 745,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have an eletronic device the model is K599 was built in china.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 746,
+    "model": "accounts.task",
+    "fields": {
+      "question": "when it is downloaded, it displays an 'successfully updated' icon.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 747,
+    "model": "accounts.task",
+    "fields": {
+      "question": "yesterday i have got a warning that the \"phone storage space is low. because of that i can't recieve SMS messages. i tried to uninstall applications and the system show me the the application is being uninstalled, but after restart i see the application again (when i tried to remove Adobe AIR - 16 MB), also when i try to delete threads of messages, it doesn't delete theme. and the weirdest thing is that after i \"free\" space and i check the internal storage in the system phone storage setting, i see that the available space in the internal phone storage is lower than before.moreover i can't install any application that can help me, cache cleaner or something else.do someone know how to overcome this problem ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 748,
+    "model": "accounts.task",
+    "fields": {
+      "question": "what will I loose?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 749,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the free version allow 2-way video chat between Android and Mac (plus many other platforms)They are expected to release a version for the Galaxy Tab in February according to this site",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 750,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is it possible to run android application on PC (with emulator) ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 751,
+    "model": "accounts.task",
+    "fields": {
+      "question": "how to stop galaxy S, for not to automatically converts SMS to MMS ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 752,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is it possible to start a session with a android samsung galaxy smartphone thru a bash shell to access files remotely?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 753,
+    "model": "accounts.task",
+    "fields": {
+      "question": "samasung Galaxy S GT I9000 comes with 512 MB RAM but it shows only 326 or less Why ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 754,
+    "model": "accounts.task",
+    "fields": {
+      "question": "what where the developers/engineers thinking?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 755,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you look at your Manage Your Kindle page on Amazon (the same page where you set the email address up) you can see that the Kindle email address is secifically assigned to one Kindle device.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 756,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I assume they are stored in./data/data/com.android.providers.telephony/databases/smsmms.db.and that this file (originally with 500+ messages) has been overwritten by a new smsmms.db (now containing ~5 messages), but as I am new to Android/Linux am not sure if this assumption is right e.g. the new smsmms.db file could be written to a different disk location (as is commin on FAT32/NTFS file systems in Windows) and hence with the right know-how the original file can be recovered (I've recvered many files like this in Windows without issue).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 757,
+    "model": "accounts.task",
+    "fields": {
+      "question": "we know that google calendar application has a way to set reminder / alarm.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 758,
+    "model": "accounts.task",
+    "fields": {
+      "question": "my question is, is there an application (preferably free, as I don't have CC and google's android market doesn't support paypal, yet) that can help me set defult reminder for every event I have?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 759,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I just switched got a Droid X and I love it.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 760,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have many video files. and want convert it all to a playable format as my phone <br>H264 or xvid ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 761,
+    "model": "accounts.task",
+    "fields": {
+      "question": "setting Manage Applications -> Third Pary App -> Force Stop not working T on Force Stop Button not changed.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 762,
+    "model": "accounts.task",
+    "fields": {
+      "question": "this is on ATT&T.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 763,
+    "model": "accounts.task",
+    "fields": {
+      "question": "there is only ways to purge the whole certificate store (for ssl root certificates used e.g. in 802.1x).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 764,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I realize you have a differnt phone, but I hope this helps.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 765,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is out there any advanced contact manager?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 766,
+    "model": "accounts.task",
+    "fields": {
+      "question": "suppose I don't have to root and thinker with it right?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 767,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I heard about the complain of Nexus S lack of 720p video recording?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 768,
+    "model": "accounts.task",
+    "fields": {
+      "question": "how does that compared to Samsung Galaxy S?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 769,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have two android tablet device, and I want to use the first device to control the second device.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 770,
+    "model": "accounts.task",
+    "fields": {
+      "question": "thanks",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 771,
+    "model": "accounts.task",
+    "fields": {
+      "question": "day or two ago I have troubles in default Market Application, When I try to scroll in selection \"Just In\" application just stop working and I get screen black for while and after that I get error process com.android.vending is crashed.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 772,
+    "model": "accounts.task",
+    "fields": {
+      "question": "can,i uninstall default applications that comes with android os.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 773,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you have more than 1 browser and you haven't set a dfault, Android will assk you which one to choose.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 774,
+    "model": "accounts.task",
+    "fields": {
+      "question": "as Seth and Hcpl have said VLC Player can play almost any format ad should be able to play your videos.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 775,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you want to know what codec is being used, then try opening the video in a codec identifying app like GSpot, this should tell you exactly which audio and video foprmats and codecs are in your videos.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 776,
+    "model": "accounts.task",
+    "fields": {
+      "question": "odly, some it left off randomly.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 777,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I switched off d cell, removed battery,sd card ,sim and then put them back and restarted but still no luck :( Then i installed GPS ESSENTIALS from android market.launched the application and changed settingsGps update interval -> 10 secondsTracking update interval -> 10 secondsafter this tapped on \"satellites\" on main screen.(outside my room)I couldn't believe my eyes. it detected 8 satellites in few seconds and even it was able to lock to 7 of them.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 778,
+    "model": "accounts.task",
+    "fields": {
+      "question": "any idea on this",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 779,
+    "model": "accounts.task",
+    "fields": {
+      "question": "just reived one of these (Sim Free, UK Version, Android 2.3 with Sense UI) , can anybody point me towards the simplest and most easy way to Root one?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 780,
+    "model": "accounts.task",
+    "fields": {
+      "question": "please not that merely showing Bengali characters won't help.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 781,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I am finding problem to connect my android mobile to server on a windows machine.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 782,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I know there were a discussion previously BUT they didn't talked about security.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 783,
+    "model": "accounts.task",
+    "fields": {
+      "question": "download quequetube you can shearch, play songs in the background and make a playlist.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 784,
+    "model": "accounts.task",
+    "fields": {
+      "question": "but I do not see any google applications installed(market, maps etc).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 785,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I know that the keyboard dock available for the asus tablet has 2 usb ports.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 786,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the Phones buy default will mount the linux partition on the sdcard at boot, but just check and make sure.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 787,
+    "model": "accounts.task",
+    "fields": {
+      "question": "cause i want to sync my outlook contacts and calendars, please suggest",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 788,
+    "model": "accounts.task",
+    "fields": {
+      "question": "any help would be appreciated.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 789,
+    "model": "accounts.task",
+    "fields": {
+      "question": "im looking for an alarmc clock which able to turn off flight mode if i stop the alarm on wake up. (i turn on flight mode when sleep.)Do you know any alarm clock with this function?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 790,
+    "model": "accounts.task",
+    "fields": {
+      "question": "thak yuo",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 791,
+    "model": "accounts.task",
+    "fields": {
+      "question": "there is any aplication to open Mixrosoft XPS documents on Android, such as Adobe PDF documents has \"Adobe Reader for Android\"?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 792,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I take a look at Market but I didnt found anything.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 793,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is there any easy way to backup/export notes from the stock notes app in froyo?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 794,
+    "model": "accounts.task",
+    "fields": {
+      "question": "or where does the data of these get saved so I can manually copy them over to my PC?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 795,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the base way is to Sync your contacts to your gmail account from your SonyErricson W810i if that allows you then sync tahat email to your glaxys and our contacts will be copied OTA easily.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 796,
+    "model": "accounts.task",
+    "fields": {
+      "question": "once you have you contacts in CVS file you can import that CSV file to your gmail account and then sync that gmail account to your glaxy s2 and you are DONE.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 797,
+    "model": "accounts.task",
+    "fields": {
+      "question": "never even tried doing that, but when you're in their text message conversation you can press <kbd>Menu</kbd> then More then Call. [1]: https://market.android.com/details?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 798,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I use Simply Honey before and everything is ok.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 799,
+    "model": "accounts.task",
+    "fields": {
+      "question": "but if someone could help I would be very greatful, I.think my phone is a HTC wildfire.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 800,
+    "model": "accounts.task",
+    "fields": {
+      "question": "socia Networking Service.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 801,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i'm not sure if the Facebook or other app rely on it.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 802,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have standard 1500mah battery in my samsung galaxy s phone and that battery last around 24hours so i want to know can i use 1650mah battery so i can get i bit more battery backup?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 803,
+    "model": "accounts.task",
+    "fields": {
+      "question": "over that time I have installed and uninstall a _lot_ of applications (often to answer questions here or, more likely, from recommendations here).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 804,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I bought the phone in October and it did work without this kind of problem for about 2-4 months.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 805,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I want to know if my calls are being blocked by number xxxxxxxxxxx and if so log the data. is there an app?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 806,
+    "model": "accounts.task",
+    "fields": {
+      "question": "please help me out.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 807,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I subscribe to podcasts via google reader, which puts them on my phone.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 808,
+    "model": "accounts.task",
+    "fields": {
+      "question": "let's that I have my contact 'John Smith' then I imported contacts from facebook and new John Smith appeared.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 809,
+    "model": "accounts.task",
+    "fields": {
+      "question": "other applications that use internet, does not work.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 810,
+    "model": "accounts.task",
+    "fields": {
+      "question": "presently i am having a Android mobile with 5MP camera; is there any way to save raw images( similar to Canon CR2,Nikon NEF, etc.)from android device ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 811,
+    "model": "accounts.task",
+    "fields": {
+      "question": "recently I noticed that some of the installed applications seem to loose data.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 812,
+    "model": "accounts.task",
+    "fields": {
+      "question": "every once in a while (and I really can't put my finger on why) this program starts up as if it is just installed - i.e. it produces the start help screen, and I loose the settings I choose (f.i. the chosen colours for Saturday and Sunday).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 813,
+    "model": "accounts.task",
+    "fields": {
+      "question": "go to Settings > Applications > Development > and check USB debuggingAfter that if u connect your s2 to a pc it will connect in USB mode and you wont get the KIES application popup",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 814,
+    "model": "accounts.task",
+    "fields": {
+      "question": "but I'd like to ask this in a more general way: Given a tablet (and an pen), how can I write - not just note taking and commenting, more like one would write on paper - in an PDF?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 815,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I called a new phone number while in airplane mode, and the number was not saved.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 816,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is there any way to restore this number from any logs or maybe combinations?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 817,
+    "model": "accounts.task",
+    "fields": {
+      "question": "on my Android phone, I can't sseem to use my google account because I have the double authentication enabled.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 818,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is is possible to download the older version of some Android application?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 819,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I was wondering how does Google Maps on my Android phone can locate me with a good accuracy when my GPS is disable.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 820,
+    "model": "accounts.task",
+    "fields": {
+      "question": "for example wolframalpha locate me with a very bad precision (the country is correct, congratulation) and it's the same for all other IP localization service.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 821,
+    "model": "accounts.task",
+    "fields": {
+      "question": "try turning radios of but leave phone one and see if your charge time improves. i'd do them one at a time to see which one is actually the problem child. i haven't exactly isolated mine, but i think its the HSPA+ personally.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 822,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have a task setup that opens co pilot after (sat nav) after I click on dailyroads voyager (blakbox recorder) this works really well.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 823,
+    "model": "accounts.task",
+    "fields": {
+      "question": "most of the times I receive incoming calls for few seconds, then it shows as missed call while my caller listens full ring, lead to thinking that I didn't pickup the call.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 824,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I accidentally uninstalled Google talk using root uninstaller and now i cant dl anything from market. can anyone help me?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 825,
+    "model": "accounts.task",
+    "fields": {
+      "question": "also you can use an editor as INKPAD, thats works your way, the keybord only is showed if you want edit the note.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 826,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I wasn't very sure what it was, but afte the update the version is still 2.3.3 (which is the version before I did that update.)",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 827,
+    "model": "accounts.task",
+    "fields": {
+      "question": "here's my scenario:HTC Incredible, Rooted to MIUI, with a 8GB SD card.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 828,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if I root Kindle Fire, do I loose all the functionality that the Fire was designed to do?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 829,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if I root Kindle Fire, do I loose access to the Amazon App store ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 830,
+    "model": "accounts.task",
+    "fields": {
+      "question": "since some of the APK are not available via Market you'll need to install a file manager and allow the android system to install apps that are not from the market.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 831,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have backed up my messages from my Sony Xperia, and now I want to open the file and export them to excel or something more easy to read, but I can't find a program or tool to do that I just have the file and i want to open it and extract especific information.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 832,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the soft key lighting is tied in with the screen brightness level.have him set the level to \"auto\" n see if that works for him.also, if rooted, there's mods for it as well, but prob don't wanna implode ur dads head with rooting lol",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 833,
+    "model": "accounts.task",
+    "fields": {
+      "question": "do you have any clue on how to discover why it's restarting?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 834,
+    "model": "accounts.task",
+    "fields": {
+      "question": "for 15 days it seemed to work fine but now it has stopped syncing my messages completly.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 835,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i know this a common problem; but my experience has been a little freakish. am using HTC Desire 2.2 and usually try to maintain approx. 40 mb space free. i have installed the bloody gigantic Google+ which took up about 20 mb and there was an option to move it the sd card, which i did. apparently only some of the 20 mb was moved, i think abt 12 mb. ok no problem, i thought, used google+ for sometime, not my thing, so i uninstalled it and couldnt really believe that am still short of the 8mb space!",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 836,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the only way in stock messaging application is to disable sms notification completely.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 837,
+    "model": "accounts.task",
+    "fields": {
+      "question": "it seems to me that the previous verson (2.2) Froyo I had user folders in the email client.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 838,
+    "model": "accounts.task",
+    "fields": {
+      "question": "after switching to g2-only the surfing on the phone is much better now but surfing on the laptop is still bad.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 839,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I hit something by accident and now whenever I use the camera app it's using the frnot facing camera evey time.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 840,
+    "model": "accounts.task",
+    "fields": {
+      "question": "according to the Android 4 (Ice Cream Sandwich) Platform Highlights, the Email client supports EAS v14 (scroll down to the \"Improved email\" section), in a comparison with Gingerbread (Android 2.3.x) though you also need to take into account the Android 3 (Honeycomb) changes which while they don't specify EAS changes did add support for policies for encrypted storage, password expiration, password history, and password complex, all of which are EAS features.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 841,
+    "model": "accounts.task",
+    "fields": {
+      "question": "should I proceed with instalation?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 842,
+    "model": "accounts.task",
+    "fields": {
+      "question": "please help me how to flush out original ROM and how to install new stok android on it.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 843,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I tried all the different way with the power button, pressing 5, 10 , 100 secongs, nothing happens.- If I plug to the power the tablet show me 100% of the battery charged.- The only way to turn it on is with the tablet plug into the power and press the power button plus the Volumen +, then in the Android system recovery I have to choose reboot system now.- If I unplug it the tablet shut down.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 844,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if I plug it to the USB port the tablet doesn't work because the USB port don't have enough power to turn the tablet on.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 845,
+    "model": "accounts.task",
+    "fields": {
+      "question": "finally, the tablet show full charged when it's working and give me the message \"Battery full charged, please unplug the charger\" If I do it the tablet will shut down.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 846,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I am able to Make and recive calls from my Samsung ACE S5830 phone using the Bluetooth device.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 847,
+    "model": "accounts.task",
+    "fields": {
+      "question": "how do I use a external microphone on my Galaxy Nexus, and what kind do I need?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 848,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I want to use my phone for a video conference, but there is gooing to be a lot of noise around me, so I need a external microphone without all the background noise which the microphone in the phone gives.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 849,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is it possible to make my Samsun Galaxy Nexus connect to USB memeory stick?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 850,
+    "model": "accounts.task",
+    "fields": {
+      "question": "so i rooted my Sony Ericsson xperia x10 mini and linked my apps to my sd card using link2sdi then factory reset my phone from the android privacy settingssuperuser still exists on my phone1- how do i get my linked apps to become visible and useable2- my android market has the (killing me) \"starting download\" forever (n i dont have gtalk, google talk that i was told i need to resolve this.) ive tried both wifi and sim data connectionive tried clearing market cache+data and nothingso i cant access my memory card because i cant download link2sd and i cant use market.i want my phone to show my linked apps n market to workcould anyone answer me?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 851,
+    "model": "accounts.task",
+    "fields": {
+      "question": "in other words, if my Android device is stolen, will the person be able to get my data by pluging it in a PC and use some trick?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 852,
+    "model": "accounts.task",
+    "fields": {
+      "question": "also a rom is a custom os right.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 853,
+    "model": "accounts.task",
+    "fields": {
+      "question": "one more question to flash means to copy is this correct.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 854,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i have one samsung galaxy i9003 and some other devices connected to wifi router,other devices have both ipv4/ipv6 address,but on samsung it gets only ipv4 address.do it support ipv6 or i need some other apps for ipv6,Please help.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 855,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I own both an Android phone and a tablet and I am trying to figure out what are the differences between all these Angry Birds Space versions:- Angry Birds Space- Angry Birds Space Premium- Angry Birds Space HDOne if free and the other two are Paid Apps, but looking at the description they seems to have the same content and features.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 856,
+    "model": "accounts.task",
+    "fields": {
+      "question": "first, problem description:Iv connected S2 to PC and turn on the mass storage mode.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 857,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i'm facing an issue with it.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 858,
+    "model": "accounts.task",
+    "fields": {
+      "question": "can someone pls help me with this issue?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 859,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I solve these probles upgrading it.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 860,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I gave a try \"More Locales 2\" from android market and it worked but not as I expect.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 861,
+    "model": "accounts.task",
+    "fields": {
+      "question": "please help me figure out the problem to my question \"i have tried a lot of things and nothing seems to be working\" so i am asking anyone if they can figure out the problem to the situation.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 862,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I Had Galaxy S2 with GinngerBred kernel , I needed to upgrade it to ICS .",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 863,
+    "model": "accounts.task",
+    "fields": {
+      "question": "using Wifi I doubt that it is possible to achive a latency suitable for games or movies.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 864,
+    "model": "accounts.task",
+    "fields": {
+      "question": "sometimes the Back & Menu capacitive buttons doesn't response at all . but most of the time it response after 2-3 sec from pressing it.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 865,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have to select the one by one the delete them.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 866,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I hjad the HTC desire bvefore and that did it no problem.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 867,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I am used to a HTC HD2 with its old Windows Mobile, and I was always able to leave a game in its position and get back at it later, without any problem.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 868,
+    "model": "accounts.task",
+    "fields": {
+      "question": "spotify's istallation page forwards me to Play market.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 869,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is there any ather way install the app?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 870,
+    "model": "accounts.task",
+    "fields": {
+      "question": "one my HTC One V (Android 4 Ice Cream Sandwich), I can use \"Settings / Security / Lock Phone After\" to set the time, after which entering the PIN is required to unlock the screen.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 871,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I get: $ fastboot oem get_identifier_tolken . (bootloader) [ERR] Command error !",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 872,
+    "model": "accounts.task",
+    "fields": {
+      "question": "but I work with XMPP and Android, so here is my answer: As Ryan already stated, an handover from one mobile cell to another is almost always transparent to the TCP stack on Android devices.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 873,
+    "model": "accounts.task",
+    "fields": {
+      "question": "this are typical GSM/UMTS <-> WiFi switches, which will cause the TCP connection to become unusable by the XMPP client.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 874,
+    "model": "accounts.task",
+    "fields": {
+      "question": "on Android the standard XMPP library that clients use - besides using their on proprietary one - is (a)Smack: Clients that use (a)Smack with an default configuration will not notice an connection change in a timely manner.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 875,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I am an university student that has most of the readings online as a pdf format.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 876,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I hat the same problem, I re-installed the last Kies version and deactivated USB-Debugging BEFORE I connected my phone(Samsung Galaxy XCover) the first time.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 877,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have a Android 2.3 device (Samsung Galaxy Y Duos, S6102) and want to receive every bluetooth files on my SD card.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 878,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if in server a same name file is updated, Then that also have synchronize in device.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 879,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I am a developer and want to run/test android apps. on android emulator and want to type using PC keyboard, as it let me type and test faster.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 880,
+    "model": "accounts.task",
+    "fields": {
+      "question": "it seems that feature has been replaced by the Check-In feature that google is trying to promote, so that u use there location based app.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 881,
+    "model": "accounts.task",
+    "fields": {
+      "question": "when u check-in you can add info as reviews.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 882,
+    "model": "accounts.task",
+    "fields": {
+      "question": "google it trying to promote Latitude as a loaction based social app where u can share ur location and interact better with ur friends and also provide reviews for the selected starred location.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 883,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I could neither solve this problem or find another way to install my ROM Zip from SDCARD.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 884,
+    "model": "accounts.task",
+    "fields": {
+      "question": "my Samsung Galaxy S2 takes long times to get a GPS signal (maybe around 5 minutes).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 885,
+    "model": "accounts.task",
+    "fields": {
+      "question": "anyone knows why and what can I do about it?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 886,
+    "model": "accounts.task",
+    "fields": {
+      "question": "push the .gpx to your phone (via bluetoot, mail or Usb) to /sdcard/osmand/tracks/This is however not very straightforward and requires some steps. but I use itI for preparing motorcycle routes offline in advance for example.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 887,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i've tried to add a field to it but that doesnt work either.thanksSteve",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 888,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I event tried this stupid idea: chmod -R 777 / but it made even worse: after reboot, my phone forgot even my Google account and offered to reconfigure it as if it was the first time I switch the phone after buying it.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 889,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have brought a new phone and need to change the old device name to the new one. how do i change the device name.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 890,
+    "model": "accounts.task",
+    "fields": {
+      "question": "why technically Android devices can't print to shared printer ?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 891,
+    "model": "accounts.task",
+    "fields": {
+      "question": "why can't Android devices directly print to a shared network printer, technically?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 892,
+    "model": "accounts.task",
+    "fields": {
+      "question": "im a really big fan of Google Play Book reader, specially for Android Tablet, i love the 2 columns and the effect when you go to other page, so i was wondering, is there any PDF/eBook reader with similar funtionality as google play book?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 893,
+    "model": "accounts.task",
+    "fields": {
+      "question": ", because google play books doesnt allow to impoort PDF o EPUB",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 894,
+    "model": "accounts.task",
+    "fields": {
+      "question": "this morning it sent me a alert saying that I could get a update, so I did.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 895,
+    "model": "accounts.task",
+    "fields": {
+      "question": "does Samsung provide update to Andorid 4 for GT-I9070 Galaxy S Advance?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 896,
+    "model": "accounts.task",
+    "fields": {
+      "question": "whats insteresting is that if I open MMS app from the applications menu it opens up without a problem.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 897,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if this occurred on a PC, I would first download a hardware test/diagnostics application and see wether this could find anything.but are there any such thing as a hardware test app for Android devices?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 898,
+    "model": "accounts.task",
+    "fields": {
+      "question": "[Note that I have root my device and don't mind flashing a new ROM if needed.]",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 899,
+    "model": "accounts.task",
+    "fields": {
+      "question": "hi guys i wnat to know if there is any `official documentation` of how to upgrade samsung android enable devices.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 900,
+    "model": "accounts.task",
+    "fields": {
+      "question": "the problem: I want to use an (offline",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 901,
+    "model": "accounts.task",
+    "fields": {
+      "question": "when I put my contacts into groups, many of them come up with different contact info when I access them in the group section.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 902,
+    "model": "accounts.task",
+    "fields": {
+      "question": "for example, if I pull up \"Bill\" in my friends group, \"John\"'s contact info will show up.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 903,
+    "model": "accounts.task",
+    "fields": {
+      "question": "is there a way to remove apps from this list?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 904,
+    "model": "accounts.task",
+    "fields": {
+      "question": "even if I select \"Sync with existing contact\" in the app, aaalllll my Facebook friends are added to my local contact, like if I'd choosen \"Sync all\".",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 905,
+    "model": "accounts.task",
+    "fields": {
+      "question": "but the options works 'cause as soon as I select \"Do not sync\", everything from Facebook disapear from my contact on my phone.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 906,
+    "model": "accounts.task",
+    "fields": {
+      "question": "this puts the calendar into \"My Calendars\" for both user's calendars.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 907,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I get a HBoot menu with the options fastboot, recovery, clear storage and simlock.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 908,
+    "model": "accounts.task",
+    "fields": {
+      "question": "turing on USB debugingTurn on USB debugging on your device:Go to System settings / Developer options and check \"USB debugging\". 2.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 909,
+    "model": "accounts.task",
+    "fields": {
+      "question": "see also user17512's answer for an althernative method for Windows users.3.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 910,
+    "model": "accounts.task",
+    "fields": {
+      "question": "going to device's fastboot modeYou need to connect the device to your computer using an USB cable and than access your device's fastboot mode: - On Nexus S: Turn off your phone.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 911,
+    "model": "accounts.task",
+    "fields": {
+      "question": "please don' suggest WMV players.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 912,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i'm going too root my Samsung Galaxy Note and I come across the term CWM and Odin very often.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 913,
+    "model": "accounts.task",
+    "fields": {
+      "question": "my Galaxy ACE sd-cards fills up with .txt files in the GPS folder when the GPS is on.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 914,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I often run out space and would like to know how to fix this. this doesnt happen on other android phones of mine.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 915,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have Galaxy Nexus running Jelly Beans.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 916,
+    "model": "accounts.task",
+    "fields": {
+      "question": "while here, you can \"delete\" too-big caches (per app) some directories in the file system cannot be investigated without having root priviledges, so the prefered `du -k",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 917,
+    "model": "accounts.task",
+    "fields": {
+      "question": "in case the `-h` parameter (\"human readable\") is not understood on your system, you might try to replace it by `-m` (\"megabytes\"), `-k` (\"kilobytes\"), or ommit it completely.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 918,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if the \"big egg\" cannot be found and removed, one can either start to uninstall some apps, cleaning \"big data\" from others (see first step), or, as a last ressort, there always remains the factory-reset which should clean up everything -- but be aware: all your downloaded apps and all your data (on internal storage only, of course -- SD card will not be affected) will get removed as well when you do this. if still unable to solve the issue, a last ressort is a factory reset.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 919,
+    "model": "accounts.task",
+    "fields": {
+      "question": "), and probably a factory-reset will be your last ressort.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 920,
+    "model": "accounts.task",
+    "fields": {
+      "question": "i recently rooted my samsung exhibit ii. and was going through and deleting some bloatware and accidently fat fingered and deleted the mediascannerservice not realizing what i was deleteing. does anyone no how to reinstall the service?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 921,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I have searched all the possible configurations and could not find anything related to this problem.(The funny thing is that I tried an app called Photo Editor CIS, which is a clone of the original Photo Editor, and it worked fine.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 922,
+    "model": "accounts.task",
+    "fields": {
+      "question": "after having struggled wit this for a while, I am under the impression that it is impossible to use a soft keyboard with Android Jelly Bean unless is you are the Primary user (userId=0).",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 923,
+    "model": "accounts.task",
+    "fields": {
+      "question": "Is there any way to maybe force apps to run on a lower resolution, say 540x960, without loosing my app data?",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 924,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you can get in to clowrokmod(or whatever custom recovery) try reflashing cm9.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 925,
+    "model": "accounts.task",
+    "fields": {
+      "question": "if you still can't boot, flash a stock rom with odin(I think it is odin you use for flashing stock roms, since it is samsung device, if not use whatever is recomended on xda-developers under topic named somthing like \"restoring a stock rom\"), and check that it boots that.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 926,
+    "model": "accounts.task",
+    "fields": {
+      "question": "so I suggest check the list of applications that run processes and unninstall some of them.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 927,
+    "model": "accounts.task",
+    "fields": {
+      "question": "galazy S has a notorious bad GPS.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 928,
+    "model": "accounts.task",
+    "fields": {
+      "question": "it May be the problem with CyanogenMod 10 Nightli Build.",
+      "batch": 5,
+      "choice": ""
+    }
+  },
+  {
+    "pk": 929,
+    "model": "accounts.task",
+    "fields": {
+      "question": "I can access google with the default browser.",
+      "batch": 5,
+      "choice": ""
+    }
+  }
+]
